@@ -10,7 +10,6 @@ translations = pd.read_excel('/home/jovyan/work/germany/Data_Format_Census.xlsx'
 translation_dict = translations.set_index('Original')['Translated'].to_dict()
 
 for i in paths:
-    print(i)
     #read in data as dataframes
     if i in ['Zensus_Bevoelkerung_100m-Gitter.csv','Bevoelkerung100M.csv']:
         data = pd.read_csv("/home/jovyan/work/germany/raw_data/" + i, 
