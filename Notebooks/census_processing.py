@@ -33,5 +33,11 @@ for i in paths:
         data = data.rename(columns=translation_dict)
         data = data.rename_axis(columns=translation_dict)
         data.index.names =  ['ID']
+
+        coords = data.index.str.extract(r'N(\d{5})E(\d{5})')
+        coords[0] = pd.to_numeric(coords[0]) * 100 + 50
+        coords[1] = pd.to_numeric(coords[1]) * 100 + 50
+        
+        data[[("", "N"), ("", "E")]]=coords.values
     
     data.to_parquet('/data/processed_data/'+ i[:-4] + '.parquet')
