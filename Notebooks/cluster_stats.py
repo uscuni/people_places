@@ -28,9 +28,11 @@ def assign_clusters(data,clusters):
     
     # Calculate the area of overlap
     overlap['area'] = overlap.geometry.area
-    
+
+    # Find the cluster with the largest overlap for each cell
     largest_overlap = overlap.loc[overlap.groupby(overlap['ID'])['area'].idxmax()]
-    
+
+    # Merge this back with the original cells DataFrame to attach cluster information
     data['cluster','cluster'] =  data.droplevel(0, axis=1).merge(largest_overlap[['ID', 'label']], on='ID')['label']
 
     return largest_overlap, data
