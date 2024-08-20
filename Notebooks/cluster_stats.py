@@ -117,15 +117,15 @@ data['STATS','Holiday apartment'] = (data['USE_TYPE','Holiday and leisure apartm
                                                  / data['USE_TYPE'].sum(axis=1))
 
 data['STATS','Average floor space'] = ((data['FLOOR_SPACE']['Under 30'].fillna(0)*20 
-+ data['FLOOR_SPACE']['30 - 39'].fillna(0)*34.5
-+ data['FLOOR_SPACE']['40 - 49'].fillna(0)*44.5 + data['FLOOR_SPACE']['50 - 59'].fillna(0)*54.5
-+ data['FLOOR_SPACE']['60 - 69'].fillna(0)*64.5 + data['FLOOR_SPACE']['70 - 79'].fillna(0)*74.5
-+ data['FLOOR_SPACE']['80 - 89'].fillna(0)*84.5 + data['FLOOR_SPACE']['90 - 99'].fillna(0)*94.5
-+ data['FLOOR_SPACE']['100 - 109'].fillna(0)*104.5 + data['FLOOR_SPACE']['110 - 119'].fillna(0)*114.5
-+ data['FLOOR_SPACE']['120 - 129'].fillna(0)*124.5 + data['FLOOR_SPACE']['130 - 139'].fillna(0)*134.5
-+ data['FLOOR_SPACE']['140 - 149'].fillna(0)*144.5 + data['FLOOR_SPACE']['150 - 159'].fillna(0)*154.5
-+ data['FLOOR_SPACE']['160 - 169'].fillna(0)*164.5 + data['FLOOR_SPACE']['170 - 179'].fillna(0)*174.5
-+ data['FLOOR_SPACE']['180 and more'].fillna(0)*200) / data['FLOOR_SPACE'].sum(axis=1))
+                            + data['FLOOR_SPACE']['30 - 39'].fillna(0)*34.5
+                            + data['FLOOR_SPACE']['40 - 49'].fillna(0)*44.5 + data['FLOOR_SPACE']['50 - 59'].fillna(0)*54.5
+                            + data['FLOOR_SPACE']['60 - 69'].fillna(0)*64.5 + data['FLOOR_SPACE']['70 - 79'].fillna(0)*74.5
+                            + data['FLOOR_SPACE']['80 - 89'].fillna(0)*84.5 + data['FLOOR_SPACE']['90 - 99'].fillna(0)*94.5
+                            + data['FLOOR_SPACE']['100 - 109'].fillna(0)*104.5 + data['FLOOR_SPACE']['110 - 119'].fillna(0)*114.5
+                            + data['FLOOR_SPACE']['120 - 129'].fillna(0)*124.5 + data['FLOOR_SPACE']['130 - 139'].fillna(0)*134.5
+                            + data['FLOOR_SPACE']['140 - 149'].fillna(0)*144.5 + data['FLOOR_SPACE']['150 - 159'].fillna(0)*154.5
+                            + data['FLOOR_SPACE']['160 - 169'].fillna(0)*164.5 + data['FLOOR_SPACE']['170 - 179'].fillna(0)*174.5
+                            + data['FLOOR_SPACE']['180 and more'].fillna(0)*200) / data['FLOOR_SPACE'].sum(axis=1))
 
 d = []
 for i in range(0,int(data['cluster','cluster'].max())):
@@ -142,3 +142,51 @@ for i in range(0,int(data['cluster','cluster'].max())):
 
 apartments_stats = pd.DataFrame(d)
 apartments_stats.to_parquet('apartments_stats.parquet')
+
+### FAMILIES
+
+data = pd.read_parquet('/data/processed_data/Familie100m.parquet').reset_index()
+data = data.rename(columns={'': 'ID'})
+data['cluster','cluster'] =  data.droplevel(0, axis=1).merge(largest_overlap[['ID', 'label']], on='ID')['label']
+
+data['STATS','Average family size'] = (data['FAMILY_SIZE','2 people'].fillna(0)*2 + data['FAMILY_SIZE','3 people'].fillna(0)*3
+                                    + data['FAMILY_SIZE','4 people'].fillna(0)*4 + data['FAMILY_SIZE','5 people'].fillna(0)*5
+                                    + data['FAMILY_SIZE','6 or more people'].fillna(0)*7)/data['FAMILY_SIZE'].sum(axis=1)
+
+d = []
+for i in range(0,int(data['cluster','cluster'].max())):
+    d.append(
+        {
+            'Average family size': data[data['cluster','cluster']==i]['STATS','Average family size'].mean(),
+            'Average family size count': data[data['cluster','cluster']==i]['STATS','Average family size'].count()
+        }
+    )
+
+family_stats = pd.DataFrame(d)
+family_stats.to_parquet('family_stats.parquet')
+
+### RENT
+
+clusters = gpd.read_parquet('clusters_freiburg_300.pq').reset_index()
+
+data = gpd.read_parquet('/data/processed_data/rent_2022.parquet').reset_index()
+clusters['label']=clusters.index
+data = data.rename(columns={'GITTER_ID_100m': 'ID'})
+cells = data[['ID','geometry']]
+
+overlap = gpd.overlay(cells, clusters, how='intersection')
+overlap['area'] = overlap.geometry.area
+largest_overlap = overlap.loc[overlap.groupby(overlap['ID'])['area'].idxmax()]
+data['cluster'] =  data.merge(largest_overlap[['ID', 'label']], on='ID')['label']
+
+d = []
+for i in range(0,int(data['cluster'].max())):
+    d.append(
+        {
+            'Average rent': data[data['cluster']==i]['durchschnMieteQM'].mean(),
+            'Average rent count': data[data['cluster']==i]['durchschnMieteQM'].count()
+        }
+    )
+
+rent_stats = pd.DataFrame(d)
+rent_stats.to_parquet('rent_stats.parquet')
