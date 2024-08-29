@@ -32,8 +32,8 @@ def assign_clusters(data,clusters):
 
     # Merge this back with the original cells DataFrame to attach cluster information
     data['cluster','cluster'] =  data.droplevel(0, axis=1).merge(
-        largest_overlap[['ID', 'label']], on='ID')['label']
-    gdf['cluster','cluster'] =  data.droplevel(0, axis=1).merge(
-        largest_overlap[['ID', 'label']], on='ID')['label']
+        largest_overlap[['ID', 'label']], how='left', on='ID')['label']
+    gdf['cluster','cluster'] =  gdf.droplevel(0, axis=1).merge(
+        largest_overlap[['ID', 'label']], how='left', on='ID')['label']
 
     return gdf, largest_overlap, data
