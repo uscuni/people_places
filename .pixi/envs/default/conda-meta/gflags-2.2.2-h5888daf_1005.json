@@ -1,0 +1,181 @@
+{
+  "arch": "x86_64",
+  "build": "h5888daf_1005",
+  "build_number": 1005,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "libstdcxx >=13"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "d411fc29e338efb48c5fd4576d71d881",
+  "name": "gflags",
+  "platform": "linux",
+  "sha256": "6c33bf0c4d8f418546ba9c250db4e4221040936aef8956353bc764d4877bc39a",
+  "size": 119654,
+  "subdir": "linux-64",
+  "timestamp": 1726600001928,
+  "version": "2.2.2",
+  "fn": "gflags-2.2.2-h5888daf_1005.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/gflags-2.2.2-h5888daf_1005.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/gflags-2.2.2-h5888daf_1005",
+  "files": [
+    "bin/gflags_completions.sh",
+    "include/gflags/gflags.h",
+    "include/gflags/gflags_completions.h",
+    "include/gflags/gflags_declare.h",
+    "include/gflags/gflags_gflags.h",
+    "lib/cmake/gflags/gflags-config-version.cmake",
+    "lib/cmake/gflags/gflags-config.cmake",
+    "lib/cmake/gflags/gflags-nonamespace-targets-release.cmake",
+    "lib/cmake/gflags/gflags-nonamespace-targets.cmake",
+    "lib/cmake/gflags/gflags-targets-release.cmake",
+    "lib/cmake/gflags/gflags-targets.cmake",
+    "lib/libgflags.so",
+    "lib/libgflags.so.2.2",
+    "lib/libgflags.so.2.2.2",
+    "lib/libgflags_nothreads.so",
+    "lib/libgflags_nothreads.so.2.2",
+    "lib/libgflags_nothreads.so.2.2.2",
+    "lib/pkgconfig/gflags.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "bin/gflags_completions.sh",
+        "path_type": "hardlink",
+        "sha256": "cc8a0aae240363a0f2561f5e664ee0e96e8f04dee152f9750583ee4344606ace",
+        "sha256_in_prefix": "cc8a0aae240363a0f2561f5e664ee0e96e8f04dee152f9750583ee4344606ace",
+        "size_in_bytes": 5126
+      },
+      {
+        "_path": "include/gflags/gflags.h",
+        "path_type": "hardlink",
+        "sha256": "85da64b9b68783bed566be69916223aa0285f747930c7491dfb3882b0b14dc31",
+        "sha256_in_prefix": "85da64b9b68783bed566be69916223aa0285f747930c7491dfb3882b0b14dc31",
+        "size_in_bytes": 30637
+      },
+      {
+        "_path": "include/gflags/gflags_completions.h",
+        "path_type": "hardlink",
+        "sha256": "824f96e57d0099e654834786347aa44f5d01ca42820380502cb654dc5e233988",
+        "sha256_in_prefix": "824f96e57d0099e654834786347aa44f5d01ca42820380502cb654dc5e233988",
+        "size_in_bytes": 5761
+      },
+      {
+        "_path": "include/gflags/gflags_declare.h",
+        "path_type": "hardlink",
+        "sha256": "d101c69d005e42b832b85cb5f66acaee96f5c02e0fb131c6962e5edf8a039a86",
+        "sha256_in_prefix": "d101c69d005e42b832b85cb5f66acaee96f5c02e0fb131c6962e5edf8a039a86",
+        "size_in_bytes": 5366
+      },
+      {
+        "_path": "include/gflags/gflags_gflags.h",
+        "path_type": "hardlink",
+        "sha256": "6040845c7dd3b491c9f9ea39d7ef0ce38144206558ba95fee21b91205d3599fa",
+        "sha256_in_prefix": "6040845c7dd3b491c9f9ea39d7ef0ce38144206558ba95fee21b91205d3599fa",
+        "size_in_bytes": 4071
+      },
+      {
+        "_path": "lib/cmake/gflags/gflags-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "58c530f798bff1705904c473e8f3da13a6c2668b8768f33e5c480f81258d6106",
+        "sha256_in_prefix": "58c530f798bff1705904c473e8f3da13a6c2668b8768f33e5c480f81258d6106",
+        "size_in_bytes": 668
+      },
+      {
+        "_path": "lib/cmake/gflags/gflags-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "f333eb064f5c494814ddf87be4a795a85eed1a7046cb1740e3fcbe144707e945",
+        "sha256_in_prefix": "f333eb064f5c494814ddf87be4a795a85eed1a7046cb1740e3fcbe144707e945",
+        "size_in_bytes": 6264
+      },
+      {
+        "_path": "lib/cmake/gflags/gflags-nonamespace-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "6efd1e186f7eb6746e5318b20d53d505628b4fd9d3d5791a9df271a0dcac8387",
+        "sha256_in_prefix": "6efd1e186f7eb6746e5318b20d53d505628b4fd9d3d5791a9df271a0dcac8387",
+        "size_in_bytes": 1396
+      },
+      {
+        "_path": "lib/cmake/gflags/gflags-nonamespace-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "8b861b3df478c74eaee50abb9032d2982cfdd21b713bb47f067ad8d441428a6b",
+        "sha256_in_prefix": "8b861b3df478c74eaee50abb9032d2982cfdd21b713bb47f067ad8d441428a6b",
+        "size_in_bytes": 4518
+      },
+      {
+        "_path": "lib/cmake/gflags/gflags-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "303dbedea02f77b9bf186d82ab7dc31c2c33cdfb6daa9816097893fba8286a2d",
+        "sha256_in_prefix": "303dbedea02f77b9bf186d82ab7dc31c2c33cdfb6daa9816097893fba8286a2d",
+        "size_in_bytes": 1476
+      },
+      {
+        "_path": "lib/cmake/gflags/gflags-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "ddf8bf53771c7fe51aac648f5f5dd5953935515c971474c89372cf0581198a86",
+        "sha256_in_prefix": "ddf8bf53771c7fe51aac648f5f5dd5953935515c971474c89372cf0581198a86",
+        "size_in_bytes": 4570
+      },
+      {
+        "_path": "lib/libgflags.so",
+        "path_type": "softlink",
+        "sha256": "d2a3ec36fc9823cd107bc2e1c55876f736fae0c567f29b9fad8b452c76968108",
+        "sha256_in_prefix": "ac90f5bd1bfa6bc1e880a2bf4ebed33361e99415a7cdf95174db3bd6f032b5f4",
+        "size_in_bytes": 207848
+      },
+      {
+        "_path": "lib/libgflags.so.2.2",
+        "path_type": "softlink",
+        "sha256": "d2a3ec36fc9823cd107bc2e1c55876f736fae0c567f29b9fad8b452c76968108",
+        "sha256_in_prefix": "ac90f5bd1bfa6bc1e880a2bf4ebed33361e99415a7cdf95174db3bd6f032b5f4",
+        "size_in_bytes": 207848
+      },
+      {
+        "_path": "lib/libgflags.so.2.2.2",
+        "path_type": "hardlink",
+        "sha256": "d2a3ec36fc9823cd107bc2e1c55876f736fae0c567f29b9fad8b452c76968108",
+        "sha256_in_prefix": "d2a3ec36fc9823cd107bc2e1c55876f736fae0c567f29b9fad8b452c76968108",
+        "size_in_bytes": 207848
+      },
+      {
+        "_path": "lib/libgflags_nothreads.so",
+        "path_type": "softlink",
+        "sha256": "8c5d6f5c51aef95d0c7f8c61300c105fe70bbdc4e4c0824d26f6529a2bc442a4",
+        "sha256_in_prefix": "70d4787813e0c31746bc731ffd0719c96aca7f494cb041ccf42ed76c4e6b0bfa",
+        "size_in_bytes": 202640
+      },
+      {
+        "_path": "lib/libgflags_nothreads.so.2.2",
+        "path_type": "softlink",
+        "sha256": "8c5d6f5c51aef95d0c7f8c61300c105fe70bbdc4e4c0824d26f6529a2bc442a4",
+        "sha256_in_prefix": "70d4787813e0c31746bc731ffd0719c96aca7f494cb041ccf42ed76c4e6b0bfa",
+        "size_in_bytes": 202640
+      },
+      {
+        "_path": "lib/libgflags_nothreads.so.2.2.2",
+        "path_type": "hardlink",
+        "sha256": "8c5d6f5c51aef95d0c7f8c61300c105fe70bbdc4e4c0824d26f6529a2bc442a4",
+        "sha256_in_prefix": "8c5d6f5c51aef95d0c7f8c61300c105fe70bbdc4e4c0824d26f6529a2bc442a4",
+        "size_in_bytes": 202640
+      },
+      {
+        "_path": "lib/pkgconfig/gflags.pc",
+        "path_type": "hardlink",
+        "sha256": "9dbd7d876613da31f01fc65bfaa4b55fef8d70b403e30c9c0842c7c6ce18f9c4",
+        "sha256_in_prefix": "99f99a374e420fe1592917a2b022c63a3872be09d5ab368947f07d98c19fe63e",
+        "size_in_bytes": 379,
+        "file_mode": "text",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/gflags_1726599822710/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac"
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/gflags-2.2.2-h5888daf_1005",
+    "type": 1
+  }
+}

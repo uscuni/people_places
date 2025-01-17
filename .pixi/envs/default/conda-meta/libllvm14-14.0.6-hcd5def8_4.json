@@ -1,0 +1,59 @@
+{
+  "arch": "x86_64",
+  "build": "hcd5def8_4",
+  "build_number": 4,
+  "depends": [
+    "libgcc-ng >=12",
+    "libstdcxx-ng >=12",
+    "libzlib >=1.2.13,<2.0.0a0"
+  ],
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "license_family": "Apache",
+  "md5": "73301c133ded2bf71906aa2104edae8b",
+  "name": "libllvm14",
+  "platform": "linux",
+  "sha256": "225cc7c3b20ac1db1bdb37fa18c95bf8aecef4388e984ab2f7540a9f4382106a",
+  "size": 31484415,
+  "subdir": "linux-64",
+  "timestamp": 1690557554081,
+  "version": "14.0.6",
+  "fn": "libllvm14-14.0.6-hcd5def8_4.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libllvm14-14.0.6-hcd5def8_4.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/libllvm14-14.0.6-hcd5def8_4",
+  "files": [
+    "lib/libLLVM-14.so",
+    "lib/libLTO.so.14",
+    "lib/libRemarks.so.14"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libLLVM-14.so",
+        "path_type": "hardlink",
+        "sha256": "12226f035f9d8ee5c401c74e4086279632545ce157ec5256ff7e6d76ca9fc11e",
+        "sha256_in_prefix": "12226f035f9d8ee5c401c74e4086279632545ce157ec5256ff7e6d76ca9fc11e",
+        "size_in_bytes": 131769152
+      },
+      {
+        "_path": "lib/libLTO.so.14",
+        "path_type": "hardlink",
+        "sha256": "cdabc4dd3d5dca939b8ef72c3b59ee72433d52c0d79a5bad116683d983e1dc1c",
+        "sha256_in_prefix": "cdabc4dd3d5dca939b8ef72c3b59ee72433d52c0d79a5bad116683d983e1dc1c",
+        "size_in_bytes": 104760
+      },
+      {
+        "_path": "lib/libRemarks.so.14",
+        "path_type": "hardlink",
+        "sha256": "afefe1817677c53df5b1d93aa6323c02038d1a5c349100025523a00dc5e0a12d",
+        "sha256_in_prefix": "afefe1817677c53df5b1d93aa6323c02038d1a5c349100025523a00dc5e0a12d",
+        "size_in_bytes": 15256
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/libllvm14-14.0.6-hcd5def8_4",
+    "type": 1
+  }
+}

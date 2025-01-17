@@ -1,0 +1,70 @@
+{
+  "arch": "x86_64",
+  "build": "ha7bfdaf_1",
+  "build_number": 1,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "libstdcxx >=13",
+    "libxml2 >=2.13.5,<3.0a0",
+    "libzlib >=1.3.1,<2.0a0",
+    "zstd >=1.5.6,<1.6.0a0"
+  ],
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "license_family": "Apache",
+  "md5": "886acc67bcba28a5c6b429aad2f057ce",
+  "name": "libllvm19",
+  "platform": "linux",
+  "sha256": "2e87601b308667b6962b41ee63d16ecaacb65ce92c2f7f4328e82edaff013de8",
+  "size": 40124450,
+  "subdir": "linux-64",
+  "timestamp": 1732690957253,
+  "version": "19.1.4",
+  "fn": "libllvm19-19.1.4-ha7bfdaf_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libllvm19-19.1.4-ha7bfdaf_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/libllvm19-19.1.4-ha7bfdaf_1",
+  "files": [
+    "lib/libLLVM-19.so",
+    "lib/libLLVM.so.19.1",
+    "lib/libLTO.so.19.1",
+    "lib/libRemarks.so.19.1"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libLLVM-19.so",
+        "path_type": "softlink",
+        "sha256": "769629d03a69ab05e411040ca84c52efb2cd52f88742550e803664f4dea59e21",
+        "sha256_in_prefix": "f0fe73ec8df2de1b2c4dd597bd28d113dbfdebc69c68e5e963e0879c0185c245",
+        "size_in_bytes": 166333040
+      },
+      {
+        "_path": "lib/libLLVM.so.19.1",
+        "path_type": "hardlink",
+        "sha256": "769629d03a69ab05e411040ca84c52efb2cd52f88742550e803664f4dea59e21",
+        "sha256_in_prefix": "769629d03a69ab05e411040ca84c52efb2cd52f88742550e803664f4dea59e21",
+        "size_in_bytes": 166333040
+      },
+      {
+        "_path": "lib/libLTO.so.19.1",
+        "path_type": "hardlink",
+        "sha256": "98838e08df9363d57c7bcd28bf176cd610f2e6d2836e17b0053206fb882adb68",
+        "sha256_in_prefix": "98838e08df9363d57c7bcd28bf176cd610f2e6d2836e17b0053206fb882adb68",
+        "size_in_bytes": 104920
+      },
+      {
+        "_path": "lib/libRemarks.so.19.1",
+        "path_type": "hardlink",
+        "sha256": "2e28cec354fcbcee324ef0410569b4eb76764488d2e74b837e25e62db42b54d1",
+        "sha256_in_prefix": "2e28cec354fcbcee324ef0410569b4eb76764488d2e74b837e25e62db42b54d1",
+        "size_in_bytes": 14952
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/libllvm19-19.1.4-ha7bfdaf_1",
+    "type": 1
+  }
+}

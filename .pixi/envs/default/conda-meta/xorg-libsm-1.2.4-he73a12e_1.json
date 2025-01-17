@@ -1,0 +1,94 @@
+{
+  "arch": "x86_64",
+  "build": "he73a12e_1",
+  "build_number": 1,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "libuuid >=2.38.1,<3.0a0",
+    "xorg-libice >=1.1.1,<2.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "05a8ea5f446de33006171a7afe6ae857",
+  "name": "xorg-libsm",
+  "platform": "linux",
+  "sha256": "70e903370977d44c9120a5641ab563887bd48446e9ef6fc2a3f5f60531c2cd6c",
+  "size": 27516,
+  "subdir": "linux-64",
+  "timestamp": 1727634669421,
+  "version": "1.2.4",
+  "fn": "xorg-libsm-1.2.4-he73a12e_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xorg-libsm-1.2.4-he73a12e_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/xorg-libsm-1.2.4-he73a12e_1",
+  "files": [
+    "include/X11/SM/SM.h",
+    "include/X11/SM/SMlib.h",
+    "include/X11/SM/SMproto.h",
+    "lib/libSM.so",
+    "lib/libSM.so.6",
+    "lib/libSM.so.6.0.1",
+    "lib/pkgconfig/sm.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/X11/SM/SM.h",
+        "path_type": "hardlink",
+        "sha256": "3580529fdcd97370008a713ff8c4e9e22d7ce179b04d1eabad9ab21085cb3373",
+        "sha256_in_prefix": "3580529fdcd97370008a713ff8c4e9e22d7ce179b04d1eabad9ab21085cb3373",
+        "size_in_bytes": 2927
+      },
+      {
+        "_path": "include/X11/SM/SMlib.h",
+        "path_type": "hardlink",
+        "sha256": "d2aea2243d0ec61de6dbde0a7b389d1d6918aa23adc50354d88f7580f8eac11a",
+        "sha256_in_prefix": "d2aea2243d0ec61de6dbde0a7b389d1d6918aa23adc50354d88f7580f8eac11a",
+        "size_in_bytes": 11268
+      },
+      {
+        "_path": "include/X11/SM/SMproto.h",
+        "path_type": "hardlink",
+        "sha256": "39194dff4b0e535141fee600fd96558e58b1ef2ecc98a2f7cc40fcd6953d1048",
+        "sha256_in_prefix": "39194dff4b0e535141fee600fd96558e58b1ef2ecc98a2f7cc40fcd6953d1048",
+        "size_in_bytes": 4780
+      },
+      {
+        "_path": "lib/libSM.so",
+        "path_type": "softlink",
+        "sha256": "dab942dfead619ee1227037b0fa353fc84e728dd2065e91f537a739703728303",
+        "sha256_in_prefix": "653154588a148e73bce449006fc0767e14289f36cc8f284b20bf53883f8bc415",
+        "size_in_bytes": 43704
+      },
+      {
+        "_path": "lib/libSM.so.6",
+        "path_type": "softlink",
+        "sha256": "dab942dfead619ee1227037b0fa353fc84e728dd2065e91f537a739703728303",
+        "sha256_in_prefix": "653154588a148e73bce449006fc0767e14289f36cc8f284b20bf53883f8bc415",
+        "size_in_bytes": 43704
+      },
+      {
+        "_path": "lib/libSM.so.6.0.1",
+        "path_type": "hardlink",
+        "sha256": "dab942dfead619ee1227037b0fa353fc84e728dd2065e91f537a739703728303",
+        "sha256_in_prefix": "dab942dfead619ee1227037b0fa353fc84e728dd2065e91f537a739703728303",
+        "size_in_bytes": 43704
+      },
+      {
+        "_path": "lib/pkgconfig/sm.pc",
+        "path_type": "hardlink",
+        "sha256": "b5063626ce4d3c3ee5e5bc24645ccea8babb20ef9d8544a429b068d53b5ca6d2",
+        "sha256_in_prefix": "2221acac99e62b4dc1acbdb2f91651bb2edde90ee20adc7d6a893d8273393b85",
+        "size_in_bytes": 309,
+        "file_mode": "text",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/xorg-libsm_1727634531050/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_"
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/xorg-libsm-1.2.4-he73a12e_1",
+    "type": 1
+  }
+}

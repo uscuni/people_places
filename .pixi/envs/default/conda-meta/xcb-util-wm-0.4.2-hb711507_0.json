@@ -1,0 +1,134 @@
+{
+  "arch": "x86_64",
+  "build": "hb711507_0",
+  "build_number": 0,
+  "depends": [
+    "libgcc-ng >=12",
+    "libxcb >=1.16,<2.0.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "608e0ef8256b81d04456e8d211eee3e8",
+  "name": "xcb-util-wm",
+  "platform": "linux",
+  "sha256": "31d44f297ad87a1e6510895740325a635dd204556aa7e079194a0034cdd7e66a",
+  "size": 51689,
+  "subdir": "linux-64",
+  "timestamp": 1718844051451,
+  "version": "0.4.2",
+  "fn": "xcb-util-wm-0.4.2-hb711507_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xcb-util-wm-0.4.2-hb711507_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/xcb-util-wm-0.4.2-hb711507_0",
+  "files": [
+    "include/xcb/xcb_ewmh.h",
+    "include/xcb/xcb_icccm.h",
+    "lib/libxcb-ewmh.a",
+    "lib/libxcb-ewmh.so",
+    "lib/libxcb-ewmh.so.2",
+    "lib/libxcb-ewmh.so.2.0.0",
+    "lib/libxcb-icccm.a",
+    "lib/libxcb-icccm.so",
+    "lib/libxcb-icccm.so.4",
+    "lib/libxcb-icccm.so.4.0.0",
+    "lib/pkgconfig/xcb-ewmh.pc",
+    "lib/pkgconfig/xcb-icccm.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/xcb/xcb_ewmh.h",
+        "path_type": "hardlink",
+        "sha256": "6491b0b42ec54db58a2206e33606016807fbed5de8ce9149678a1b6e46cf4bba",
+        "sha256_in_prefix": "6491b0b42ec54db58a2206e33606016807fbed5de8ce9149678a1b6e46cf4bba",
+        "size_in_bytes": 102214
+      },
+      {
+        "_path": "include/xcb/xcb_icccm.h",
+        "path_type": "hardlink",
+        "sha256": "5a54e8a7fb867558e00d3a60786af9f3d64ca60646fca685156f2a679024b472",
+        "sha256_in_prefix": "5a54e8a7fb867558e00d3a60786af9f3d64ca60646fca685156f2a679024b472",
+        "size_in_bytes": 40454
+      },
+      {
+        "_path": "lib/libxcb-ewmh.a",
+        "path_type": "hardlink",
+        "sha256": "9720f6e5ef9269573cd5234c3451a007844170b1cec5b711231f97dace0c4255",
+        "sha256_in_prefix": "9720f6e5ef9269573cd5234c3451a007844170b1cec5b711231f97dace0c4255",
+        "size_in_bytes": 100680
+      },
+      {
+        "_path": "lib/libxcb-ewmh.so",
+        "path_type": "softlink",
+        "sha256": "1ac4f9b56a9964e5d0759c76c75df4ba8cb6f0f40101e252fd36f7278d1636a6",
+        "sha256_in_prefix": "fe573f0c6e0339d6b8c3fe0aea23894e396e9d47b3d78bab85d1639ee0edec75",
+        "size_in_bytes": 73112
+      },
+      {
+        "_path": "lib/libxcb-ewmh.so.2",
+        "path_type": "softlink",
+        "sha256": "1ac4f9b56a9964e5d0759c76c75df4ba8cb6f0f40101e252fd36f7278d1636a6",
+        "sha256_in_prefix": "fe573f0c6e0339d6b8c3fe0aea23894e396e9d47b3d78bab85d1639ee0edec75",
+        "size_in_bytes": 73112
+      },
+      {
+        "_path": "lib/libxcb-ewmh.so.2.0.0",
+        "path_type": "hardlink",
+        "sha256": "1ac4f9b56a9964e5d0759c76c75df4ba8cb6f0f40101e252fd36f7278d1636a6",
+        "sha256_in_prefix": "1ac4f9b56a9964e5d0759c76c75df4ba8cb6f0f40101e252fd36f7278d1636a6",
+        "size_in_bytes": 73112
+      },
+      {
+        "_path": "lib/libxcb-icccm.a",
+        "path_type": "hardlink",
+        "sha256": "9099ce0484a44933acb7c053afa8b83bade243146df61e0aced233874c3f4cc7",
+        "sha256_in_prefix": "9099ce0484a44933acb7c053afa8b83bade243146df61e0aced233874c3f4cc7",
+        "size_in_bytes": 34172
+      },
+      {
+        "_path": "lib/libxcb-icccm.so",
+        "path_type": "softlink",
+        "sha256": "3165a3147caa285d6bf5a74d347c208a7a288ef7728abb3ab080e4bf48d6b0b4",
+        "sha256_in_prefix": "82b1f65c488b59dd26af99badc5090f5644e66d54dc3447ec07196fd3414f398",
+        "size_in_bytes": 28544
+      },
+      {
+        "_path": "lib/libxcb-icccm.so.4",
+        "path_type": "softlink",
+        "sha256": "3165a3147caa285d6bf5a74d347c208a7a288ef7728abb3ab080e4bf48d6b0b4",
+        "sha256_in_prefix": "82b1f65c488b59dd26af99badc5090f5644e66d54dc3447ec07196fd3414f398",
+        "size_in_bytes": 28544
+      },
+      {
+        "_path": "lib/libxcb-icccm.so.4.0.0",
+        "path_type": "hardlink",
+        "sha256": "3165a3147caa285d6bf5a74d347c208a7a288ef7728abb3ab080e4bf48d6b0b4",
+        "sha256_in_prefix": "3165a3147caa285d6bf5a74d347c208a7a288ef7728abb3ab080e4bf48d6b0b4",
+        "size_in_bytes": 28544
+      },
+      {
+        "_path": "lib/pkgconfig/xcb-ewmh.pc",
+        "path_type": "hardlink",
+        "sha256": "6709ceff5c5d87a6f106cfd2b5f91cc5e706a42c66558872be4923e2529cc7df",
+        "sha256_in_prefix": "d2985a59f3e0fcf5d6d9ce624131722101188a507fffbfdfdaf121c1bd396143",
+        "size_in_bytes": 273,
+        "file_mode": "text",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/xcb-util-wm_1718843926090/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold"
+      },
+      {
+        "_path": "lib/pkgconfig/xcb-icccm.pc",
+        "path_type": "hardlink",
+        "sha256": "a0e8285f0f1543f28e0bd912afd5b73fc9cb0c1e7ac6857d6eccd9b1bce85ca8",
+        "sha256_in_prefix": "b218da599427723b2400c0294626c0b4980f05f65ddae0cc013c2aafd65af6f2",
+        "size_in_bytes": 276,
+        "file_mode": "text",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/xcb-util-wm_1718843926090/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold"
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/xcb-util-wm-0.4.2-hb711507_0",
+    "type": 1
+  }
+}

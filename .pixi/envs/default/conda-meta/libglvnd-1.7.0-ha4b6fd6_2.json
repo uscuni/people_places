@@ -1,0 +1,48 @@
+{
+  "arch": "x86_64",
+  "build": "ha4b6fd6_2",
+  "build_number": 2,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0"
+  ],
+  "license": "LicenseRef-libglvnd",
+  "md5": "434ca7e50e40f4918ab701e3facd59a0",
+  "name": "libglvnd",
+  "platform": "linux",
+  "sha256": "1175f8a7a0c68b7f81962699751bb6574e6f07db4c9f72825f978e3016f46850",
+  "size": 132463,
+  "subdir": "linux-64",
+  "timestamp": 1731330968309,
+  "version": "1.7.0",
+  "fn": "libglvnd-1.7.0-ha4b6fd6_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libglvnd-1.7.0-ha4b6fd6_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/libglvnd-1.7.0-ha4b6fd6_2",
+  "files": [
+    "lib/libGLdispatch.so.0",
+    "lib/libGLdispatch.so.0.0.0"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libGLdispatch.so.0",
+        "path_type": "softlink",
+        "sha256": "67177f7517a6ff8993fbacd0df3df65c1925bcaef7a12c498530e701470a54a2",
+        "sha256_in_prefix": "8efc8290e10eb9a406b42ca6bbbc7df40f499f36a43d49aa43863b80f4866bce",
+        "size_in_bytes": 1030840
+      },
+      {
+        "_path": "lib/libGLdispatch.so.0.0.0",
+        "path_type": "hardlink",
+        "sha256": "67177f7517a6ff8993fbacd0df3df65c1925bcaef7a12c498530e701470a54a2",
+        "sha256_in_prefix": "67177f7517a6ff8993fbacd0df3df65c1925bcaef7a12c498530e701470a54a2",
+        "size_in_bytes": 1030840
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/libglvnd-1.7.0-ha4b6fd6_2",
+    "type": 1
+  }
+}

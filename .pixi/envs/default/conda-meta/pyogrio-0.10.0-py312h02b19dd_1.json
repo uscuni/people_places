@@ -1,0 +1,512 @@
+{
+  "arch": "x86_64",
+  "build": "py312h02b19dd_1",
+  "build_number": 1,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "libgdal-core >=3.10.0,<3.11.0a0",
+    "libstdcxx >=13",
+    "numpy",
+    "packaging",
+    "python >=3.12,<3.13.0a0",
+    "python_abi 3.12.* *_cp312"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "6ebb12bd1833a52e08e63297b8621903",
+  "name": "pyogrio",
+  "platform": "linux",
+  "sha256": "b1a2754f1ddda7f098dc1f6712153c8a184bf31e11e71ee8b6ca95d9791c2147",
+  "size": 640043,
+  "subdir": "linux-64",
+  "timestamp": 1732013500715,
+  "version": "0.10.0",
+  "fn": "pyogrio-0.10.0-py312h02b19dd_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/pyogrio-0.10.0-py312h02b19dd_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/pyogrio-0.10.0-py312h02b19dd_1",
+  "files": [
+    "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/INSTALLER",
+    "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/LICENSE",
+    "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/METADATA",
+    "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/RECORD",
+    "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/REQUESTED",
+    "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/WHEEL",
+    "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/direct_url.json",
+    "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/top_level.txt",
+    "lib/python3.12/site-packages/pyogrio/__init__.py",
+    "lib/python3.12/site-packages/pyogrio/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/__pycache__/_compat.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/__pycache__/_env.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/__pycache__/_version.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/__pycache__/core.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/__pycache__/errors.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/__pycache__/geopandas.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/__pycache__/raw.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/__pycache__/util.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/_compat.py",
+    "lib/python3.12/site-packages/pyogrio/_env.py",
+    "lib/python3.12/site-packages/pyogrio/_err.cpython-312-x86_64-linux-gnu.so",
+    "lib/python3.12/site-packages/pyogrio/_geometry.cpython-312-x86_64-linux-gnu.so",
+    "lib/python3.12/site-packages/pyogrio/_io.cpython-312-x86_64-linux-gnu.so",
+    "lib/python3.12/site-packages/pyogrio/_ogr.cpython-312-x86_64-linux-gnu.so",
+    "lib/python3.12/site-packages/pyogrio/_version.py",
+    "lib/python3.12/site-packages/pyogrio/_vsi.cpython-312-x86_64-linux-gnu.so",
+    "lib/python3.12/site-packages/pyogrio/core.py",
+    "lib/python3.12/site-packages/pyogrio/errors.py",
+    "lib/python3.12/site-packages/pyogrio/geopandas.py",
+    "lib/python3.12/site-packages/pyogrio/raw.py",
+    "lib/python3.12/site-packages/pyogrio/tests/__init__.py",
+    "lib/python3.12/site-packages/pyogrio/tests/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/tests/__pycache__/conftest.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/tests/__pycache__/test_arrow.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/tests/__pycache__/test_core.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/tests/__pycache__/test_geopandas_io.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/tests/__pycache__/test_path.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/tests/__pycache__/test_raw_io.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/tests/__pycache__/test_util.cpython-312.pyc",
+    "lib/python3.12/site-packages/pyogrio/tests/conftest.py",
+    "lib/python3.12/site-packages/pyogrio/tests/fixtures/README.md",
+    "lib/python3.12/site-packages/pyogrio/tests/fixtures/curve.gpkg",
+    "lib/python3.12/site-packages/pyogrio/tests/fixtures/curvepolygon.gpkg",
+    "lib/python3.12/site-packages/pyogrio/tests/fixtures/line_zm.gpkg",
+    "lib/python3.12/site-packages/pyogrio/tests/fixtures/multisurface.gpkg",
+    "lib/python3.12/site-packages/pyogrio/tests/fixtures/naturalearth_lowres/naturalearth_lowres.cpg",
+    "lib/python3.12/site-packages/pyogrio/tests/fixtures/naturalearth_lowres/naturalearth_lowres.dbf",
+    "lib/python3.12/site-packages/pyogrio/tests/fixtures/naturalearth_lowres/naturalearth_lowres.prj",
+    "lib/python3.12/site-packages/pyogrio/tests/fixtures/naturalearth_lowres/naturalearth_lowres.shp",
+    "lib/python3.12/site-packages/pyogrio/tests/fixtures/naturalearth_lowres/naturalearth_lowres.shx",
+    "lib/python3.12/site-packages/pyogrio/tests/fixtures/sample.osm.pbf",
+    "lib/python3.12/site-packages/pyogrio/tests/fixtures/test_gpkg_nulls.gpkg",
+    "lib/python3.12/site-packages/pyogrio/tests/test_arrow.py",
+    "lib/python3.12/site-packages/pyogrio/tests/test_core.py",
+    "lib/python3.12/site-packages/pyogrio/tests/test_geopandas_io.py",
+    "lib/python3.12/site-packages/pyogrio/tests/test_path.py",
+    "lib/python3.12/site-packages/pyogrio/tests/test_raw_io.py",
+    "lib/python3.12/site-packages/pyogrio/tests/test_util.py",
+    "lib/python3.12/site-packages/pyogrio/util.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "70b1890ff5193b1c271e0520deb9a197346481fbfac7db3ccb1d736753ab735d",
+        "sha256_in_prefix": "70b1890ff5193b1c271e0520deb9a197346481fbfac7db3ccb1d736753ab735d",
+        "size_in_bytes": 1102
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "5b78d19308313847d43782d8a57bf9959f6c06044f6d5fb7648ede79ed4db018",
+        "sha256_in_prefix": "5b78d19308313847d43782d8a57bf9959f6c06044f6d5fb7648ede79ed4db018",
+        "size_in_bytes": 5496
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "b7ef6ac4e44bb21879acf15ae776779f9cf994daf52e4d8bd7f9c427c800b31d",
+        "sha256_in_prefix": "b7ef6ac4e44bb21879acf15ae776779f9cf994daf52e4d8bd7f9c427c800b31d",
+        "size_in_bytes": 4706
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "874350c800e31d73e9690a9a6dbcd5b33b38b7433222936c600f565ce997d466",
+        "sha256_in_prefix": "874350c800e31d73e9690a9a6dbcd5b33b38b7433222936c600f565ce997d466",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "769925cbc2cdd5a93e22da5582af1a6c54a9ef35fe43ba4813408230a5ef762d",
+        "sha256_in_prefix": "769925cbc2cdd5a93e22da5582af1a6c54a9ef35fe43ba4813408230a5ef762d",
+        "size_in_bytes": 103
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio-0.10.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "0d404055a2f16bdaf49c71ec906f2d1dd3f53f7cede936183d188306511473b6",
+        "sha256_in_prefix": "0d404055a2f16bdaf49c71ec906f2d1dd3f53f7cede936183d188306511473b6",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b079e02acd7151f799503d9cf3483515d380d4eda299b86504e787d62b5c9599",
+        "sha256_in_prefix": "b079e02acd7151f799503d9cf3483515d380d4eda299b86504e787d62b5c9599",
+        "size_in_bytes": 1284
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "258d5ee0051d6309bcdebd23aa6f3ebcc903aea3b78c34050f38e2c3f716a284",
+        "sha256_in_prefix": "258d5ee0051d6309bcdebd23aa6f3ebcc903aea3b78c34050f38e2c3f716a284",
+        "size_in_bytes": 1155
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/__pycache__/_compat.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "b3ae0ccde3e3a2c33ad95829117e351d15b5b2bc4dd883a7c697e42cd760a6ad",
+        "sha256_in_prefix": "b3ae0ccde3e3a2c33ad95829117e351d15b5b2bc4dd883a7c697e42cd760a6ad",
+        "size_in_bytes": 1521
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/__pycache__/_env.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "ea311bc59d27bd47fddb7448a91dc720de5942bff861c447d93275d3529f1814",
+        "sha256_in_prefix": "ea311bc59d27bd47fddb7448a91dc720de5942bff861c447d93275d3529f1814",
+        "size_in_bytes": 1984
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/__pycache__/_version.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "3067c09fd8a5a20f301076131dcb065ecccc2b83067a5a3797ba79a0e034953a",
+        "sha256_in_prefix": "3067c09fd8a5a20f301076131dcb065ecccc2b83067a5a3797ba79a0e034953a",
+        "size_in_bytes": 534
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/__pycache__/core.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "23e7488a0535aac0b23de4f9b43d61baa0696a07ca537858b431bc9df36ae2c2",
+        "sha256_in_prefix": "23e7488a0535aac0b23de4f9b43d61baa0696a07ca537858b431bc9df36ae2c2",
+        "size_in_bytes": 13747
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/__pycache__/errors.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "e10f5c47f33b40082dfa2d714f1dcea77082a1aab83457be70327b7f4a78f3dc",
+        "sha256_in_prefix": "e10f5c47f33b40082dfa2d714f1dcea77082a1aab83457be70327b7f4a78f3dc",
+        "size_in_bytes": 1488
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/__pycache__/geopandas.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "16ea2c18051c926dd298df45f3c7cdcc0db42934dcd3d4fa079a67bb04e0869c",
+        "sha256_in_prefix": "16ea2c18051c926dd298df45f3c7cdcc0db42934dcd3d4fa079a67bb04e0869c",
+        "size_in_bytes": 27077
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/__pycache__/raw.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "e44b025e709bb372b35b9de5f98de79151c27b6b3516264c8bdf19211f37ed1e",
+        "sha256_in_prefix": "e44b025e709bb372b35b9de5f98de79151c27b6b3516264c8bdf19211f37ed1e",
+        "size_in_bytes": 32163
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/__pycache__/util.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "b330533ff16a6deff3e8d67e4ff0d05ea16185d7b3ec67db834a994edb6e7165",
+        "sha256_in_prefix": "b330533ff16a6deff3e8d67e4ff0d05ea16185d7b3ec67db834a994edb6e7165",
+        "size_in_bytes": 8153
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/_compat.py",
+        "path_type": "hardlink",
+        "sha256": "43657d19d4596b1ded2543a2a09c11fd6587a654e5b6ba8f9e9c22a129cb192d",
+        "sha256_in_prefix": "43657d19d4596b1ded2543a2a09c11fd6587a654e5b6ba8f9e9c22a129cb192d",
+        "size_in_bytes": 1102
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/_env.py",
+        "path_type": "hardlink",
+        "sha256": "54fb0095577a3c01b573d5e9e3a3f9cd9628a63ff96658ad3cc4e40ab77b71fa",
+        "sha256_in_prefix": "54fb0095577a3c01b573d5e9e3a3f9cd9628a63ff96658ad3cc4e40ab77b71fa",
+        "size_in_bytes": 1494
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/_err.cpython-312-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "be61cb13d210badb66e44b50856a61e9b421c2538acb6ed3cb10e67a0ccbf211",
+        "sha256_in_prefix": "be61cb13d210badb66e44b50856a61e9b421c2538acb6ed3cb10e67a0ccbf211",
+        "size_in_bytes": 104760
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/_geometry.cpython-312-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "fee32f13fc2d2283e0117096d1a7eb726e67cbc228d6fa8efda858e09119d863",
+        "sha256_in_prefix": "fee32f13fc2d2283e0117096d1a7eb726e67cbc228d6fa8efda858e09119d863",
+        "size_in_bytes": 70736
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/_io.cpython-312-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "4eff20302afe449ff473a1af8385a8dc9f225d002a9f8b8d9f89e63b89617df6",
+        "sha256_in_prefix": "4eff20302afe449ff473a1af8385a8dc9f225d002a9f8b8d9f89e63b89617df6",
+        "size_in_bytes": 698896
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/_ogr.cpython-312-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "e9358c24c166ef66b7473e9cc120e3adad0c3dd0a33d2f9aae2712a88bda9c26",
+        "sha256_in_prefix": "e9358c24c166ef66b7473e9cc120e3adad0c3dd0a33d2f9aae2712a88bda9c26",
+        "size_in_bytes": 142080
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/_version.py",
+        "path_type": "hardlink",
+        "sha256": "5dd4f96541893683d5a45066da9ccd2a68f31e32a9d9b409c391cf3be1880f19",
+        "sha256_in_prefix": "5dd4f96541893683d5a45066da9ccd2a68f31e32a9d9b409c391cf3be1880f19",
+        "size_in_bytes": 498
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/_vsi.cpython-312-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "d0fa34ec91d61f9fabfd16baa9a006440459843b4f29ed89ad1f5bc68dc56290",
+        "sha256_in_prefix": "d0fa34ec91d61f9fabfd16baa9a006440459843b4f29ed89ad1f5bc68dc56290",
+        "size_in_bytes": 105024
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/core.py",
+        "path_type": "hardlink",
+        "sha256": "59c9398531be1b0f7106c946f6c25e9eb0aaf03357b95b5cdd933d47bbbe76b8",
+        "sha256_in_prefix": "59c9398531be1b0f7106c946f6c25e9eb0aaf03357b95b5cdd933d47bbbe76b8",
+        "size_in_bytes": 12702
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/errors.py",
+        "path_type": "hardlink",
+        "sha256": "8153f32e0e80e5067b30d0c7286495c25a6438fb7a5ad86131cb6422c27f2b51",
+        "sha256_in_prefix": "8153f32e0e80e5067b30d0c7286495c25a6438fb7a5ad86131cb6422c27f2b51",
+        "size_in_bytes": 645
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/geopandas.py",
+        "path_type": "hardlink",
+        "sha256": "c2d5f9573f71ca64dde1d27f853e22601109fdcff479fa39e15c83bb053eca14",
+        "sha256_in_prefix": "c2d5f9573f71ca64dde1d27f853e22601109fdcff479fa39e15c83bb053eca14",
+        "size_in_bytes": 29169
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/raw.py",
+        "path_type": "hardlink",
+        "sha256": "c05e38de8bbfcafebefdcd7fcc100f1ac2f3302154cf11816e271d1e1949761d",
+        "sha256_in_prefix": "c05e38de8bbfcafebefdcd7fcc100f1ac2f3302154cf11816e271d1e1949761d",
+        "size_in_bytes": 34375
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "faf0a6395e801ee5e7f68ebf93a3dca6e8a01ecf1ed1a046a9ca9f7be5e87f90",
+        "sha256_in_prefix": "faf0a6395e801ee5e7f68ebf93a3dca6e8a01ecf1ed1a046a9ca9f7be5e87f90",
+        "size_in_bytes": 151
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/__pycache__/conftest.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "f908ff632227a3d14b17a275e00f894411fff7f238bc72ce8c60a4f1490faf64",
+        "sha256_in_prefix": "f908ff632227a3d14b17a275e00f894411fff7f238bc72ce8c60a4f1490faf64",
+        "size_in_bytes": 15063
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/__pycache__/test_arrow.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "756791eddf44cb00b0125443a49f189cf831041173cc82d12f1ca26b02534bfc",
+        "sha256_in_prefix": "756791eddf44cb00b0125443a49f189cf831041173cc82d12f1ca26b02534bfc",
+        "size_in_bytes": 45429
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/__pycache__/test_core.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "872fb22d616a3a9a29c77bf5090ab9f8b32a2b0be7044e4ca60abbf3b65e5b64",
+        "sha256_in_prefix": "872fb22d616a3a9a29c77bf5090ab9f8b32a2b0be7044e4ca60abbf3b65e5b64",
+        "size_in_bytes": 28510
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/__pycache__/test_geopandas_io.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "cd9f77db89109753254f60775656a91bcf859b17b5c01cd9bfcd25c0a91424bb",
+        "sha256_in_prefix": "cd9f77db89109753254f60775656a91bcf859b17b5c01cd9bfcd25c0a91424bb",
+        "size_in_bytes": 91569
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/__pycache__/test_path.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "02d1e6ec6d07edfbd55cc0fef23f053fa4765452484878c8b36538f0853d9f11",
+        "sha256_in_prefix": "02d1e6ec6d07edfbd55cc0fef23f053fa4765452484878c8b36538f0853d9f11",
+        "size_in_bytes": 16626
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/__pycache__/test_raw_io.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "2037f21689de8d50fc0d7c43c8b7a711557689eb65db85081ed984d6b930c00d",
+        "sha256_in_prefix": "2037f21689de8d50fc0d7c43c8b7a711557689eb65db85081ed984d6b930c00d",
+        "size_in_bytes": 65335
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/__pycache__/test_util.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "c88cf7b13bffabb94a26bce78f11ee79fb6eda6f886b71c58fdafbff20f52553",
+        "sha256_in_prefix": "c88cf7b13bffabb94a26bce78f11ee79fb6eda6f886b71c58fdafbff20f52553",
+        "size_in_bytes": 2576
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/conftest.py",
+        "path_type": "hardlink",
+        "sha256": "2b1465f27c7fecf8dca815dd721be0b91adaeef58f09a6fda8d1fa62958710bd",
+        "sha256_in_prefix": "2b1465f27c7fecf8dca815dd721be0b91adaeef58f09a6fda8d1fa62958710bd",
+        "size_in_bytes": 11367
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/fixtures/README.md",
+        "path_type": "hardlink",
+        "sha256": "abea145592095ce5f5d862406880dfb77792c6b345d5d4c359294b1668c8508e",
+        "sha256_in_prefix": "abea145592095ce5f5d862406880dfb77792c6b345d5d4c359294b1668c8508e",
+        "size_in_bytes": 3606
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/fixtures/curve.gpkg",
+        "path_type": "hardlink",
+        "sha256": "03a9c5904fd3075c61ba96e5bf0aac381721d43799db23c06634a0c56e04f302",
+        "sha256_in_prefix": "03a9c5904fd3075c61ba96e5bf0aac381721d43799db23c06634a0c56e04f302",
+        "size_in_bytes": 98304
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/fixtures/curvepolygon.gpkg",
+        "path_type": "hardlink",
+        "sha256": "00a1309ab0f29f97a4c5f6cb9cd3bde27143fc936712d5101767f60f0c96bac7",
+        "sha256_in_prefix": "00a1309ab0f29f97a4c5f6cb9cd3bde27143fc936712d5101767f60f0c96bac7",
+        "size_in_bytes": 98304
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/fixtures/line_zm.gpkg",
+        "path_type": "hardlink",
+        "sha256": "9563e513b064476ee7ab8c66858f3f434307ca554f7495652d09674d2747c70c",
+        "sha256_in_prefix": "9563e513b064476ee7ab8c66858f3f434307ca554f7495652d09674d2747c70c",
+        "size_in_bytes": 98304
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/fixtures/multisurface.gpkg",
+        "path_type": "hardlink",
+        "sha256": "898a238bc119f051622c22de973899f501466a33a6a6c0cc405122802c6d648d",
+        "sha256_in_prefix": "898a238bc119f051622c22de973899f501466a33a6a6c0cc405122802c6d648d",
+        "size_in_bytes": 98304
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/fixtures/naturalearth_lowres/naturalearth_lowres.cpg",
+        "path_type": "hardlink",
+        "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2",
+        "sha256_in_prefix": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2",
+        "size_in_bytes": 10
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/fixtures/naturalearth_lowres/naturalearth_lowres.dbf",
+        "path_type": "hardlink",
+        "sha256": "d2ae1c99adcf8e4586a5b12c639672035fa2f3f469e7255947de00401c3ed7e1",
+        "sha256_in_prefix": "d2ae1c99adcf8e4586a5b12c639672035fa2f3f469e7255947de00401c3ed7e1",
+        "size_in_bytes": 48869
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/fixtures/naturalearth_lowres/naturalearth_lowres.prj",
+        "path_type": "hardlink",
+        "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "sha256_in_prefix": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "size_in_bytes": 143
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/fixtures/naturalearth_lowres/naturalearth_lowres.shp",
+        "path_type": "hardlink",
+        "sha256": "08e341606e8391e458c3f08deb312de664b56bfae376064c5aa0aee6681a5f55",
+        "sha256_in_prefix": "08e341606e8391e458c3f08deb312de664b56bfae376064c5aa0aee6681a5f55",
+        "size_in_bytes": 180924
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/fixtures/naturalearth_lowres/naturalearth_lowres.shx",
+        "path_type": "hardlink",
+        "sha256": "8b0be2ad97dd484aee5c2ebc98697d5372e832b8ae58a35a661aeef6b985668d",
+        "sha256_in_prefix": "8b0be2ad97dd484aee5c2ebc98697d5372e832b8ae58a35a661aeef6b985668d",
+        "size_in_bytes": 1516
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/fixtures/sample.osm.pbf",
+        "path_type": "hardlink",
+        "sha256": "40a25059d31a82521dcf49e3f1c9df385f1759b574d9bb1ca4ea37db91416992",
+        "sha256_in_prefix": "40a25059d31a82521dcf49e3f1c9df385f1759b574d9bb1ca4ea37db91416992",
+        "size_in_bytes": 9653
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/fixtures/test_gpkg_nulls.gpkg",
+        "path_type": "hardlink",
+        "sha256": "4281d3c55f2042e2174ab9a13c5c5a06d13841071c1aa3ea2cc131afaf71e1d8",
+        "sha256_in_prefix": "4281d3c55f2042e2174ab9a13c5c5a06d13841071c1aa3ea2cc131afaf71e1d8",
+        "size_in_bytes": 98304
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/test_arrow.py",
+        "path_type": "hardlink",
+        "sha256": "f11075002194cf43b3edc7153b4c08ed5b88d0bc885b6adc4b8c8c5f0924866d",
+        "sha256_in_prefix": "f11075002194cf43b3edc7153b4c08ed5b88d0bc885b6adc4b8c8c5f0924866d",
+        "size_in_bytes": 37714
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/test_core.py",
+        "path_type": "hardlink",
+        "sha256": "9c31f81901c7947269aed867d74289d836aad677eacf4b100ceaf8a0592f9d92",
+        "sha256_in_prefix": "9c31f81901c7947269aed867d74289d836aad677eacf4b100ceaf8a0592f9d92",
+        "size_in_bytes": 22079
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/test_geopandas_io.py",
+        "path_type": "hardlink",
+        "sha256": "6720dd2ba5ccedcc0250bd12045a0cb4299d3a83a45d949ecb87f488373a44f0",
+        "sha256_in_prefix": "6720dd2ba5ccedcc0250bd12045a0cb4299d3a83a45d949ecb87f488373a44f0",
+        "size_in_bytes": 79576
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/test_path.py",
+        "path_type": "hardlink",
+        "sha256": "4b0c74826187e676febcd7c2ac93f043f58c3cfbc8f13de46d0f611b47aa3ce3",
+        "sha256_in_prefix": "4b0c74826187e676febcd7c2ac93f043f58c3cfbc8f13de46d0f611b47aa3ce3",
+        "size_in_bytes": 11985
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/test_raw_io.py",
+        "path_type": "hardlink",
+        "sha256": "d5ed857e459bda4670b80e16b6d9508d5288d12ecd2fbda9993fa3e340f5ffb4",
+        "sha256_in_prefix": "d5ed857e459bda4670b80e16b6d9508d5288d12ecd2fbda9993fa3e340f5ffb4",
+        "size_in_bytes": 50597
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/tests/test_util.py",
+        "path_type": "hardlink",
+        "sha256": "902b152fceef81c910754490f6f978c16091bf998640a224ed459a87f580161b",
+        "sha256_in_prefix": "902b152fceef81c910754490f6f978c16091bf998640a224ed459a87f580161b",
+        "size_in_bytes": 2126
+      },
+      {
+        "_path": "lib/python3.12/site-packages/pyogrio/util.py",
+        "path_type": "hardlink",
+        "sha256": "1df47f78f1ffe1cacbfc6dc49ebe52c95e2ef5f8a902bd4c2379ff03add29565",
+        "sha256_in_prefix": "1df47f78f1ffe1cacbfc6dc49ebe52c95e2ef5f8a902bd4c2379ff03add29565",
+        "size_in_bytes": 6719
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/pyogrio-0.10.0-py312h02b19dd_1",
+    "type": 1
+  }
+}

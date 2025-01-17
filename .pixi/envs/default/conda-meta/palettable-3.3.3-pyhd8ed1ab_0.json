@@ -1,0 +1,488 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.7"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "23326336f3384f28551668bf3ccd982e",
+  "name": "palettable",
+  "noarch": "python",
+  "sha256": "fb57824c2ef8e1fde904f7dd4f5d54903fe14cf08870d373801b8ae0aeafe301",
+  "size": 81203,
+  "subdir": "noarch",
+  "timestamp": 1682018482324,
+  "version": "3.3.3",
+  "fn": "palettable-3.3.3-pyhd8ed1ab_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/palettable-3.3.3-pyhd8ed1ab_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/palettable-3.3.3-pyhd8ed1ab_0",
+  "files": [
+    "lib/python3.12/site-packages/docs/_python/__init__.py",
+    "lib/python3.12/site-packages/docs/_python/filters.py",
+    "lib/python3.12/site-packages/docs/gendocs.py",
+    "lib/python3.12/site-packages/palettable-3.3.3.dist-info/INSTALLER",
+    "lib/python3.12/site-packages/palettable-3.3.3.dist-info/METADATA",
+    "lib/python3.12/site-packages/palettable-3.3.3.dist-info/RECORD",
+    "lib/python3.12/site-packages/palettable-3.3.3.dist-info/REQUESTED",
+    "lib/python3.12/site-packages/palettable-3.3.3.dist-info/WHEEL",
+    "lib/python3.12/site-packages/palettable-3.3.3.dist-info/direct_url.json",
+    "lib/python3.12/site-packages/palettable-3.3.3.dist-info/top_level.txt",
+    "lib/python3.12/site-packages/palettable/__init__.py",
+    "lib/python3.12/site-packages/palettable/cartocolors/__init__.py",
+    "lib/python3.12/site-packages/palettable/cartocolors/cartocolorspalette.py",
+    "lib/python3.12/site-packages/palettable/cartocolors/colormaps.py",
+    "lib/python3.12/site-packages/palettable/cartocolors/diverging.py",
+    "lib/python3.12/site-packages/palettable/cartocolors/qualitative.py",
+    "lib/python3.12/site-packages/palettable/cartocolors/sequential.py",
+    "lib/python3.12/site-packages/palettable/cmocean/__init__.py",
+    "lib/python3.12/site-packages/palettable/cmocean/cmoceanpalette.py",
+    "lib/python3.12/site-packages/palettable/cmocean/colormaps.py",
+    "lib/python3.12/site-packages/palettable/cmocean/diverging.py",
+    "lib/python3.12/site-packages/palettable/cmocean/sequential.py",
+    "lib/python3.12/site-packages/palettable/colorbrewer/__init__.py",
+    "lib/python3.12/site-packages/palettable/colorbrewer/colorbrewer.py",
+    "lib/python3.12/site-packages/palettable/colorbrewer/colorbrewer_all_schemes.py",
+    "lib/python3.12/site-packages/palettable/colorbrewer/data/colorbrewer_all_schemes.csv",
+    "lib/python3.12/site-packages/palettable/colorbrewer/data/colorbrewer_licence.txt",
+    "lib/python3.12/site-packages/palettable/colorbrewer/data/colorbrewer_schemes_csv_to_py.py",
+    "lib/python3.12/site-packages/palettable/colorbrewer/diverging.py",
+    "lib/python3.12/site-packages/palettable/colorbrewer/qualitative.py",
+    "lib/python3.12/site-packages/palettable/colorbrewer/sequential.py",
+    "lib/python3.12/site-packages/palettable/cubehelix/__init__.py",
+    "lib/python3.12/site-packages/palettable/cubehelix/cubehelix.py",
+    "lib/python3.12/site-packages/palettable/lightbartlein/__init__.py",
+    "lib/python3.12/site-packages/palettable/lightbartlein/colordata.py",
+    "lib/python3.12/site-packages/palettable/lightbartlein/diverging.py",
+    "lib/python3.12/site-packages/palettable/lightbartlein/lightbartlein.py",
+    "lib/python3.12/site-packages/palettable/lightbartlein/sequential.py",
+    "lib/python3.12/site-packages/palettable/matplotlib/__init__.py",
+    "lib/python3.12/site-packages/palettable/matplotlib/colormaps.py",
+    "lib/python3.12/site-packages/palettable/matplotlib/matplotlib.py",
+    "lib/python3.12/site-packages/palettable/mycarta/__init__.py",
+    "lib/python3.12/site-packages/palettable/mycarta/colordata.py",
+    "lib/python3.12/site-packages/palettable/mycarta/mycarta.py",
+    "lib/python3.12/site-packages/palettable/palette.py",
+    "lib/python3.12/site-packages/palettable/scientific/__init__.py",
+    "lib/python3.12/site-packages/palettable/scientific/colordata.py",
+    "lib/python3.12/site-packages/palettable/scientific/diverging.py",
+    "lib/python3.12/site-packages/palettable/scientific/scientific.py",
+    "lib/python3.12/site-packages/palettable/scientific/sequential.py",
+    "lib/python3.12/site-packages/palettable/tableau/__init__.py",
+    "lib/python3.12/site-packages/palettable/tableau/tableau.py",
+    "lib/python3.12/site-packages/palettable/utils.py",
+    "lib/python3.12/site-packages/palettable/wesanderson/__init__.py",
+    "lib/python3.12/site-packages/palettable/wesanderson/wesanderson.py",
+    "lib/python3.12/site-packages/scripts/scientific.py",
+    "lib/python3.12/site-packages/test/test_installed.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/python3.12/site-packages/docs/_python/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "2c22b636426779b40782f5b9eba5316a91f5c3eaa9c518801be25d694731c3d4",
+        "sha256_in_prefix": "2c22b636426779b40782f5b9eba5316a91f5c3eaa9c518801be25d694731c3d4",
+        "size_in_bytes": 29
+      },
+      {
+        "_path": "lib/python3.12/site-packages/docs/_python/filters.py",
+        "path_type": "hardlink",
+        "sha256": "38e3a0fd6d6829e8d0ea36db82d17625f9c537f291c605c6ce71fb870bc3fb8f",
+        "sha256_in_prefix": "38e3a0fd6d6829e8d0ea36db82d17625f9c537f291c605c6ce71fb870bc3fb8f",
+        "size_in_bytes": 125
+      },
+      {
+        "_path": "lib/python3.12/site-packages/docs/gendocs.py",
+        "path_type": "hardlink",
+        "sha256": "51e4dd076dadc8c3554412c3d8362792bf31b18f76009b0eab79a6884fbbe3ba",
+        "sha256_in_prefix": "51e4dd076dadc8c3554412c3d8362792bf31b18f76009b0eab79a6884fbbe3ba",
+        "size_in_bytes": 3536
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable-3.3.3.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable-3.3.3.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "895060146b8047e634019bf6e5d757794173cd63725fcabf77c727fcd1ab5902",
+        "sha256_in_prefix": "895060146b8047e634019bf6e5d757794173cd63725fcabf77c727fcd1ab5902",
+        "size_in_bytes": 3268
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable-3.3.3.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "d687362dc261ef19cdcaae4f382c0c7eee93763aeb7e7340596bb38c1cd4969f",
+        "sha256_in_prefix": "d687362dc261ef19cdcaae4f382c0c7eee93763aeb7e7340596bb38c1cd4969f",
+        "size_in_bytes": 8142
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable-3.3.3.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable-3.3.3.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "6bece9151209cceab941fba10736e1880d5e1d3ccd0899fc39d46f85d357d119",
+        "sha256_in_prefix": "6bece9151209cceab941fba10736e1880d5e1d3ccd0899fc39d46f85d357d119",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable-3.3.3.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "45650947edfca810e54d23a626685ba7696194a58744937e9bf51e64d15ea8c6",
+        "sha256_in_prefix": "45650947edfca810e54d23a626685ba7696194a58744937e9bf51e64d15ea8c6",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable-3.3.3.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "c790ee0a74391ba861bc38cea34aa76e7a14fc6d169789836add3648f7e6a854",
+        "sha256_in_prefix": "c790ee0a74391ba861bc38cea34aa76e7a14fc6d169789836add3648f7e6a854",
+        "size_in_bytes": 29
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7bbb2486e54bb9f83cc9e55fc05860f243dbec8de0ae0a51c506a6ed2751f191",
+        "sha256_in_prefix": "7bbb2486e54bb9f83cc9e55fc05860f243dbec8de0ae0a51c506a6ed2751f191",
+        "size_in_bytes": 491
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/cartocolors/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "39828ad371f07ee764296b7501e694e9d2c605561bb44f269da7bbab516c89f5",
+        "sha256_in_prefix": "39828ad371f07ee764296b7501e694e9d2c605561bb44f269da7bbab516c89f5",
+        "size_in_bytes": 89
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/cartocolors/cartocolorspalette.py",
+        "path_type": "hardlink",
+        "sha256": "64c0f7121409db1cd595f4794239259c0dc1fcbdbd56194d59a1b3cf3c3b9091",
+        "sha256_in_prefix": "64c0f7121409db1cd595f4794239259c0dc1fcbdbd56194d59a1b3cf3c3b9091",
+        "size_in_bytes": 932
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/cartocolors/colormaps.py",
+        "path_type": "hardlink",
+        "sha256": "175cd0b09285010675a883196cc22ae32adc75408e80dd40c0f215750c07f635",
+        "sha256_in_prefix": "175cd0b09285010675a883196cc22ae32adc75408e80dd40c0f215750c07f635",
+        "size_in_bytes": 6104
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/cartocolors/diverging.py",
+        "path_type": "hardlink",
+        "sha256": "c11bbf75079b15cd689047b44b8ce8f8f4761c4f6fc71ce137b725595112b7a7",
+        "sha256_in_prefix": "c11bbf75079b15cd689047b44b8ce8f8f4761c4f6fc71ce137b725595112b7a7",
+        "size_in_bytes": 1049
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/cartocolors/qualitative.py",
+        "path_type": "hardlink",
+        "sha256": "c6f779cf327c304d7731179246dc7775891d91f13afc96906dcff61fc8326461",
+        "sha256_in_prefix": "c6f779cf327c304d7731179246dc7775891d91f13afc96906dcff61fc8326461",
+        "size_in_bytes": 1276
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/cartocolors/sequential.py",
+        "path_type": "hardlink",
+        "sha256": "9266989090c89c064ab1929bcb6ee711f8a45910f6261309367ccb586cedda9b",
+        "sha256_in_prefix": "9266989090c89c064ab1929bcb6ee711f8a45910f6261309367ccb586cedda9b",
+        "size_in_bytes": 1410
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/cmocean/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e514eed550758cc9e0458166f835b659711efb785c2eca4e2d4b48e2059d76cc",
+        "sha256_in_prefix": "e514eed550758cc9e0458166f835b659711efb785c2eca4e2d4b48e2059d76cc",
+        "size_in_bytes": 76
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/cmocean/cmoceanpalette.py",
+        "path_type": "hardlink",
+        "sha256": "c7662526a0f1d27697ec0e50f69702512bdff8c7f97a556c3f095b5b98aeb55f",
+        "sha256_in_prefix": "c7662526a0f1d27697ec0e50f69702512bdff8c7f97a556c3f095b5b98aeb55f",
+        "size_in_bytes": 884
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/cmocean/colormaps.py",
+        "path_type": "hardlink",
+        "sha256": "1ed58a22dae52e41d91b1d78557c2bf5c41afcaf2ca5d7a0c99e0f2d39449eb4",
+        "sha256_in_prefix": "1ed58a22dae52e41d91b1d78557c2bf5c41afcaf2ca5d7a0c99e0f2d39449eb4",
+        "size_in_bytes": 101253
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/cmocean/diverging.py",
+        "path_type": "hardlink",
+        "sha256": "8f94038e3148036ef38c594a3d2acab3422155bc5ab17b3e9e9caf63cfe4478f",
+        "sha256_in_prefix": "8f94038e3148036ef38c594a3d2acab3422155bc5ab17b3e9e9caf63cfe4478f",
+        "size_in_bytes": 817
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/cmocean/sequential.py",
+        "path_type": "hardlink",
+        "sha256": "f3e5849fea67efc428cee9a3144ae9bec691cd288e85e6a817eea01fb571b7e9",
+        "sha256_in_prefix": "f3e5849fea67efc428cee9a3144ae9bec691cd288e85e6a817eea01fb571b7e9",
+        "size_in_bytes": 1130
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/colorbrewer/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a18ad07db038d7b7d578de60d074ba6943226dd818b3e27ee380b5c1996328cd",
+        "sha256_in_prefix": "a18ad07db038d7b7d578de60d074ba6943226dd818b3e27ee380b5c1996328cd",
+        "size_in_bytes": 116
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/colorbrewer/colorbrewer.py",
+        "path_type": "hardlink",
+        "sha256": "fd32bba657492239a587893e6b932423fc65491baede71c641788772835bb23e",
+        "sha256_in_prefix": "fd32bba657492239a587893e6b932423fc65491baede71c641788772835bb23e",
+        "size_in_bytes": 6309
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/colorbrewer/colorbrewer_all_schemes.py",
+        "path_type": "hardlink",
+        "sha256": "ae12f0f4af277739a8d39096d6a482fef25da1a60a2702a7d673746531c64291",
+        "sha256_in_prefix": "ae12f0f4af277739a8d39096d6a482fef25da1a60a2702a7d673746531c64291",
+        "size_in_bytes": 99495
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/colorbrewer/data/colorbrewer_all_schemes.csv",
+        "path_type": "hardlink",
+        "sha256": "3350e8470923704d5f1ce81f0e95fe7fa6722247a49394a5e95016fc9ce9e202",
+        "sha256_in_prefix": "3350e8470923704d5f1ce81f0e95fe7fa6722247a49394a5e95016fc9ce9e202",
+        "size_in_bytes": 37224
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/colorbrewer/data/colorbrewer_licence.txt",
+        "path_type": "hardlink",
+        "sha256": "5234708d1b321285ceb71a1fa2475a8ea515226fa626cd3cd71cbee48e0db8d6",
+        "sha256_in_prefix": "5234708d1b321285ceb71a1fa2475a8ea515226fa626cd3cd71cbee48e0db8d6",
+        "size_in_bytes": 1712
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/colorbrewer/data/colorbrewer_schemes_csv_to_py.py",
+        "path_type": "hardlink",
+        "sha256": "f7e91109ff21de2ac6b217d11dce5f425c0d89f9ec4338490fca5f97094878a8",
+        "sha256_in_prefix": "f7e91109ff21de2ac6b217d11dce5f425c0d89f9ec4338490fca5f97094878a8",
+        "size_in_bytes": 2087
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/colorbrewer/diverging.py",
+        "path_type": "hardlink",
+        "sha256": "34331cc2ee2b6f82fc30e2ddf708975aa19e3c8e9f4d5548b28abd30c3d3b5da",
+        "sha256_in_prefix": "34331cc2ee2b6f82fc30e2ddf708975aa19e3c8e9f4d5548b28abd30c3d3b5da",
+        "size_in_bytes": 135
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/colorbrewer/qualitative.py",
+        "path_type": "hardlink",
+        "sha256": "78ad4bedf6e437e067a47647a3af2682eea144eafc6e6434c618c9a814f6875b",
+        "sha256_in_prefix": "78ad4bedf6e437e067a47647a3af2682eea144eafc6e6434c618c9a814f6875b",
+        "size_in_bytes": 137
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/colorbrewer/sequential.py",
+        "path_type": "hardlink",
+        "sha256": "57418f747fcdd669053bea03ed0b89239e3a1fa5c30036756fa697031834c36f",
+        "sha256_in_prefix": "57418f747fcdd669053bea03ed0b89239e3a1fa5c30036756fa697031834c36f",
+        "size_in_bytes": 136
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/cubehelix/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "73cc387de1d630d1b7f8ce49f2ae2765eba7d1fff19c06a9d8337342f7369a23",
+        "sha256_in_prefix": "73cc387de1d630d1b7f8ce49f2ae2765eba7d1fff19c06a9d8337342f7369a23",
+        "size_in_bytes": 153
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/cubehelix/cubehelix.py",
+        "path_type": "hardlink",
+        "sha256": "da1640eabe9f584fc1bcba51b728d6d81a1c8b45be2849b592c4a193636511e1",
+        "sha256_in_prefix": "da1640eabe9f584fc1bcba51b728d6d81a1c8b45be2849b592c4a193636511e1",
+        "size_in_bytes": 13383
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/lightbartlein/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e514eed550758cc9e0458166f835b659711efb785c2eca4e2d4b48e2059d76cc",
+        "sha256_in_prefix": "e514eed550758cc9e0458166f835b659711efb785c2eca4e2d4b48e2059d76cc",
+        "size_in_bytes": 76
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/lightbartlein/colordata.py",
+        "path_type": "hardlink",
+        "sha256": "53659481f9657842a0adc855fe4588ab2bb01f1e08a1066de67eeae7ca944a3c",
+        "sha256_in_prefix": "53659481f9657842a0adc855fe4588ab2bb01f1e08a1066de67eeae7ca944a3c",
+        "size_in_bytes": 4398
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/lightbartlein/diverging.py",
+        "path_type": "hardlink",
+        "sha256": "abd0296e81b4e7e68dfa5852f61576ada1ec743a095cf8a26126b95bead3deb4",
+        "sha256_in_prefix": "abd0296e81b4e7e68dfa5852f61576ada1ec743a095cf8a26126b95bead3deb4",
+        "size_in_bytes": 2181
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/lightbartlein/lightbartlein.py",
+        "path_type": "hardlink",
+        "sha256": "00d37c0c802783a7486009f3da672e5bb2a20e27afca3e841da41a8abd4cca9e",
+        "sha256_in_prefix": "00d37c0c802783a7486009f3da672e5bb2a20e27afca3e841da41a8abd4cca9e",
+        "size_in_bytes": 998
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/lightbartlein/sequential.py",
+        "path_type": "hardlink",
+        "sha256": "3a695e1d849347ba038bd20b983a37eb3f9078b6e657d7e18769401fca923957",
+        "sha256_in_prefix": "3a695e1d849347ba038bd20b983a37eb3f9078b6e657d7e18769401fca923957",
+        "size_in_bytes": 1194
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/matplotlib/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "484ce12750ff15c7563252090775047f2f8a6b46d8e31527c7f58665e914dd0e",
+        "sha256_in_prefix": "484ce12750ff15c7563252090775047f2f8a6b46d8e31527c7f58665e914dd0e",
+        "size_in_bytes": 207
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/matplotlib/colormaps.py",
+        "path_type": "hardlink",
+        "sha256": "f8c30817458ab44c17ee277078ee04d52b2be886ebd1ad941bfdeccb11a804f2",
+        "sha256_in_prefix": "f8c30817458ab44c17ee277078ee04d52b2be886ebd1ad941bfdeccb11a804f2",
+        "size_in_bytes": 33280
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/matplotlib/matplotlib.py",
+        "path_type": "hardlink",
+        "sha256": "91f17de227b5b21dbffd1ecedf425fa4eef5417ac9507052ec0eea5f83a13c7a",
+        "sha256_in_prefix": "91f17de227b5b21dbffd1ecedf425fa4eef5417ac9507052ec0eea5f83a13c7a",
+        "size_in_bytes": 1548
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/mycarta/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "66cadfdac2fe1520d270af5a44a00f9651d22dc9e80bf1722d0c1c062585d21d",
+        "sha256_in_prefix": "66cadfdac2fe1520d270af5a44a00f9651d22dc9e80bf1722d0c1c062585d21d",
+        "size_in_bytes": 204
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/mycarta/colordata.py",
+        "path_type": "hardlink",
+        "sha256": "e2744c2fc2d84b5b91190b67da6f34b0ac3d78cd8da4aff710ee9e8dafdf5de4",
+        "sha256_in_prefix": "e2744c2fc2d84b5b91190b67da6f34b0ac3d78cd8da4aff710ee9e8dafdf5de4",
+        "size_in_bytes": 15123
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/mycarta/mycarta.py",
+        "path_type": "hardlink",
+        "sha256": "cc32d16de9132f37bdb9fcd96de9ed07e797053278209d646f7bb71efc88d9a4",
+        "sha256_in_prefix": "cc32d16de9132f37bdb9fcd96de9ed07e797053278209d646f7bb71efc88d9a4",
+        "size_in_bytes": 1491
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/palette.py",
+        "path_type": "hardlink",
+        "sha256": "660c1844b72b36ffafe3140e625a1db7eac4fb259980b0af55fccc43905208e8",
+        "sha256_in_prefix": "660c1844b72b36ffafe3140e625a1db7eac4fb259980b0af55fccc43905208e8",
+        "size_in_bytes": 7200
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/scientific/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e514eed550758cc9e0458166f835b659711efb785c2eca4e2d4b48e2059d76cc",
+        "sha256_in_prefix": "e514eed550758cc9e0458166f835b659711efb785c2eca4e2d4b48e2059d76cc",
+        "size_in_bytes": 76
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/scientific/colordata.py",
+        "path_type": "hardlink",
+        "sha256": "bc0870bebf5916468102d3f7012bc5f694a82be64f6d64b89af3128614b5398e",
+        "sha256_in_prefix": "bc0870bebf5916468102d3f7012bc5f694a82be64f6d64b89af3128614b5398e",
+        "size_in_bytes": 122443
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/scientific/diverging.py",
+        "path_type": "hardlink",
+        "sha256": "922c82acfdf1d51250384a489cad86e588b9af3d2b45882fe731015be1cce1d6",
+        "sha256_in_prefix": "922c82acfdf1d51250384a489cad86e588b9af3d2b45882fe731015be1cce1d6",
+        "size_in_bytes": 799
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/scientific/scientific.py",
+        "path_type": "hardlink",
+        "sha256": "527615b8f9d2d69b13f9187e729ae75c127866896ed1b797d888e766b9e6bcac",
+        "sha256_in_prefix": "527615b8f9d2d69b13f9187e729ae75c127866896ed1b797d888e766b9e6bcac",
+        "size_in_bytes": 888
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/scientific/sequential.py",
+        "path_type": "hardlink",
+        "sha256": "f2dbf48e124d344bfb10437e9d4ce658eabce9f9de6dd66c4069185a0c9c9ae5",
+        "sha256_in_prefix": "f2dbf48e124d344bfb10437e9d4ce658eabce9f9de6dd66c4069185a0c9c9ae5",
+        "size_in_bytes": 907
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/tableau/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "01d13ce5fa0a5d7675531a66dff70ebac667ab7c2b78de16cc8c3225f3ec5904",
+        "sha256_in_prefix": "01d13ce5fa0a5d7675531a66dff70ebac667ab7c2b78de16cc8c3225f3ec5904",
+        "size_in_bytes": 140
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/tableau/tableau.py",
+        "path_type": "hardlink",
+        "sha256": "20bc135ac1bfa77a36f46a56b3429fdbe36068e9a817a21e49ef7dbcb327ee65",
+        "sha256_in_prefix": "20bc135ac1bfa77a36f46a56b3429fdbe36068e9a817a21e49ef7dbcb327ee65",
+        "size_in_bytes": 5921
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/utils.py",
+        "path_type": "hardlink",
+        "sha256": "0e2ce2df0461b03ef4d6b2bf2f8b9dbe60b2b3d26c1d32ebfdeb1ad5c894309c",
+        "sha256_in_prefix": "0e2ce2df0461b03ef4d6b2bf2f8b9dbe60b2b3d26c1d32ebfdeb1ad5c894309c",
+        "size_in_bytes": 7124
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/wesanderson/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f6361c2b060fac12f097b215ec47775c3b21996e6c55df23017936a636d29bae",
+        "sha256_in_prefix": "f6361c2b060fac12f097b215ec47775c3b21996e6c55df23017936a636d29bae",
+        "size_in_bytes": 156
+      },
+      {
+        "_path": "lib/python3.12/site-packages/palettable/wesanderson/wesanderson.py",
+        "path_type": "hardlink",
+        "sha256": "7e0337561fb884fa391a98e4f5656d145bc3caf6f2dad8194eb10726879ec071",
+        "sha256_in_prefix": "7e0337561fb884fa391a98e4f5656d145bc3caf6f2dad8194eb10726879ec071",
+        "size_in_bytes": 12587
+      },
+      {
+        "_path": "lib/python3.12/site-packages/scripts/scientific.py",
+        "path_type": "hardlink",
+        "sha256": "25ac8ce96d4c394aceabf64f948ada43411e19201d61bb5e11da1a14152a7a9b",
+        "sha256_in_prefix": "25ac8ce96d4c394aceabf64f948ada43411e19201d61bb5e11da1a14152a7a9b",
+        "size_in_bytes": 1169
+      },
+      {
+        "_path": "lib/python3.12/site-packages/test/test_installed.py",
+        "path_type": "hardlink",
+        "sha256": "dd9211e25d5ce3d84f2702cf4b7d564ceff0cf9a062666dff15e366f9b95a8fd",
+        "sha256_in_prefix": "dd9211e25d5ce3d84f2702cf4b7d564ceff0cf9a062666dff15e366f9b95a8fd",
+        "size_in_bytes": 1154
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/palettable-3.3.3-pyhd8ed1ab_0",
+    "type": 1
+  }
+}

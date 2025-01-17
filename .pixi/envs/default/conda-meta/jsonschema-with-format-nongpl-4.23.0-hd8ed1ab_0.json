@@ -1,0 +1,38 @@
+{
+  "build": "hd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "fqdn",
+    "idna",
+    "isoduration",
+    "jsonpointer >1.13",
+    "jsonschema >=4.23.0,<4.23.1.0a0",
+    "rfc3339-validator",
+    "rfc3986-validator >0.1.0",
+    "uri-template",
+    "webcolors >=24.6.0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "16b37612b3a2fd77f409329e213b530c",
+  "name": "jsonschema-with-format-nongpl",
+  "noarch": "generic",
+  "sha256": "007a0a506a0d1805b099629cb0ee743ad0afe7d9749e57339f32c168119e0139",
+  "size": 7143,
+  "subdir": "noarch",
+  "timestamp": 1720529619500,
+  "version": "4.23.0",
+  "fn": "jsonschema-with-format-nongpl-4.23.0-hd8ed1ab_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/jsonschema-with-format-nongpl-4.23.0-hd8ed1ab_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/jsonschema-with-format-nongpl-4.23.0-hd8ed1ab_0",
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/jsonschema-with-format-nongpl-4.23.0-hd8ed1ab_0",
+    "type": 1
+  }
+}

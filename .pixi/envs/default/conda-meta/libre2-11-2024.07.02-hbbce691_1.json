@@ -1,0 +1,56 @@
+{
+  "arch": "x86_64",
+  "build": "hbbce691_1",
+  "build_number": 1,
+  "constrains": [
+    "re2 2024.07.02.*"
+  ],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libabseil * cxx17*",
+    "libabseil >=20240722.0,<20240723.0a0",
+    "libgcc >=13",
+    "libstdcxx >=13"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "2124de47357b7a516c0a3efd8f88c143",
+  "name": "libre2-11",
+  "platform": "linux",
+  "sha256": "f8ad6a4f6d4fd54ebe3e5e712a01e663222fc57f49d16b6b8b10c30990dafb8f",
+  "size": 211096,
+  "subdir": "linux-64",
+  "timestamp": 1728778964655,
+  "version": "2024.07.02",
+  "fn": "libre2-11-2024.07.02-hbbce691_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libre2-11-2024.07.02-hbbce691_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/libre2-11-2024.07.02-hbbce691_1",
+  "files": [
+    "lib/libre2.so.11",
+    "lib/libre2.so.11.0.0"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libre2.so.11",
+        "path_type": "hardlink",
+        "sha256": "f8f90938834489f64fbb3f620ac0acfefba98d894d7a09189b55114593eaf3dc",
+        "sha256_in_prefix": "f8f90938834489f64fbb3f620ac0acfefba98d894d7a09189b55114593eaf3dc",
+        "size_in_bytes": 594712
+      },
+      {
+        "_path": "lib/libre2.so.11.0.0",
+        "path_type": "hardlink",
+        "sha256": "f8f90938834489f64fbb3f620ac0acfefba98d894d7a09189b55114593eaf3dc",
+        "sha256_in_prefix": "f8f90938834489f64fbb3f620ac0acfefba98d894d7a09189b55114593eaf3dc",
+        "size_in_bytes": 594712
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/libre2-11-2024.07.02-hbbce691_1",
+    "type": 1
+  }
+}

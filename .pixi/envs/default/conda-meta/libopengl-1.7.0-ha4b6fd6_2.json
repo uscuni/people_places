@@ -1,0 +1,49 @@
+{
+  "arch": "x86_64",
+  "build": "ha4b6fd6_2",
+  "build_number": 2,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libglvnd 1.7.0 ha4b6fd6_2"
+  ],
+  "license": "LicenseRef-libglvnd",
+  "md5": "7df50d44d4a14d6c31a2c54f2cd92157",
+  "name": "libopengl",
+  "platform": "linux",
+  "sha256": "215086c108d80349e96051ad14131b751d17af3ed2cb5a34edd62fa89bfe8ead",
+  "size": 50757,
+  "subdir": "linux-64",
+  "timestamp": 1731330993524,
+  "version": "1.7.0",
+  "fn": "libopengl-1.7.0-ha4b6fd6_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libopengl-1.7.0-ha4b6fd6_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/libopengl-1.7.0-ha4b6fd6_2",
+  "files": [
+    "lib/libOpenGL.so.0",
+    "lib/libOpenGL.so.0.0.0"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libOpenGL.so.0",
+        "path_type": "softlink",
+        "sha256": "af175f9673e55e1ac1c6db174a5b7b04174015f1c7c3861b7cbda83e6d38ef6d",
+        "sha256_in_prefix": "05ef4c25fcf6a54baef9efa2ce4aa973690a823db35d1c451a86a789f9cd30e8",
+        "size_in_bytes": 224424
+      },
+      {
+        "_path": "lib/libOpenGL.so.0.0.0",
+        "path_type": "hardlink",
+        "sha256": "af175f9673e55e1ac1c6db174a5b7b04174015f1c7c3861b7cbda83e6d38ef6d",
+        "sha256_in_prefix": "af175f9673e55e1ac1c6db174a5b7b04174015f1c7c3861b7cbda83e6d38ef6d",
+        "size_in_bytes": 224424
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/libopengl-1.7.0-ha4b6fd6_2",
+    "type": 1
+  }
+}

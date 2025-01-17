@@ -1,0 +1,7 @@
+
+datadir=/home/anna/people_places_germany/.pixi/envs/default/share
+xkb_base=/home/anna/people_places_germany/.pixi/envs/default/share/X11/xkb
+
+Name: XKeyboardConfig
+Description: X Keyboard configuration data
+Version: 2.43

@@ -1,0 +1,14 @@
+{
+ "argv": [
+  "/home/anna/people_places_germany/.pixi/envs/default/bin/python",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "Python 3 (ipykernel)",
+ "language": "python",
+ "metadata": {
+  "debugger": true
+ }
+}

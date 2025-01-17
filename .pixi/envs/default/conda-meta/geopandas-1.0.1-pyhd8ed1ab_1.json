@@ -1,0 +1,37 @@
+{
+  "build": "pyhd8ed1ab_1",
+  "build_number": 1,
+  "depends": [
+    "folium",
+    "geopandas-base 1.0.1 pyha770c72_1",
+    "mapclassify >=2.4.0",
+    "matplotlib-base",
+    "pyogrio >=0.7.2",
+    "pyproj >=3.3.0",
+    "python >=3.9",
+    "xyzservices"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "79a9a8d2fd39ecb4081c0df0c10135dc",
+  "name": "geopandas",
+  "noarch": "python",
+  "sha256": "ea0e200967b93a1342670bee137917e93d04742f3c3c626fe435ebb29462bbd7",
+  "size": 7545,
+  "subdir": "noarch",
+  "timestamp": 1726898026216,
+  "version": "1.0.1",
+  "fn": "geopandas-1.0.1-pyhd8ed1ab_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/geopandas-1.0.1-pyhd8ed1ab_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/geopandas-1.0.1-pyhd8ed1ab_1",
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/geopandas-1.0.1-pyhd8ed1ab_1",
+    "type": 1
+  }
+}

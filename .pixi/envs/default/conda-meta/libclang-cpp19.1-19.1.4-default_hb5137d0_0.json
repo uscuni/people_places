@@ -1,0 +1,44 @@
+{
+  "arch": "x86_64",
+  "build": "default_hb5137d0_0",
+  "build_number": 0,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "libllvm19 >=19.1.4,<19.2.0a0",
+    "libstdcxx >=13"
+  ],
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "license_family": "Apache",
+  "md5": "e7e4a0ebe1f6eedf483f6f5d4f7d2bdd",
+  "name": "libclang-cpp19.1",
+  "platform": "linux",
+  "sha256": "66817b7e03486b3564de0bb7e3c27ccf4ecff2e31bcb10d3aa3e9b846ff483d7",
+  "size": 20526176,
+  "subdir": "linux-64",
+  "timestamp": 1732088410415,
+  "version": "19.1.4",
+  "fn": "libclang-cpp19.1-19.1.4-default_hb5137d0_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libclang-cpp19.1-19.1.4-default_hb5137d0_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/libclang-cpp19.1-19.1.4-default_hb5137d0_0",
+  "files": [
+    "lib/libclang-cpp.so.19.1"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libclang-cpp.so.19.1",
+        "path_type": "hardlink",
+        "sha256": "7029efa430235d0cc81979a1dfc6610db4e48530c560cce8f4d12911972538f6",
+        "sha256_in_prefix": "7029efa430235d0cc81979a1dfc6610db4e48530c560cce8f4d12911972538f6",
+        "size_in_bytes": 93795080
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/libclang-cpp19.1-19.1.4-default_hb5137d0_0",
+    "type": 1
+  }
+}

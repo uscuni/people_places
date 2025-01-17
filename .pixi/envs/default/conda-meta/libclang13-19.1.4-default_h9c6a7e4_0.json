@@ -1,0 +1,44 @@
+{
+  "arch": "x86_64",
+  "build": "default_h9c6a7e4_0",
+  "build_number": 0,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "libllvm19 >=19.1.4,<19.2.0a0",
+    "libstdcxx >=13"
+  ],
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "license_family": "Apache",
+  "md5": "6c450adae455c7d648856e8b0cfcebd6",
+  "name": "libclang13",
+  "platform": "linux",
+  "sha256": "954e2c4cf8bd715246e79ad262261a5b33b2e67485dc5156520c2c5d9203f65b",
+  "size": 11823523,
+  "subdir": "linux-64",
+  "timestamp": 1732088587561,
+  "version": "19.1.4",
+  "fn": "libclang13-19.1.4-default_h9c6a7e4_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libclang13-19.1.4-default_h9c6a7e4_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/libclang13-19.1.4-default_h9c6a7e4_0",
+  "files": [
+    "lib/libclang.so.13"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libclang.so.13",
+        "path_type": "hardlink",
+        "sha256": "626edc5d43efe171197fef66e1689554d2d22610a81ab579bb7d87c074fe1c31",
+        "sha256_in_prefix": "626edc5d43efe171197fef66e1689554d2d22610a81ab579bb7d87c074fe1c31",
+        "size_in_bytes": 51089664
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/libclang13-19.1.4-default_h9c6a7e4_0",
+    "type": 1
+  }
+}

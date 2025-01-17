@@ -1,0 +1,78 @@
+{
+  "arch": "x86_64",
+  "build": "hb9d3cd8_2",
+  "build_number": 2,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "xorg-libx11 >=1.8.10,<2.0a0",
+    "xorg-libxfixes >=6.0.1,<7.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "d3c295b50f092ab525ffe3c2aa4b7413",
+  "name": "xorg-libxcomposite",
+  "platform": "linux",
+  "sha256": "753f73e990c33366a91fd42cc17a3d19bb9444b9ca5ff983605fa9e953baf57f",
+  "size": 13603,
+  "subdir": "linux-64",
+  "timestamp": 1727884600744,
+  "version": "0.4.6",
+  "fn": "xorg-libxcomposite-0.4.6-hb9d3cd8_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xorg-libxcomposite-0.4.6-hb9d3cd8_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/xorg-libxcomposite-0.4.6-hb9d3cd8_2",
+  "files": [
+    "include/X11/extensions/Xcomposite.h",
+    "lib/libXcomposite.so",
+    "lib/libXcomposite.so.1",
+    "lib/libXcomposite.so.1.0.0",
+    "lib/pkgconfig/xcomposite.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/X11/extensions/Xcomposite.h",
+        "path_type": "hardlink",
+        "sha256": "f617e9b88ff589a8b658ce011095fce4a08392d08def40596b24cef63cec9253",
+        "sha256_in_prefix": "f617e9b88ff589a8b658ce011095fce4a08392d08def40596b24cef63cec9253",
+        "size_in_bytes": 3835
+      },
+      {
+        "_path": "lib/libXcomposite.so",
+        "path_type": "softlink",
+        "sha256": "3dc02228c8f9250738b686caf931a6580c021a7c03c6fdce0368a035001d58cd",
+        "sha256_in_prefix": "5c2f9694f70abce84bb76a3803705fa6587e23fcb572e152a87e00ac808ee362",
+        "size_in_bytes": 16344
+      },
+      {
+        "_path": "lib/libXcomposite.so.1",
+        "path_type": "softlink",
+        "sha256": "3dc02228c8f9250738b686caf931a6580c021a7c03c6fdce0368a035001d58cd",
+        "sha256_in_prefix": "5c2f9694f70abce84bb76a3803705fa6587e23fcb572e152a87e00ac808ee362",
+        "size_in_bytes": 16344
+      },
+      {
+        "_path": "lib/libXcomposite.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "3dc02228c8f9250738b686caf931a6580c021a7c03c6fdce0368a035001d58cd",
+        "sha256_in_prefix": "3dc02228c8f9250738b686caf931a6580c021a7c03c6fdce0368a035001d58cd",
+        "size_in_bytes": 16344
+      },
+      {
+        "_path": "lib/pkgconfig/xcomposite.pc",
+        "path_type": "hardlink",
+        "sha256": "3d7bb3369b16891dd67cc0d8ccdb1e7d89e306c3d4cf470e4595fcf62b65183e",
+        "sha256_in_prefix": "0ed00f5cb57ac63186aeedc67bf6b83ce892814406059be07c1616723ecac83c",
+        "size_in_bytes": 335,
+        "file_mode": "text",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/xorg-libxcomposite_1727884456006/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl"
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/xorg-libxcomposite-0.4.6-hb9d3cd8_2",
+    "type": 1
+  }
+}

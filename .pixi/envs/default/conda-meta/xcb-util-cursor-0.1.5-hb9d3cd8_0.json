@@ -1,0 +1,88 @@
+{
+  "arch": "x86_64",
+  "build": "hb9d3cd8_0",
+  "build_number": 0,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "libxcb >=1.13",
+    "libxcb >=1.16,<2.0.0a0",
+    "xcb-util-image >=0.4.0,<0.5.0a0",
+    "xcb-util-renderutil >=0.3.10,<0.4.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "eb44b3b6deb1cab08d72cb61686fe64c",
+  "name": "xcb-util-cursor",
+  "platform": "linux",
+  "sha256": "c7b35db96f6e32a9e5346f97adc968ef2f33948e3d7084295baebc0e33abdd5b",
+  "size": 20296,
+  "subdir": "linux-64",
+  "timestamp": 1726125844850,
+  "version": "0.1.5",
+  "fn": "xcb-util-cursor-0.1.5-hb9d3cd8_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xcb-util-cursor-0.1.5-hb9d3cd8_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/xcb-util-cursor-0.1.5-hb9d3cd8_0",
+  "files": [
+    "include/xcb/xcb_cursor.h",
+    "lib/libxcb-cursor.a",
+    "lib/libxcb-cursor.so",
+    "lib/libxcb-cursor.so.0",
+    "lib/libxcb-cursor.so.0.0.0",
+    "lib/pkgconfig/xcb-cursor.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/xcb/xcb_cursor.h",
+        "path_type": "hardlink",
+        "sha256": "f93f9d5a8bad7957dbd895846f63ee83d198c6c5f236fdfd4e2dc5184efa2e58",
+        "sha256_in_prefix": "f93f9d5a8bad7957dbd895846f63ee83d198c6c5f236fdfd4e2dc5184efa2e58",
+        "size_in_bytes": 4352
+      },
+      {
+        "_path": "lib/libxcb-cursor.a",
+        "path_type": "hardlink",
+        "sha256": "160ad63015bebfe2fd5456a065e44bfe7c735332bdd712886ccc206ad4739f9a",
+        "sha256_in_prefix": "160ad63015bebfe2fd5456a065e44bfe7c735332bdd712886ccc206ad4739f9a",
+        "size_in_bytes": 31070
+      },
+      {
+        "_path": "lib/libxcb-cursor.so",
+        "path_type": "softlink",
+        "sha256": "6ddd73b3aa4f150365803e8884955e336ea87dcb27bf294b40d9440bebc46ab4",
+        "sha256_in_prefix": "966b81b8af2797566bf67881e0642b3e526ad668f4073a8f4efa351860ca0303",
+        "size_in_bytes": 27216
+      },
+      {
+        "_path": "lib/libxcb-cursor.so.0",
+        "path_type": "softlink",
+        "sha256": "6ddd73b3aa4f150365803e8884955e336ea87dcb27bf294b40d9440bebc46ab4",
+        "sha256_in_prefix": "966b81b8af2797566bf67881e0642b3e526ad668f4073a8f4efa351860ca0303",
+        "size_in_bytes": 27216
+      },
+      {
+        "_path": "lib/libxcb-cursor.so.0.0.0",
+        "path_type": "hardlink",
+        "sha256": "6ddd73b3aa4f150365803e8884955e336ea87dcb27bf294b40d9440bebc46ab4",
+        "sha256_in_prefix": "6ddd73b3aa4f150365803e8884955e336ea87dcb27bf294b40d9440bebc46ab4",
+        "size_in_bytes": 27216
+      },
+      {
+        "_path": "lib/pkgconfig/xcb-cursor.pc",
+        "path_type": "hardlink",
+        "sha256": "f4a6c59773243e7dd922f9f22273f435ce0c7253a3033ceefe1cce3f4c048f08",
+        "sha256_in_prefix": "4156a0428d7ec2ff2f6c5769fc888a73eb788610fe759acbd6c34f5a0f21c6b2",
+        "size_in_bytes": 341,
+        "file_mode": "text",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/xcb-util-cursor_1726125700886/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place"
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/xcb-util-cursor-0.1.5-hb9d3cd8_0",
+    "type": 1
+  }
+}

@@ -1,0 +1,490 @@
+{
+  "build": "pyh5bfe37b_0",
+  "build_number": 0,
+  "depends": [
+    "anywidget >=0.9.0",
+    "arro3-compute >=0.4.1",
+    "arro3-core >=0.4.1",
+    "arro3-io >=0.4.1",
+    "ipywidgets >=7.6.0",
+    "numpy >=1.14",
+    "pyproj >=3.3",
+    "python >=3.8.0,<4.0.0",
+    "traitlets >=5.10"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "2eae9b142ddbc9a29f353cf9ed28adb7",
+  "name": "lonboard",
+  "noarch": "python",
+  "sha256": "80a037d2cc3fc5fa16c07f0e8e7ba2dbe49ad2b50103a02b15f8fe0f85dc746c",
+  "size": 749648,
+  "subdir": "noarch",
+  "timestamp": 1729055302745,
+  "version": "0.10.3",
+  "fn": "lonboard-0.10.3-pyh5bfe37b_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/lonboard-0.10.3-pyh5bfe37b_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/lonboard-0.10.3-pyh5bfe37b_0",
+  "files": [
+    "bin/lonboard",
+    "lib/python3.12/site-packages/MANIFEST.in",
+    "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/INSTALLER",
+    "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/LICENSE",
+    "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/METADATA",
+    "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/RECORD",
+    "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/REQUESTED",
+    "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/WHEEL",
+    "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/direct_url.json",
+    "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/entry_points.txt",
+    "lib/python3.12/site-packages/lonboard/__init__.py",
+    "lib/python3.12/site-packages/lonboard/__main__.py",
+    "lib/python3.12/site-packages/lonboard/_base.py",
+    "lib/python3.12/site-packages/lonboard/_cli.py",
+    "lib/python3.12/site-packages/lonboard/_compat.py",
+    "lib/python3.12/site-packages/lonboard/_constants.py",
+    "lib/python3.12/site-packages/lonboard/_environment.py",
+    "lib/python3.12/site-packages/lonboard/_geoarrow/__init__.py",
+    "lib/python3.12/site-packages/lonboard/_geoarrow/_duckdb.py",
+    "lib/python3.12/site-packages/lonboard/_geoarrow/crs.py",
+    "lib/python3.12/site-packages/lonboard/_geoarrow/extension_types.py",
+    "lib/python3.12/site-packages/lonboard/_geoarrow/geopandas_interop.py",
+    "lib/python3.12/site-packages/lonboard/_geoarrow/movingpandas_interop.py",
+    "lib/python3.12/site-packages/lonboard/_geoarrow/ops/__init__.py",
+    "lib/python3.12/site-packages/lonboard/_geoarrow/ops/bbox.py",
+    "lib/python3.12/site-packages/lonboard/_geoarrow/ops/centroid.py",
+    "lib/python3.12/site-packages/lonboard/_geoarrow/ops/coord_layout.py",
+    "lib/python3.12/site-packages/lonboard/_geoarrow/ops/reproject.py",
+    "lib/python3.12/site-packages/lonboard/_geoarrow/parse_wkb.py",
+    "lib/python3.12/site-packages/lonboard/_geoarrow/utils.py",
+    "lib/python3.12/site-packages/lonboard/_layer.py",
+    "lib/python3.12/site-packages/lonboard/_map.py",
+    "lib/python3.12/site-packages/lonboard/_serialization.py",
+    "lib/python3.12/site-packages/lonboard/_utils.py",
+    "lib/python3.12/site-packages/lonboard/_vendor/__init__.py",
+    "lib/python3.12/site-packages/lonboard/_vendor/matplotlib/__init__.py",
+    "lib/python3.12/site-packages/lonboard/_vendor/matplotlib/_color_data.py",
+    "lib/python3.12/site-packages/lonboard/_vendor/matplotlib/colors.py",
+    "lib/python3.12/site-packages/lonboard/_version.py",
+    "lib/python3.12/site-packages/lonboard/_viewport.py",
+    "lib/python3.12/site-packages/lonboard/_viz.py",
+    "lib/python3.12/site-packages/lonboard/basemap.py",
+    "lib/python3.12/site-packages/lonboard/colormap.py",
+    "lib/python3.12/site-packages/lonboard/controls.py",
+    "lib/python3.12/site-packages/lonboard/experimental/__init__.py",
+    "lib/python3.12/site-packages/lonboard/experimental/_layer.py",
+    "lib/python3.12/site-packages/lonboard/experimental/traits.py",
+    "lib/python3.12/site-packages/lonboard/layer_extension.py",
+    "lib/python3.12/site-packages/lonboard/models.py",
+    "lib/python3.12/site-packages/lonboard/py.typed",
+    "lib/python3.12/site-packages/lonboard/static/index.css",
+    "lib/python3.12/site-packages/lonboard/static/index.js",
+    "lib/python3.12/site-packages/lonboard/traits.py",
+    "lib/python3.12/site-packages/lonboard/types/__init__.py",
+    "lib/python3.12/site-packages/lonboard/types/layer.py",
+    "lib/python3.12/site-packages/lonboard/types/map.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "bin/lonboard",
+        "path_type": "hardlink",
+        "sha256": "b8f0846a3a7cfd557e648c4f0c122c5e8551fbda974677650784dd4916585396",
+        "sha256_in_prefix": "ee4cc596409a9d7e2c9baaa87613b0cdeee5468f1316f1ba813d19c9b6297c7f",
+        "size_in_bytes": 291,
+        "file_mode": "text",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/lonboard_1729055185984/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pl"
+      },
+      {
+        "_path": "lib/python3.12/site-packages/MANIFEST.in",
+        "path_type": "hardlink",
+        "sha256": "4b7ac38dfcbb2e1363422465a78fb72cdd5fecabb68e920386eca885e316187c",
+        "sha256_in_prefix": "4b7ac38dfcbb2e1363422465a78fb72cdd5fecabb68e920386eca885e316187c",
+        "size_in_bytes": 36
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "41233ac6ce812ad63e6a1b4b9685ec54b07213738d798d86dbfd97aaee9f085f",
+        "sha256_in_prefix": "41233ac6ce812ad63e6a1b4b9685ec54b07213738d798d86dbfd97aaee9f085f",
+        "size_in_bytes": 1073
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "229f54ed1529ff7af634e8b263d6319891a196c539e079db7694519519b0281e",
+        "sha256_in_prefix": "229f54ed1529ff7af634e8b263d6319891a196c539e079db7694519519b0281e",
+        "size_in_bytes": 5114
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "500dcbae14aaaaa0481728d05d018053671b82d578f6b44aedddd0a6569430ee",
+        "sha256_in_prefix": "500dcbae14aaaaa0481728d05d018053671b82d578f6b44aedddd0a6569430ee",
+        "size_in_bytes": 7069
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "36af367bdad4027123b7df09e8c95598c0996feb7d71813622bd64a419a759fb",
+        "sha256_in_prefix": "36af367bdad4027123b7df09e8c95598c0996feb7d71813622bd64a419a759fb",
+        "size_in_bytes": 88
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "43c4253ba51fc7899046ca4cf9972db3bc0b0c5cbf95c897376fb57add2e0783",
+        "sha256_in_prefix": "43c4253ba51fc7899046ca4cf9972db3bc0b0c5cbf95c897376fb57add2e0783",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard-0.10.3.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "18a40c3639a6db7a1234b33fb1b1253582372c2c5b2786c403944f6943bb021e",
+        "sha256_in_prefix": "18a40c3639a6db7a1234b33fb1b1253582372c2c5b2786c403944f6943bb021e",
+        "size_in_bytes": 47
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "74d19e23fe9f3cf08c1aacc3bef95761f213f78718dc6663df362f319215fc71",
+        "sha256_in_prefix": "74d19e23fe9f3cf08c1aacc3bef95761f213f78718dc6663df362f319215fc71",
+        "size_in_bytes": 476
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "d757f76e072efb2fbcbe4ae41cfb765b15213c7afe8190ae28038b6c7640964a",
+        "sha256_in_prefix": "d757f76e072efb2fbcbe4ae41cfb765b15213c7afe8190ae28038b6c7640964a",
+        "size_in_bytes": 39
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_base.py",
+        "path_type": "hardlink",
+        "sha256": "989ff1af695ec75e5d23ba4b6189e17511ed9b7c40841c390bb3a9c283b9a44c",
+        "sha256_in_prefix": "989ff1af695ec75e5d23ba4b6189e17511ed9b7c40841c390bb3a9c283b9a44c",
+        "size_in_bytes": 1458
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_cli.py",
+        "path_type": "hardlink",
+        "sha256": "2e62b7beada63c486148a77c22151d6d7c51bcf9d9573bd333396eecb6bbb63e",
+        "sha256_in_prefix": "2e62b7beada63c486148a77c22151d6d7c51bcf9d9573bd333396eecb6bbb63e",
+        "size_in_bytes": 5808
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_compat.py",
+        "path_type": "hardlink",
+        "sha256": "d401d8a8b931d9e18bd5014bf4e4243ca66b69e49c118af6b1fe23ddfa85eea0",
+        "sha256_in_prefix": "d401d8a8b931d9e18bd5014bf4e4243ca66b69e49c118af6b1fe23ddfa85eea0",
+        "size_in_bytes": 148
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_constants.py",
+        "path_type": "hardlink",
+        "sha256": "4c5ad5b29e22f856a716321ca82d7d01edd87968bc2b1dae4175b329e3b0f1a9",
+        "sha256_in_prefix": "4c5ad5b29e22f856a716321ca82d7d01edd87968bc2b1dae4175b329e3b0f1a9",
+        "size_in_bytes": 3610
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_environment.py",
+        "path_type": "hardlink",
+        "sha256": "2e6bbedc2fffe48ad1089d8edfe2635ebc7778e0460a71ab1d5e15baf95e7b65",
+        "sha256_in_prefix": "2e6bbedc2fffe48ad1089d8edfe2635ebc7778e0460a71ab1d5e15baf95e7b65",
+        "size_in_bytes": 1421
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_geoarrow/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "d51e74cba7409bd745c302633b2c40d384251e38a7e77060d52aa07fe6fca4dc",
+        "sha256_in_prefix": "d51e74cba7409bd745c302633b2c40d384251e38a7e77060d52aa07fe6fca4dc",
+        "size_in_bytes": 95
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_geoarrow/_duckdb.py",
+        "path_type": "hardlink",
+        "sha256": "2508af90b763160ec7cc5e0282875f1c7085b76fb59a361e42ce454fe9751dc8",
+        "sha256_in_prefix": "2508af90b763160ec7cc5e0282875f1c7085b76fb59a361e42ce454fe9751dc8",
+        "size_in_bytes": 8724
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_geoarrow/crs.py",
+        "path_type": "hardlink",
+        "sha256": "fba0a33adaabe62b476f0a97c446ebbc575761449a00f8baa27d81e4e7270f6c",
+        "sha256_in_prefix": "fba0a33adaabe62b476f0a97c446ebbc575761449a00f8baa27d81e4e7270f6c",
+        "size_in_bytes": 515
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_geoarrow/extension_types.py",
+        "path_type": "hardlink",
+        "sha256": "405b5d8a93a629f27e229b39bea4358825eca584ee663b926914470bf80bcd45",
+        "sha256_in_prefix": "405b5d8a93a629f27e229b39bea4358825eca584ee663b926914470bf80bcd45",
+        "size_in_bytes": 9941
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_geoarrow/geopandas_interop.py",
+        "path_type": "hardlink",
+        "sha256": "ec9e7b0e47fb3ad783404411ffb2a2ddd697a9eac270c3330ae8fa001ebb6e33",
+        "sha256_in_prefix": "ec9e7b0e47fb3ad783404411ffb2a2ddd697a9eac270c3330ae8fa001ebb6e33",
+        "size_in_bytes": 1105
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_geoarrow/movingpandas_interop.py",
+        "path_type": "hardlink",
+        "sha256": "95720fe110f826b17a721e778bd9bd7418006c5a837ea1d8c51131bab5aa948f",
+        "sha256_in_prefix": "95720fe110f826b17a721e778bd9bd7418006c5a837ea1d8c51131bab5aa948f",
+        "size_in_bytes": 5879
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_geoarrow/ops/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "75ce30547f888013ec5958b470801bd16de62164bd479313f3e28fd8d91b2531",
+        "sha256_in_prefix": "75ce30547f888013ec5958b470801bd16de62164bd479313f3e28fd8d91b2531",
+        "size_in_bytes": 174
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_geoarrow/ops/bbox.py",
+        "path_type": "hardlink",
+        "sha256": "c20f76164c4752147b5ddd1cbe21782f94a81b50e8894d60d6867e7ba92b74ac",
+        "sha256_in_prefix": "c20f76164c4752147b5ddd1cbe21782f94a81b50e8894d60d6867e7ba92b74ac",
+        "size_in_bytes": 2750
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_geoarrow/ops/centroid.py",
+        "path_type": "hardlink",
+        "sha256": "7a1875307ec61f7c7d202d7b65291a110dfae87990a9a2f63ce63232313bd8d0",
+        "sha256_in_prefix": "7a1875307ec61f7c7d202d7b65291a110dfae87990a9a2f63ce63232313bd8d0",
+        "size_in_bytes": 4776
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_geoarrow/ops/coord_layout.py",
+        "path_type": "hardlink",
+        "sha256": "0e7a4a90c02ad7a13b3552b84cda9243d6f9c270da47e63e46fd920811663650",
+        "sha256_in_prefix": "0e7a4a90c02ad7a13b3552b84cda9243d6f9c270da47e63e46fd920811663650",
+        "size_in_bytes": 3221
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_geoarrow/ops/reproject.py",
+        "path_type": "hardlink",
+        "sha256": "0414e2ac53e33be601dfe6f58e6d02b49030330a9f7baa38a6e1e32a10062ae7",
+        "sha256_in_prefix": "0414e2ac53e33be601dfe6f58e6d02b49030330a9f7baa38a6e1e32a10062ae7",
+        "size_in_bytes": 7811
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_geoarrow/parse_wkb.py",
+        "path_type": "hardlink",
+        "sha256": "8c94785f93216d638c8b7c2717193792a7a5077c7518ed846a0cf8810bf63ab4",
+        "sha256_in_prefix": "8c94785f93216d638c8b7c2717193792a7a5077c7518ed846a0cf8810bf63ab4",
+        "size_in_bytes": 5385
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_geoarrow/utils.py",
+        "path_type": "hardlink",
+        "sha256": "5c5cd98fe0e4881486f572dcc07f5ea7ecc7b3545ddbfcdadecb1851973b0023",
+        "sha256_in_prefix": "5c5cd98fe0e4881486f572dcc07f5ea7ecc7b3545ddbfcdadecb1851973b0023",
+        "size_in_bytes": 441
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_layer.py",
+        "path_type": "hardlink",
+        "sha256": "59476ce8822da424e5a04f3ea20fbfce713351cd5215cf382c56eec391618d5e",
+        "sha256_in_prefix": "59476ce8822da424e5a04f3ea20fbfce713351cd5215cf382c56eec391618d5e",
+        "size_in_bytes": 70087
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_map.py",
+        "path_type": "hardlink",
+        "sha256": "3ab0a4044f2ff13533abd150e3534ef14d01403e2a48c03da83fe27aa8b8ca5b",
+        "sha256_in_prefix": "3ab0a4044f2ff13533abd150e3534ef14d01403e2a48c03da83fe27aa8b8ca5b",
+        "size_in_bytes": 17120
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_serialization.py",
+        "path_type": "hardlink",
+        "sha256": "9328a00749b008658527e402291b8a458a2968e90c74ef72b951388549b45e61",
+        "sha256_in_prefix": "9328a00749b008658527e402291b8a458a2968e90c74ef72b951388549b45e61",
+        "size_in_bytes": 6116
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "06eb025e00cd071d68479553b506ba3357b0553a96f88a54d42acfed474e624f",
+        "sha256_in_prefix": "06eb025e00cd071d68479553b506ba3357b0553a96f88a54d42acfed474e624f",
+        "size_in_bytes": 7827
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_vendor/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_vendor/matplotlib/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_vendor/matplotlib/_color_data.py",
+        "path_type": "hardlink",
+        "sha256": "1c0bb1efb37a7dd798285cd255a54b5b4ae9f13697288a010afa34e6ff56555a",
+        "sha256_in_prefix": "1c0bb1efb37a7dd798285cd255a54b5b4ae9f13697288a010afa34e6ff56555a",
+        "size_in_bytes": 33254
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_vendor/matplotlib/colors.py",
+        "path_type": "hardlink",
+        "sha256": "9acdc0048b5440b4b666cbe99a0efcade40d0d2955bf3f21c703c617ee8fda6f",
+        "sha256_in_prefix": "9acdc0048b5440b4b666cbe99a0efcade40d0d2955bf3f21c703c617ee8fda6f",
+        "size_in_bytes": 4882
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_version.py",
+        "path_type": "hardlink",
+        "sha256": "28f43d20f97a9250db1d06dfa478426e93e445c8f974c52018d636e23d6cec21",
+        "sha256_in_prefix": "28f43d20f97a9250db1d06dfa478426e93e445c8f974c52018d636e23d6cec21",
+        "size_in_bytes": 166
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_viewport.py",
+        "path_type": "hardlink",
+        "sha256": "1f0dffb459af5c672aaf73b9d88a1bc7a9bed9f1c7fa9f77e452e07ee6463997",
+        "sha256_in_prefix": "1f0dffb459af5c672aaf73b9d88a1bc7a9bed9f1c7fa9f77e452e07ee6463997",
+        "size_in_bytes": 2392
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/_viz.py",
+        "path_type": "hardlink",
+        "sha256": "efab417cc07387359b160cabc6d404086f4e6892c7f747ed10e74244fd61a6a0",
+        "sha256_in_prefix": "efab417cc07387359b160cabc6d404086f4e6892c7f747ed10e74244fd61a6a0",
+        "size_in_bytes": 20359
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/basemap.py",
+        "path_type": "hardlink",
+        "sha256": "3ec10314c5ff53739e9bbd2a094f94030eae6c183a5eabb0903a717913d93f79",
+        "sha256_in_prefix": "3ec10314c5ff53739e9bbd2a094f94030eae6c183a5eabb0903a717913d93f79",
+        "size_in_bytes": 1367
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/colormap.py",
+        "path_type": "hardlink",
+        "sha256": "c225565322bc89eb8b0f2ef155e682bbb6e687e7c017211fa2fbf1cef8b978f3",
+        "sha256_in_prefix": "c225565322bc89eb8b0f2ef155e682bbb6e687e7c017211fa2fbf1cef8b978f3",
+        "size_in_bytes": 8177
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/controls.py",
+        "path_type": "hardlink",
+        "sha256": "5fa768e02598e98b9943efdecbfb90c13180c7480a3e46551f2b54b3b7cac1f5",
+        "sha256_in_prefix": "5fa768e02598e98b9943efdecbfb90c13180c7480a3e46551f2b54b3b7cac1f5",
+        "size_in_bytes": 2758
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/experimental/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "cf4779a61a3693936c6b5f54be2cdbf4fb02e7830c73149df6d02961ade9063e",
+        "sha256_in_prefix": "cf4779a61a3693936c6b5f54be2cdbf4fb02e7830c73149df6d02961ade9063e",
+        "size_in_bytes": 219
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/experimental/_layer.py",
+        "path_type": "hardlink",
+        "sha256": "44a5a86c22000d79ca310de62677f6739ce19ed8661c33f44d1f05f3f089a5a0",
+        "sha256_in_prefix": "44a5a86c22000d79ca310de62677f6739ce19ed8661c33f44d1f05f3f089a5a0",
+        "size_in_bytes": 25154
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/experimental/traits.py",
+        "path_type": "hardlink",
+        "sha256": "168ad15b4265812b2e717b19e482e0a334d41231efc3f10acdf717fedb2c550d",
+        "sha256_in_prefix": "168ad15b4265812b2e717b19e482e0a334d41231efc3f10acdf717fedb2c550d",
+        "size_in_bytes": 8337
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/layer_extension.py",
+        "path_type": "hardlink",
+        "sha256": "c5b8dc99d5ec83ea1d78466ea0dea913cdfb4498534c5914317771cdac1e9b63",
+        "sha256_in_prefix": "c5b8dc99d5ec83ea1d78466ea0dea913cdfb4498534c5914317771cdac1e9b63",
+        "size_in_bytes": 16556
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/models.py",
+        "path_type": "hardlink",
+        "sha256": "17731fc7fee367b8ac4a4d79b79d64a90ea2120008d23d1de3dbcf5f0475e1f4",
+        "sha256_in_prefix": "17731fc7fee367b8ac4a4d79b79d64a90ea2120008d23d1de3dbcf5f0475e1f4",
+        "size_in_bytes": 357
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/static/index.css",
+        "path_type": "hardlink",
+        "sha256": "261c40d0a6fee9ef0bb89b6721ae78f7b12658ed7086da74cd4021f45e72a8b5",
+        "sha256_in_prefix": "261c40d0a6fee9ef0bb89b6721ae78f7b12658ed7086da74cd4021f45e72a8b5",
+        "size_in_bytes": 308562
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/static/index.js",
+        "path_type": "hardlink",
+        "sha256": "46e17e0ade15adfe313c6aba7bb252f09c9e2e639029e73feb26eec04b0d4746",
+        "sha256_in_prefix": "46e17e0ade15adfe313c6aba7bb252f09c9e2e639029e73feb26eec04b0d4746",
+        "size_in_bytes": 2639897
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/traits.py",
+        "path_type": "hardlink",
+        "sha256": "aa6c3ccfdf2464cf9b4d8ea10e6b8566027ffebfaa0f73f5e060c205a0ba108f",
+        "sha256_in_prefix": "aa6c3ccfdf2464cf9b4d8ea10e6b8566027ffebfaa0f73f5e060c205a0ba108f",
+        "size_in_bytes": 41689
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/types/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/types/layer.py",
+        "path_type": "hardlink",
+        "sha256": "1b3aa8fa6de074c2bea89873252d94b1a7ed1561db854f945f70f97e2fd3c268",
+        "sha256_in_prefix": "1b3aa8fa6de074c2bea89873252d94b1a7ed1561db854f945f70f97e2fd3c268",
+        "size_in_bytes": 5676
+      },
+      {
+        "_path": "lib/python3.12/site-packages/lonboard/types/map.py",
+        "path_type": "hardlink",
+        "sha256": "aae6793d8ca57671382c03ae23e35c32dfc0d3d9c516382088112b4f9780d3a8",
+        "sha256_in_prefix": "aae6793d8ca57671382c03ae23e35c32dfc0d3d9c516382088112b4f9780d3a8",
+        "size_in_bytes": 466
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/lonboard-0.10.3-pyh5bfe37b_0",
+    "type": 1
+  }
+}

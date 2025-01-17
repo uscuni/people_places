@@ -1,0 +1,86 @@
+{
+  "arch": "x86_64",
+  "build": "hb9d3cd8_1",
+  "build_number": 1,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "xorg-libx11 >=1.8.10,<2.0a0",
+    "xorg-xorgproto"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "a7a49a8b85122b49214798321e2e96b4",
+  "name": "xorg-libxrender",
+  "platform": "linux",
+  "sha256": "f1217e902c0b1d8bc5d3ce65e483ebf38b049c823c9117b7198cfb16bd2b9143",
+  "size": 37780,
+  "subdir": "linux-64",
+  "timestamp": 1727529943015,
+  "version": "0.9.11",
+  "fn": "xorg-libxrender-0.9.11-hb9d3cd8_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xorg-libxrender-0.9.11-hb9d3cd8_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/xorg-libxrender-0.9.11-hb9d3cd8_1",
+  "files": [
+    "include/X11/extensions/Xrender.h",
+    "lib/libXrender.so",
+    "lib/libXrender.so.1",
+    "lib/libXrender.so.1.3.0",
+    "lib/pkgconfig/xrender.pc",
+    "share/doc/libXrender/libXrender.txt"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/X11/extensions/Xrender.h",
+        "path_type": "hardlink",
+        "sha256": "fa8cd26e0cf279b0677cc4ec3f8c5b0eb012e5a576fc6a776b45f3253a93ebe3",
+        "sha256_in_prefix": "fa8cd26e0cf279b0677cc4ec3f8c5b0eb012e5a576fc6a776b45f3253a93ebe3",
+        "size_in_bytes": 33826
+      },
+      {
+        "_path": "lib/libXrender.so",
+        "path_type": "softlink",
+        "sha256": "5e015ca825d297c98d9614ef05940d395e17a61323a2ebe7dcfe698e9a4d13bc",
+        "sha256_in_prefix": "69732545b405c4d78c73c1c86e04741bbda1180c917e78811712b1110cb8081c",
+        "size_in_bytes": 52648
+      },
+      {
+        "_path": "lib/libXrender.so.1",
+        "path_type": "softlink",
+        "sha256": "5e015ca825d297c98d9614ef05940d395e17a61323a2ebe7dcfe698e9a4d13bc",
+        "sha256_in_prefix": "69732545b405c4d78c73c1c86e04741bbda1180c917e78811712b1110cb8081c",
+        "size_in_bytes": 52648
+      },
+      {
+        "_path": "lib/libXrender.so.1.3.0",
+        "path_type": "hardlink",
+        "sha256": "5e015ca825d297c98d9614ef05940d395e17a61323a2ebe7dcfe698e9a4d13bc",
+        "sha256_in_prefix": "5e015ca825d297c98d9614ef05940d395e17a61323a2ebe7dcfe698e9a4d13bc",
+        "size_in_bytes": 52648
+      },
+      {
+        "_path": "lib/pkgconfig/xrender.pc",
+        "path_type": "hardlink",
+        "sha256": "f4b54c403af21a697f2c78dc59d1e874e1c5aded4c1dc7c149788d6df04f374b",
+        "sha256_in_prefix": "11de210b26df4009a8b672d2da352fc54da1326a6c61f74ab035423dbfc039e6",
+        "size_in_bytes": 311,
+        "file_mode": "text",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/xorg-libxrender_1727529809422/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place"
+      },
+      {
+        "_path": "share/doc/libXrender/libXrender.txt",
+        "path_type": "hardlink",
+        "sha256": "1e2bc69f134ae83d773ddd6857344ea235b6b7ed4cb92d60ce66fbb85959777d",
+        "sha256_in_prefix": "1e2bc69f134ae83d773ddd6857344ea235b6b7ed4cb92d60ce66fbb85959777d",
+        "size_in_bytes": 17217
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/xorg-libxrender-0.9.11-hb9d3cd8_1",
+    "type": 1
+  }
+}

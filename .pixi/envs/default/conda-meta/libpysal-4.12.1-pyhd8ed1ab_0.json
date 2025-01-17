@@ -1,0 +1,3538 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "beautifulsoup4 >=4.10",
+    "geopandas >=0.10.0",
+    "numpy >=1.22",
+    "packaging >=22",
+    "pandas >=1.4",
+    "platformdirs >=2.0.2",
+    "python >=3.10",
+    "requests >=2.27",
+    "scikit-learn >=1.1",
+    "scipy >=1.8",
+    "shapely >=2.0.1"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "c88ffc80b8c7d51646f4d81c1e0913a5",
+  "name": "libpysal",
+  "noarch": "python",
+  "sha256": "d1925dc9b9edfc1b01a26cc1b7032b65ca1ab69197d4e275085d2dde82307dfb",
+  "size": 2186464,
+  "subdir": "noarch",
+  "timestamp": 1725000451863,
+  "version": "4.12.1",
+  "fn": "libpysal-4.12.1-pyhd8ed1ab_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/libpysal-4.12.1-pyhd8ed1ab_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/libpysal-4.12.1-pyhd8ed1ab_0",
+  "files": [
+    "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/INSTALLER",
+    "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/LICENSE.txt",
+    "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/METADATA",
+    "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/RECORD",
+    "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/REQUESTED",
+    "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/WHEEL",
+    "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/direct_url.json",
+    "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/top_level.txt",
+    "lib/python3.12/site-packages/libpysal/.gitignore",
+    "lib/python3.12/site-packages/libpysal/__init__.py",
+    "lib/python3.12/site-packages/libpysal/cg/__init__.py",
+    "lib/python3.12/site-packages/libpysal/cg/alpha_shapes.py",
+    "lib/python3.12/site-packages/libpysal/cg/kdtree.py",
+    "lib/python3.12/site-packages/libpysal/cg/locators.py",
+    "lib/python3.12/site-packages/libpysal/cg/ops/__init__.py",
+    "lib/python3.12/site-packages/libpysal/cg/ops/_accessors.py",
+    "lib/python3.12/site-packages/libpysal/cg/ops/_shapely.py",
+    "lib/python3.12/site-packages/libpysal/cg/ops/atomic.py",
+    "lib/python3.12/site-packages/libpysal/cg/ops/tabular.py",
+    "lib/python3.12/site-packages/libpysal/cg/ops/tests/__init__.py",
+    "lib/python3.12/site-packages/libpysal/cg/ops/tests/test_accessors.py",
+    "lib/python3.12/site-packages/libpysal/cg/ops/tests/test_shapely.py",
+    "lib/python3.12/site-packages/libpysal/cg/ops/tests/test_tabular.py",
+    "lib/python3.12/site-packages/libpysal/cg/polygonQuadTreeStructure.py",
+    "lib/python3.12/site-packages/libpysal/cg/rtree.py",
+    "lib/python3.12/site-packages/libpysal/cg/segmentLocator.py",
+    "lib/python3.12/site-packages/libpysal/cg/shapely_ext.py",
+    "lib/python3.12/site-packages/libpysal/cg/shapes.py",
+    "lib/python3.12/site-packages/libpysal/cg/sphere.py",
+    "lib/python3.12/site-packages/libpysal/cg/standalone.py",
+    "lib/python3.12/site-packages/libpysal/cg/tests/__init__.py",
+    "lib/python3.12/site-packages/libpysal/cg/tests/data/alpha_05.gpkg",
+    "lib/python3.12/site-packages/libpysal/cg/tests/data/alpha_auto.gpkg",
+    "lib/python3.12/site-packages/libpysal/cg/tests/data/alpha_fifth.gpkg",
+    "lib/python3.12/site-packages/libpysal/cg/tests/data/alpha_fourth.gpkg",
+    "lib/python3.12/site-packages/libpysal/cg/tests/data/alpha_tenth.gpkg",
+    "lib/python3.12/site-packages/libpysal/cg/tests/data/eberly_bounding_circles.gpkg",
+    "lib/python3.12/site-packages/libpysal/cg/tests/data/pecos_points.txt",
+    "lib/python3.12/site-packages/libpysal/cg/tests/data/san_saba_points.txt",
+    "lib/python3.12/site-packages/libpysal/cg/tests/data/study_region_huangshan_point.txt",
+    "lib/python3.12/site-packages/libpysal/cg/tests/data/texas_points.txt",
+    "lib/python3.12/site-packages/libpysal/cg/tests/fast_point_in_polygon_algorithm.ipynb",
+    "lib/python3.12/site-packages/libpysal/cg/tests/img/cell_boundary_category_rule.png",
+    "lib/python3.12/site-packages/libpysal/cg/tests/img/extract_connecting_boders_between_points.png",
+    "lib/python3.12/site-packages/libpysal/cg/tests/img/quadtree_example.png",
+    "lib/python3.12/site-packages/libpysal/cg/tests/img/segment_sequence_search_rule.png",
+    "lib/python3.12/site-packages/libpysal/cg/tests/img/situation_segment_intersect_with_two_split_line.png",
+    "lib/python3.12/site-packages/libpysal/cg/tests/test_ashapes.py",
+    "lib/python3.12/site-packages/libpysal/cg/tests/test_geoJSON.py",
+    "lib/python3.12/site-packages/libpysal/cg/tests/test_locators.py",
+    "lib/python3.12/site-packages/libpysal/cg/tests/test_polygonQuadTreeStructure.py",
+    "lib/python3.12/site-packages/libpysal/cg/tests/test_rtree.py",
+    "lib/python3.12/site-packages/libpysal/cg/tests/test_segmentLocator.py",
+    "lib/python3.12/site-packages/libpysal/cg/tests/test_shapes.py",
+    "lib/python3.12/site-packages/libpysal/cg/tests/test_sphere.py",
+    "lib/python3.12/site-packages/libpysal/cg/tests/test_standalone.py",
+    "lib/python3.12/site-packages/libpysal/cg/tests/test_voronoi.py",
+    "lib/python3.12/site-packages/libpysal/cg/voronoi.py",
+    "lib/python3.12/site-packages/libpysal/common.py",
+    "lib/python3.12/site-packages/libpysal/examples/10740/10740.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/10740/10740.shp",
+    "lib/python3.12/site-packages/libpysal/examples/10740/10740.shx",
+    "lib/python3.12/site-packages/libpysal/examples/10740/10740_queen.gal",
+    "lib/python3.12/site-packages/libpysal/examples/10740/10740_rook.gal",
+    "lib/python3.12/site-packages/libpysal/examples/10740/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/Line/Line.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/Line/Line.prj",
+    "lib/python3.12/site-packages/libpysal/examples/Line/Line.shp",
+    "lib/python3.12/site-packages/libpysal/examples/Line/Line.shx",
+    "lib/python3.12/site-packages/libpysal/examples/Line/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/Point/Point.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/Point/Point.prj",
+    "lib/python3.12/site-packages/libpysal/examples/Point/Point.shp",
+    "lib/python3.12/site-packages/libpysal/examples/Point/Point.shx",
+    "lib/python3.12/site-packages/libpysal/examples/Point/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/Polygon/Polygon.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/Polygon/Polygon.prj",
+    "lib/python3.12/site-packages/libpysal/examples/Polygon/Polygon.shp",
+    "lib/python3.12/site-packages/libpysal/examples/Polygon/Polygon.shx",
+    "lib/python3.12/site-packages/libpysal/examples/Polygon/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/Polygon_Holes.cpg",
+    "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/Polygon_Holes.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/Polygon_Holes.prj",
+    "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/Polygon_Holes.qpj",
+    "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/Polygon_Holes.shp",
+    "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/Polygon_Holes.shx",
+    "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/__init__.py",
+    "lib/python3.12/site-packages/libpysal/examples/arcgis/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/arcgis/arcgis_ohio.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/arcgis/arcgis_txt.txt",
+    "lib/python3.12/site-packages/libpysal/examples/baltim/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/baltim/baltim.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/baltim/baltim.shp",
+    "lib/python3.12/site-packages/libpysal/examples/baltim/baltim.shx",
+    "lib/python3.12/site-packages/libpysal/examples/baltim/baltim.tri.k12.kwt",
+    "lib/python3.12/site-packages/libpysal/examples/baltim/baltim_k4.gwt",
+    "lib/python3.12/site-packages/libpysal/examples/baltim/baltim_q.gal",
+    "lib/python3.12/site-packages/libpysal/examples/baltim/baltimore.geojson",
+    "lib/python3.12/site-packages/libpysal/examples/base.py",
+    "lib/python3.12/site-packages/libpysal/examples/berlin/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/berlin/prenz_bound.zip",
+    "lib/python3.12/site-packages/libpysal/examples/berlin/prenzlauer.zip",
+    "lib/python3.12/site-packages/libpysal/examples/book/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/book/book.gal",
+    "lib/python3.12/site-packages/libpysal/examples/book/book.txt",
+    "lib/python3.12/site-packages/libpysal/examples/builtin.py",
+    "lib/python3.12/site-packages/libpysal/examples/burkitt/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/burkitt/burkitt.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/burkitt/burkitt.shp",
+    "lib/python3.12/site-packages/libpysal/examples/burkitt/burkitt.shx",
+    "lib/python3.12/site-packages/libpysal/examples/calemp/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/calemp/calempdensity.csv",
+    "lib/python3.12/site-packages/libpysal/examples/chicago/Chicago77.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/chicago/Chicago77.shp",
+    "lib/python3.12/site-packages/libpysal/examples/chicago/Chicago77.shx",
+    "lib/python3.12/site-packages/libpysal/examples/chicago/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/columbus/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/columbus/columbus.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/columbus/columbus.gal",
+    "lib/python3.12/site-packages/libpysal/examples/columbus/columbus.html",
+    "lib/python3.12/site-packages/libpysal/examples/columbus/columbus.json",
+    "lib/python3.12/site-packages/libpysal/examples/columbus/columbus.shp",
+    "lib/python3.12/site-packages/libpysal/examples/columbus/columbus.shx",
+    "lib/python3.12/site-packages/libpysal/examples/desmith/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/desmith/desmith.gal",
+    "lib/python3.12/site-packages/libpysal/examples/desmith/desmith.txt",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.prj",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.sbn",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.sbx",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.shp",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.shp.xml",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.shx",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.prj",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.sbn",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.sbx",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.shp",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.shp.xml",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.shx",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/streets.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/streets.prj",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/streets.sbn",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/streets.sbx",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/streets.shp",
+    "lib/python3.12/site-packages/libpysal/examples/geodanet/streets.shx",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/FB.p",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/GData_utm.csv",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/G_utm.cpg",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/G_utm.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/G_utm.sbn",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/G_utm.sbx",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/G_utm.shp",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/G_utm.shx",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/XB.p",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/err.p",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_BS_F.ctl",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_BS_F_listwise.csv",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_BS_F_summary.txt",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_BS_NN.ctl",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_BS_NN_listwise.csv",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_BS_NN_summary.txt",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_GS_F.ctl",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_GS_F_listwise.csv",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_GS_F_summary.txt",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_GS_NN.ctl",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_GS_NN_listwise.csv",
+    "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_GS_NN_summary.txt",
+    "lib/python3.12/site-packages/libpysal/examples/juvenile/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/juvenile/juvenile.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/juvenile/juvenile.gwt",
+    "lib/python3.12/site-packages/libpysal/examples/juvenile/juvenile.shp",
+    "lib/python3.12/site-packages/libpysal/examples/juvenile/juvenile.shx",
+    "lib/python3.12/site-packages/libpysal/examples/mexico/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/mexico/mexico.csv",
+    "lib/python3.12/site-packages/libpysal/examples/mexico/mexico.gal",
+    "lib/python3.12/site-packages/libpysal/examples/mexico/mexicojoin.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/mexico/mexicojoin.prj",
+    "lib/python3.12/site-packages/libpysal/examples/mexico/mexicojoin.shp",
+    "lib/python3.12/site-packages/libpysal/examples/mexico/mexicojoin.shx",
+    "lib/python3.12/site-packages/libpysal/examples/networks/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net.shp",
+    "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net.shx",
+    "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net_pts_offnetwork.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net_pts_offnetwork.shp",
+    "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net_pts_offnetwork.shx",
+    "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net_pts_onnetwork.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net_pts_onnetwork.shp",
+    "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net_pts_onnetwork.shx",
+    "lib/python3.12/site-packages/libpysal/examples/networks/nonplanarsegments.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/networks/nonplanarsegments.prj",
+    "lib/python3.12/site-packages/libpysal/examples/networks/nonplanarsegments.qpj",
+    "lib/python3.12/site-packages/libpysal/examples/networks/nonplanarsegments.shp",
+    "lib/python3.12/site-packages/libpysal/examples/networks/nonplanarsegments.shx",
+    "lib/python3.12/site-packages/libpysal/examples/remotes.py",
+    "lib/python3.12/site-packages/libpysal/examples/sids2/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/sids2/sids2.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/sids2/sids2.gal",
+    "lib/python3.12/site-packages/libpysal/examples/sids2/sids2.html",
+    "lib/python3.12/site-packages/libpysal/examples/sids2/sids2.shp",
+    "lib/python3.12/site-packages/libpysal/examples/sids2/sids2.shx",
+    "lib/python3.12/site-packages/libpysal/examples/sids2/sids2.swm",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoPeople.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoPeople.prj",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoPeople.sbn",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoPeople.sbx",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoPeople.shp",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoPeople.shx",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoWater.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoWater.prj",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoWater.sbn",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoWater.sbx",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoWater.shp",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoWater.shx",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/Soho_Network.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/Soho_Network.prj",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/Soho_Network.sbn",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/Soho_Network.sbx",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/Soho_Network.shp",
+    "lib/python3.12/site-packages/libpysal/examples/snow_maps/Soho_Network.shx",
+    "lib/python3.12/site-packages/libpysal/examples/stl/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/stl/stl.gal",
+    "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.csv",
+    "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.html",
+    "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.shp",
+    "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.shx",
+    "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.txt",
+    "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.wkt",
+    "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom_rook.gal",
+    "lib/python3.12/site-packages/libpysal/examples/street_net_pts/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/street_net_pts/street_net_pts.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/street_net_pts/street_net_pts.prj",
+    "lib/python3.12/site-packages/libpysal/examples/street_net_pts/street_net_pts.qpj",
+    "lib/python3.12/site-packages/libpysal/examples/street_net_pts/street_net_pts.shp",
+    "lib/python3.12/site-packages/libpysal/examples/street_net_pts/street_net_pts.shx",
+    "lib/python3.12/site-packages/libpysal/examples/tests/__init__.py",
+    "lib/python3.12/site-packages/libpysal/examples/tests/test_available.py",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/Readme_tokyomortality.txt",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/SampleTokyoMortalityGWPR.ctl",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/Tokyomortality.csv",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/Tokyomortality.txt",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_F.ctl",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_F_listwise.csv",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_F_summary.txt",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_NN.ctl",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_NN_OFF.ctl",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_NN_OFF_listwise.csv",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_NN_OFF_summary.txt",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_NN_listwise.csv",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_NN_summary.txt",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_GS_F.ctl",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_GS_F_listwise.csv",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_GS_F_summary.txt",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_GS_NN.ctl",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_GS_NN_listwise.csv",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_GS_NN_summary.txt",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyomet262.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyomet262.prj",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyomet262.shp",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyomet262.shp.xml",
+    "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyomet262.shx",
+    "lib/python3.12/site-packages/libpysal/examples/us_income/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/us_income/spi_download.csv",
+    "lib/python3.12/site-packages/libpysal/examples/us_income/states48.gal",
+    "lib/python3.12/site-packages/libpysal/examples/us_income/us48.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/us_income/us48.shp",
+    "lib/python3.12/site-packages/libpysal/examples/us_income/us48.shx",
+    "lib/python3.12/site-packages/libpysal/examples/us_income/usjoin.csv",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n.prj",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n.qpj",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n.shp",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n.shx",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n_points.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n_points.prj",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n_points.qpj",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n_points.shp",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n_points.shx",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia.gal",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia.json",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia.prj",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia.shp",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia.shx",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.dat",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.gal",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.mat",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.mtx",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.swm",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.txt",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.wk1",
+    "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_rook.gal",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/README.md",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/geobugs_scot",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/lattice10x10.shp",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/lattice10x10.shx",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/ohio.swm",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/rook31.dbf",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/rook31.gal",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/rook31.shp",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/rook31.shx",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/spat-sym-us.mat",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/spat-sym-us.wk1",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/spdep_listw2WB_columbus",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/stata_full.txt",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/stata_sparse.txt",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/us48_CONTIGUITY_EDGES_ONLY.swm",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/us48_INVERSE_DISTANCE.swm",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/wmat.dat",
+    "lib/python3.12/site-packages/libpysal/examples/wmat/wmat.mtx",
+    "lib/python3.12/site-packages/libpysal/graph/__init__.py",
+    "lib/python3.12/site-packages/libpysal/graph/_contiguity.py",
+    "lib/python3.12/site-packages/libpysal/graph/_indices.py",
+    "lib/python3.12/site-packages/libpysal/graph/_kernel.py",
+    "lib/python3.12/site-packages/libpysal/graph/_matching.py",
+    "lib/python3.12/site-packages/libpysal/graph/_network.py",
+    "lib/python3.12/site-packages/libpysal/graph/_plotting.py",
+    "lib/python3.12/site-packages/libpysal/graph/_raster.py",
+    "lib/python3.12/site-packages/libpysal/graph/_set_ops.py",
+    "lib/python3.12/site-packages/libpysal/graph/_spatial_lag.py",
+    "lib/python3.12/site-packages/libpysal/graph/_summary.py",
+    "lib/python3.12/site-packages/libpysal/graph/_triangulation.py",
+    "lib/python3.12/site-packages/libpysal/graph/_utils.py",
+    "lib/python3.12/site-packages/libpysal/graph/base.py",
+    "lib/python3.12/site-packages/libpysal/graph/io/_gal.py",
+    "lib/python3.12/site-packages/libpysal/graph/io/_gwt.py",
+    "lib/python3.12/site-packages/libpysal/graph/io/_parquet.py",
+    "lib/python3.12/site-packages/libpysal/graph/tests/test_base.py",
+    "lib/python3.12/site-packages/libpysal/graph/tests/test_builders.py",
+    "lib/python3.12/site-packages/libpysal/graph/tests/test_contiguity.py",
+    "lib/python3.12/site-packages/libpysal/graph/tests/test_indices.py",
+    "lib/python3.12/site-packages/libpysal/graph/tests/test_kernel.py",
+    "lib/python3.12/site-packages/libpysal/graph/tests/test_matching.py",
+    "lib/python3.12/site-packages/libpysal/graph/tests/test_plotting.py",
+    "lib/python3.12/site-packages/libpysal/graph/tests/test_raster.py",
+    "lib/python3.12/site-packages/libpysal/graph/tests/test_set_ops.py",
+    "lib/python3.12/site-packages/libpysal/graph/tests/test_spatial_lag.py",
+    "lib/python3.12/site-packages/libpysal/graph/tests/test_summary.py",
+    "lib/python3.12/site-packages/libpysal/graph/tests/test_triangulation.py",
+    "lib/python3.12/site-packages/libpysal/graph/tests/test_utils.py",
+    "lib/python3.12/site-packages/libpysal/io/__init__.py",
+    "lib/python3.12/site-packages/libpysal/io/fileio.py",
+    "lib/python3.12/site-packages/libpysal/io/geotable/__init__.py",
+    "lib/python3.12/site-packages/libpysal/io/geotable/dbf.py",
+    "lib/python3.12/site-packages/libpysal/io/geotable/file.py",
+    "lib/python3.12/site-packages/libpysal/io/geotable/shp.py",
+    "lib/python3.12/site-packages/libpysal/io/geotable/tests/__init__.py",
+    "lib/python3.12/site-packages/libpysal/io/geotable/tests/test_utils.py",
+    "lib/python3.12/site-packages/libpysal/io/geotable/utils.py",
+    "lib/python3.12/site-packages/libpysal/io/geotable/wrappers.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/__init__.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/arcgis_dbf.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/arcgis_swm.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/arcgis_txt.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/csvWrapper.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/dat.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/db.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/gal.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/geobugs_txt.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/geoda_txt.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/gwt.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/mat.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/mtx.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/pyDbfIO.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/pyShpIO.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/stata_txt.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/template.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/__init__.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_arcgis_dbf.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_arcgis_swm.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_arcgis_txt.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_csvWrapper.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_dat.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_db.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_gal.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_geobugs_txt.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_geoda_txt.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_gwt.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_mat.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_mtx.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_pyDbfIO.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_pyShpIO.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_stata_txt.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_wk1.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_wkt.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/wk1.py",
+    "lib/python3.12/site-packages/libpysal/io/iohandlers/wkt.py",
+    "lib/python3.12/site-packages/libpysal/io/tables.py",
+    "lib/python3.12/site-packages/libpysal/io/tests/__init__.py",
+    "lib/python3.12/site-packages/libpysal/io/tests/test_FileIO.py",
+    "lib/python3.12/site-packages/libpysal/io/tests/test_Tables.py",
+    "lib/python3.12/site-packages/libpysal/io/util/__init__.py",
+    "lib/python3.12/site-packages/libpysal/io/util/shapefile.py",
+    "lib/python3.12/site-packages/libpysal/io/util/tests/__init__.py",
+    "lib/python3.12/site-packages/libpysal/io/util/tests/test_shapefile.py",
+    "lib/python3.12/site-packages/libpysal/io/util/tests/test_weight_converter.py",
+    "lib/python3.12/site-packages/libpysal/io/util/tests/test_wkt.py",
+    "lib/python3.12/site-packages/libpysal/io/util/weight_converter.py",
+    "lib/python3.12/site-packages/libpysal/io/util/wkb.py",
+    "lib/python3.12/site-packages/libpysal/io/util/wkt.py",
+    "lib/python3.12/site-packages/libpysal/weights/__init__.py",
+    "lib/python3.12/site-packages/libpysal/weights/_contW_lists.py",
+    "lib/python3.12/site-packages/libpysal/weights/adjtools.py",
+    "lib/python3.12/site-packages/libpysal/weights/contiguity.py",
+    "lib/python3.12/site-packages/libpysal/weights/distance.py",
+    "lib/python3.12/site-packages/libpysal/weights/gabriel.py",
+    "lib/python3.12/site-packages/libpysal/weights/raster.py",
+    "lib/python3.12/site-packages/libpysal/weights/set_operations.py",
+    "lib/python3.12/site-packages/libpysal/weights/spatial_lag.py",
+    "lib/python3.12/site-packages/libpysal/weights/spintW.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/__init__.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test_Wsets.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test__contW_lists.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test_adjlist.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test_contiguity.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test_distance.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test_gabriel.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test_nx.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test_raster.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test_spatial_lag.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test_spintW.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test_user.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test_util.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test_weights.py",
+    "lib/python3.12/site-packages/libpysal/weights/tests/test_weights_IO.py",
+    "lib/python3.12/site-packages/libpysal/weights/user.py",
+    "lib/python3.12/site-packages/libpysal/weights/util.py",
+    "lib/python3.12/site-packages/libpysal/weights/weights.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "c8e047db79ca9ac9fe822ee4fa0a28ab83bccf1a0f555ae29c41b11cc7a9a053",
+        "sha256_in_prefix": "c8e047db79ca9ac9fe822ee4fa0a28ab83bccf1a0f555ae29c41b11cc7a9a053",
+        "size_in_bytes": 1535
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "e518cae8509e34a73a6d6a6034f70aa4e8f6bbc302d56b810d4403e52dcdb7e3",
+        "sha256_in_prefix": "e518cae8509e34a73a6d6a6034f70aa4e8f6bbc302d56b810d4403e52dcdb7e3",
+        "size_in_bytes": 4761
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "d294511011b59db270b323ab838dc4084a9a200f046ea167ac2a3c705edc9ead",
+        "sha256_in_prefix": "d294511011b59db270b323ab838dc4084a9a200f046ea167ac2a3c705edc9ead",
+        "size_in_bytes": 51305
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "1e20998f3bb2e83c3485d5f94772c214f0e6152e015a5f07fbc5b7f577e6817e",
+        "sha256_in_prefix": "1e20998f3bb2e83c3485d5f94772c214f0e6152e015a5f07fbc5b7f577e6817e",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "8a2ff85ad0eb911888a302a761cc2136bd106344a35906a0d08b5df8c838d756",
+        "sha256_in_prefix": "8a2ff85ad0eb911888a302a761cc2136bd106344a35906a0d08b5df8c838d756",
+        "size_in_bytes": 104
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal-4.12.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "5f4a0027f0e58179c44dd57cc41ef20c3d84b560938e8fe9ab01909a0b2b343f",
+        "sha256_in_prefix": "5f4a0027f0e58179c44dd57cc41ef20c3d84b560938e8fe9ab01909a0b2b343f",
+        "size_in_bytes": 9
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/.gitignore",
+        "path_type": "hardlink",
+        "sha256": "408ef4cd064345f1508b0a9247a8cbd3cc3cd350050f5a0c6c3aa0614127a91b",
+        "sha256_in_prefix": "408ef4cd064345f1508b0a9247a8cbd3cc3cd350050f5a0c6c3aa0614127a91b",
+        "size_in_bytes": 221
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7dcb33c6f5935c4b3c8c4c5182862e5f36cdd1c73d95c2a8237cdd76e990d3e4",
+        "sha256_in_prefix": "7dcb33c6f5935c4b3c8c4c5182862e5f36cdd1c73d95c2a8237cdd76e990d3e4",
+        "size_in_bytes": 750
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "4f1c013931996baee3b92d1a4792c0efa2fe1bd25adc4ff4521597518b074d76",
+        "sha256_in_prefix": "4f1c013931996baee3b92d1a4792c0efa2fe1bd25adc4ff4521597518b074d76",
+        "size_in_bytes": 234
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/alpha_shapes.py",
+        "path_type": "hardlink",
+        "sha256": "8fb2b520175780529c6f5606f47a08d35ef75e786f422edb93141c0ee8b33e42",
+        "sha256_in_prefix": "8fb2b520175780529c6f5606f47a08d35ef75e786f422edb93141c0ee8b33e42",
+        "size_in_bytes": 21807
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/kdtree.py",
+        "path_type": "hardlink",
+        "sha256": "0d7be74bd0a87bf7c67f1290128543521b97a9f9b0a03f65d4b8169526e9776c",
+        "sha256_in_prefix": "0d7be74bd0a87bf7c67f1290128543521b97a9f9b0a03f65d4b8169526e9776c",
+        "size_in_bytes": 12265
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/locators.py",
+        "path_type": "hardlink",
+        "sha256": "02d41880457b2b471a148ab2cb2471289d5258549eb670e0946de64ca647cd7b",
+        "sha256_in_prefix": "02d41880457b2b471a148ab2cb2471289d5258549eb670e0946de64ca647cd7b",
+        "size_in_bytes": 25876
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/ops/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "06c0932d909ef4571877809473b005335d98924086252cc398eb9c94e5dbe775",
+        "sha256_in_prefix": "06c0932d909ef4571877809473b005335d98924086252cc398eb9c94e5dbe775",
+        "size_in_bytes": 30
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/ops/_accessors.py",
+        "path_type": "hardlink",
+        "sha256": "b3aca1adbbd4a1d11a3d51b8f08522a9c65545c288f5197114f2555b69b8f1cc",
+        "sha256_in_prefix": "b3aca1adbbd4a1d11a3d51b8f08522a9c65545c288f5197114f2555b69b8f1cc",
+        "size_in_bytes": 1403
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/ops/_shapely.py",
+        "path_type": "hardlink",
+        "sha256": "dcdd1625869f9e571c24f8eb96a0658d43fd17e33c447a89e95aff3edb880b4f",
+        "sha256_in_prefix": "dcdd1625869f9e571c24f8eb96a0658d43fd17e33c447a89e95aff3edb880b4f",
+        "size_in_bytes": 5853
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/ops/atomic.py",
+        "path_type": "hardlink",
+        "sha256": "aaae5ad97684d9b34dd08d0223a67a179f704699ada46aeef4faad8ba1badba0",
+        "sha256_in_prefix": "aaae5ad97684d9b34dd08d0223a67a179f704699ada46aeef4faad8ba1badba0",
+        "size_in_bytes": 263
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/ops/tabular.py",
+        "path_type": "hardlink",
+        "sha256": "0f578882f97f9a594071f99a82337c62483abeb02376e0f4c210695aa45cd947",
+        "sha256_in_prefix": "0f578882f97f9a594071f99a82337c62483abeb02376e0f4c210695aa45cd947",
+        "size_in_bytes": 5189
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/ops/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/ops/tests/test_accessors.py",
+        "path_type": "hardlink",
+        "sha256": "3b21048d73b3df2332849b63800ada79e564de97c161a9c2e089f93eac37ef73",
+        "sha256_in_prefix": "3b21048d73b3df2332849b63800ada79e564de97c161a9c2e089f93eac37ef73",
+        "size_in_bytes": 20546
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/ops/tests/test_shapely.py",
+        "path_type": "hardlink",
+        "sha256": "f768bad627d7a955555f86b688c56bc950ee4dec7082b65e73b83b69c2821c6b",
+        "sha256_in_prefix": "f768bad627d7a955555f86b688c56bc950ee4dec7082b65e73b83b69c2821c6b",
+        "size_in_bytes": 6981
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/ops/tests/test_tabular.py",
+        "path_type": "hardlink",
+        "sha256": "223c2feb66e14be180453289b887c31d08c4f7296ecc35aa2ae045c1fd8fa9db",
+        "sha256_in_prefix": "223c2feb66e14be180453289b887c31d08c4f7296ecc35aa2ae045c1fd8fa9db",
+        "size_in_bytes": 2179
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/polygonQuadTreeStructure.py",
+        "path_type": "hardlink",
+        "sha256": "3f7e6f872e7329a21e65007af6a6337748436beb0474df846898c7a48217ae54",
+        "sha256_in_prefix": "3f7e6f872e7329a21e65007af6a6337748436beb0474df846898c7a48217ae54",
+        "size_in_bytes": 54860
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/rtree.py",
+        "path_type": "hardlink",
+        "sha256": "f5c11f539fee5b1748c9ca18740c0787482b37ff03ff36cee16791aa226fd96b",
+        "sha256_in_prefix": "f5c11f539fee5b1748c9ca18740c0787482b37ff03ff36cee16791aa226fd96b",
+        "size_in_bytes": 32540
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/segmentLocator.py",
+        "path_type": "hardlink",
+        "sha256": "3ad2bd968be7258a2eae05388cb24238e0671cdaff04fd321f65faf8c684063e",
+        "sha256_in_prefix": "3ad2bd968be7258a2eae05388cb24238e0671cdaff04fd321f65faf8c684063e",
+        "size_in_bytes": 14530
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/shapely_ext.py",
+        "path_type": "hardlink",
+        "sha256": "c9d8763a74afe70e8584a1e3770df02c504b3364c681e5874aaa7dc60386bda3",
+        "sha256_in_prefix": "c9d8763a74afe70e8584a1e3770df02c504b3364c681e5874aaa7dc60386bda3",
+        "size_in_bytes": 10778
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/shapes.py",
+        "path_type": "hardlink",
+        "sha256": "802a6d46820a54a0e31d773c7018e8e8ae489d8bcce47c0cb92474635d96b696",
+        "sha256_in_prefix": "802a6d46820a54a0e31d773c7018e8e8ae489d8bcce47c0cb92474635d96b696",
+        "size_in_bytes": 51993
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/sphere.py",
+        "path_type": "hardlink",
+        "sha256": "174ccb1cfecda24148183048d705bcc4b30a62aeaf137492e96ec31aabf90b66",
+        "sha256_in_prefix": "174ccb1cfecda24148183048d705bcc4b30a62aeaf137492e96ec31aabf90b66",
+        "size_in_bytes": 16872
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/standalone.py",
+        "path_type": "hardlink",
+        "sha256": "4f1a6e5132ee54f40b8625f3598ec57d6e19fbff7c992e3df58d024060341be4",
+        "sha256_in_prefix": "4f1a6e5132ee54f40b8625f3598ec57d6e19fbff7c992e3df58d024060341be4",
+        "size_in_bytes": 35791
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/data/alpha_05.gpkg",
+        "path_type": "hardlink",
+        "sha256": "d07b951c3971f79c8879783ff1d1f521c4d00a0aec5fd2b9869b5d97f77aa75c",
+        "sha256_in_prefix": "d07b951c3971f79c8879783ff1d1f521c4d00a0aec5fd2b9869b5d97f77aa75c",
+        "size_in_bytes": 98304
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/data/alpha_auto.gpkg",
+        "path_type": "hardlink",
+        "sha256": "1fe9214d7c74fa9350a89813814bd506d9b2433a250227e8c9e0d4ca462a6b78",
+        "sha256_in_prefix": "1fe9214d7c74fa9350a89813814bd506d9b2433a250227e8c9e0d4ca462a6b78",
+        "size_in_bytes": 98304
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/data/alpha_fifth.gpkg",
+        "path_type": "hardlink",
+        "sha256": "ded9ecf4df4bfeadd735b9396b07f6449e177f49ad30de0a2b006171d590704c",
+        "sha256_in_prefix": "ded9ecf4df4bfeadd735b9396b07f6449e177f49ad30de0a2b006171d590704c",
+        "size_in_bytes": 98304
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/data/alpha_fourth.gpkg",
+        "path_type": "hardlink",
+        "sha256": "99a1b328576d5923db5d0233ada7e73b806473979b95dcf18ac5d27fa906f59d",
+        "sha256_in_prefix": "99a1b328576d5923db5d0233ada7e73b806473979b95dcf18ac5d27fa906f59d",
+        "size_in_bytes": 98304
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/data/alpha_tenth.gpkg",
+        "path_type": "hardlink",
+        "sha256": "60f66c3ae5c3c6ccaf23695ad4beb1f4acef0579165df2e927756abd3b9b8718",
+        "sha256_in_prefix": "60f66c3ae5c3c6ccaf23695ad4beb1f4acef0579165df2e927756abd3b9b8718",
+        "size_in_bytes": 98304
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/data/eberly_bounding_circles.gpkg",
+        "path_type": "hardlink",
+        "sha256": "04375cf422d6e25f99071bb1147368013aac8362d0ef18fa4e1b4f72c7fa8768",
+        "sha256_in_prefix": "04375cf422d6e25f99071bb1147368013aac8362d0ef18fa4e1b4f72c7fa8768",
+        "size_in_bytes": 98304
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/data/pecos_points.txt",
+        "path_type": "hardlink",
+        "sha256": "f72603e633cc53eced853a778331f96a7c2bbe479334bab42d44429ecb75118e",
+        "sha256_in_prefix": "f72603e633cc53eced853a778331f96a7c2bbe479334bab42d44429ecb75118e",
+        "size_in_bytes": 1786
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/data/san_saba_points.txt",
+        "path_type": "hardlink",
+        "sha256": "639355386472207318aa5ed248b2d667ad84acc419c66df52a04870a577077e4",
+        "sha256_in_prefix": "639355386472207318aa5ed248b2d667ad84acc419c66df52a04870a577077e4",
+        "size_in_bytes": 2293
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/data/study_region_huangshan_point.txt",
+        "path_type": "hardlink",
+        "sha256": "973210f583cf608e9ac72d4a12ce9eece045f8289a5aa19c569dd95c67b209b0",
+        "sha256_in_prefix": "973210f583cf608e9ac72d4a12ce9eece045f8289a5aa19c569dd95c67b209b0",
+        "size_in_bytes": 80829
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/data/texas_points.txt",
+        "path_type": "hardlink",
+        "sha256": "fcdf0d9ef815b39549244725ef95e06a9ca31fac4600e0d682d8b92471fa84ac",
+        "sha256_in_prefix": "fcdf0d9ef815b39549244725ef95e06a9ca31fac4600e0d682d8b92471fa84ac",
+        "size_in_bytes": 23530
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/fast_point_in_polygon_algorithm.ipynb",
+        "path_type": "hardlink",
+        "sha256": "116d5197e9df85a9eff43ddb490ee1cc73dad89fe3b741ebd801ab34ac6d9145",
+        "sha256_in_prefix": "116d5197e9df85a9eff43ddb490ee1cc73dad89fe3b741ebd801ab34ac6d9145",
+        "size_in_bytes": 264310
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/img/cell_boundary_category_rule.png",
+        "path_type": "hardlink",
+        "sha256": "4cbf62d5367753a2793a29b4a0a0d958225188a864e3e29924b3ce352da03379",
+        "sha256_in_prefix": "4cbf62d5367753a2793a29b4a0a0d958225188a864e3e29924b3ce352da03379",
+        "size_in_bytes": 21197
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/img/extract_connecting_boders_between_points.png",
+        "path_type": "hardlink",
+        "sha256": "844cc00ec69096e1bff45c222141fe58ac47d0d83869345f96789168879a56bd",
+        "sha256_in_prefix": "844cc00ec69096e1bff45c222141fe58ac47d0d83869345f96789168879a56bd",
+        "size_in_bytes": 15479
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/img/quadtree_example.png",
+        "path_type": "hardlink",
+        "sha256": "55ec0d086f5f69a20f4afa1c0900a84e35ff513c563109beea251b99c2cad749",
+        "sha256_in_prefix": "55ec0d086f5f69a20f4afa1c0900a84e35ff513c563109beea251b99c2cad749",
+        "size_in_bytes": 11755
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/img/segment_sequence_search_rule.png",
+        "path_type": "hardlink",
+        "sha256": "9e71a34a79bf75ec646fadb46f2e30e3e0ea1846138f26f1b06ef5fbc75380c3",
+        "sha256_in_prefix": "9e71a34a79bf75ec646fadb46f2e30e3e0ea1846138f26f1b06ef5fbc75380c3",
+        "size_in_bytes": 32173
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/img/situation_segment_intersect_with_two_split_line.png",
+        "path_type": "hardlink",
+        "sha256": "c6bfdf5cd3508762159f255274d522c4a6b7fde9f712b687be82deff337e68e8",
+        "sha256_in_prefix": "c6bfdf5cd3508762159f255274d522c4a6b7fde9f712b687be82deff337e68e8",
+        "size_in_bytes": 5080
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/test_ashapes.py",
+        "path_type": "hardlink",
+        "sha256": "e32db8257a7398a24f83f158803ce3255e5f22ea0d1c60e1399694f35d9420ea",
+        "sha256_in_prefix": "e32db8257a7398a24f83f158803ce3255e5f22ea0d1c60e1399694f35d9420ea",
+        "size_in_bytes": 4681
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/test_geoJSON.py",
+        "path_type": "hardlink",
+        "sha256": "766c0dc709012e9afd8dcfbb048ed8fa41251a90db7a454f8c7d4c1190a9305a",
+        "sha256_in_prefix": "766c0dc709012e9afd8dcfbb048ed8fa41251a90db7a454f8c7d4c1190a9305a",
+        "size_in_bytes": 1565
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/test_locators.py",
+        "path_type": "hardlink",
+        "sha256": "88e678b841f3bd107b71e8fba3eeaac0882b4e592a5795bd76645ee1e1c71d3e",
+        "sha256_in_prefix": "88e678b841f3bd107b71e8fba3eeaac0882b4e592a5795bd76645ee1e1c71d3e",
+        "size_in_bytes": 1522
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/test_polygonQuadTreeStructure.py",
+        "path_type": "hardlink",
+        "sha256": "05cedc51d9a95faab778f035cbb4498c17cd88a6715df0086b6468e159abe922",
+        "sha256_in_prefix": "05cedc51d9a95faab778f035cbb4498c17cd88a6715df0086b6468e159abe922",
+        "size_in_bytes": 99442
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/test_rtree.py",
+        "path_type": "hardlink",
+        "sha256": "2de2d437da0acd74cd498e379f4aec59effdf1267ce30cd24069cda2ca3a54d6",
+        "sha256_in_prefix": "2de2d437da0acd74cd498e379f4aec59effdf1267ce30cd24069cda2ca3a54d6",
+        "size_in_bytes": 1569
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/test_segmentLocator.py",
+        "path_type": "hardlink",
+        "sha256": "43b8e0a7b3f00dc81d9aaad87eeb59cf0ec8d18fc11ec9b8073f48d18493d8d2",
+        "sha256_in_prefix": "43b8e0a7b3f00dc81d9aaad87eeb59cf0ec8d18fc11ec9b8073f48d18493d8d2",
+        "size_in_bytes": 1452
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/test_shapes.py",
+        "path_type": "hardlink",
+        "sha256": "352c697d3df2277cca66ff14d880a3a0619db0db7b7306526a73029a00ca2165",
+        "sha256_in_prefix": "352c697d3df2277cca66ff14d880a3a0619db0db7b7306526a73029a00ca2165",
+        "size_in_bytes": 22225
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/test_sphere.py",
+        "path_type": "hardlink",
+        "sha256": "6c3d9d0004e00f9fb5011d83f51d04c1a611c511045c49e5c88436c2a4afca8c",
+        "sha256_in_prefix": "6c3d9d0004e00f9fb5011d83f51d04c1a611c511045c49e5c88436c2a4afca8c",
+        "size_in_bytes": 5790
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/test_standalone.py",
+        "path_type": "hardlink",
+        "sha256": "e68c083da1d592ec775a57b7ccbc5b5382a860f7b2fd5970ce68e17803791eff",
+        "sha256_in_prefix": "e68c083da1d592ec775a57b7ccbc5b5382a860f7b2fd5970ce68e17803791eff",
+        "size_in_bytes": 23463
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/tests/test_voronoi.py",
+        "path_type": "hardlink",
+        "sha256": "158ee754186ab1ae5d23192161a678a886e0ed45e5549041ae8f84ec8bd14bab",
+        "sha256_in_prefix": "158ee754186ab1ae5d23192161a678a886e0ed45e5549041ae8f84ec8bd14bab",
+        "size_in_bytes": 8144
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/cg/voronoi.py",
+        "path_type": "hardlink",
+        "sha256": "c368e1d16f6a25c73fca96fd20d231555e0905cfca9aee4375d2b6bac3c273c4",
+        "sha256_in_prefix": "c368e1d16f6a25c73fca96fd20d231555e0905cfca9aee4375d2b6bac3c273c4",
+        "size_in_bytes": 19089
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/common.py",
+        "path_type": "hardlink",
+        "sha256": "ff724b31cb43fd18e182a4feda924f5bf50dd43ce24e13abeb3e2262c6e2ee0d",
+        "sha256_in_prefix": "ff724b31cb43fd18e182a4feda924f5bf50dd43ce24e13abeb3e2262c6e2ee0d",
+        "size_in_bytes": 3263
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/10740/10740.dbf",
+        "path_type": "hardlink",
+        "sha256": "f064d01da632c1c699c7860111171fb85b8e38464310e4342709527b9845c0c9",
+        "sha256_in_prefix": "f064d01da632c1c699c7860111171fb85b8e38464310e4342709527b9845c0c9",
+        "size_in_bytes": 8188
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/10740/10740.shp",
+        "path_type": "hardlink",
+        "sha256": "7253e588120bcf29095b7d47a768b9cd874f0d8ee1f1287a3215d0258671e07a",
+        "sha256_in_prefix": "7253e588120bcf29095b7d47a768b9cd874f0d8ee1f1287a3215d0258671e07a",
+        "size_in_bytes": 521068
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/10740/10740.shx",
+        "path_type": "hardlink",
+        "sha256": "8af4b280fd4a4a9288c97aaa7452f3f430046f2ff961d11f04286bb8322d920b",
+        "sha256_in_prefix": "8af4b280fd4a4a9288c97aaa7452f3f430046f2ff961d11f04286bb8322d920b",
+        "size_in_bytes": 1660
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/10740/10740_queen.gal",
+        "path_type": "hardlink",
+        "sha256": "ecc5c6fbc32b116b4dca3dd45c099dbd065b01ec3af1f12a3bb5581cd9548c25",
+        "sha256_in_prefix": "ecc5c6fbc32b116b4dca3dd45c099dbd065b01ec3af1f12a3bb5581cd9548c25",
+        "size_in_bytes": 5209
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/10740/10740_rook.gal",
+        "path_type": "hardlink",
+        "sha256": "e9880f2b0d5ac1e58966912a9d28d356700b0ffa2c24d0c91dd3fbca8ffe35ab",
+        "sha256_in_prefix": "e9880f2b0d5ac1e58966912a9d28d356700b0ffa2c24d0c91dd3fbca8ffe35ab",
+        "size_in_bytes": 4547
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/10740/README.md",
+        "path_type": "hardlink",
+        "sha256": "0be5b5cfbbd9f1818d4a9a0a388306f8a95f9c423c148b3a0b4b0e962f7c7711",
+        "sha256_in_prefix": "0be5b5cfbbd9f1818d4a9a0a388306f8a95f9c423c148b3a0b4b0e962f7c7711",
+        "size_in_bytes": 405
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Line/Line.dbf",
+        "path_type": "hardlink",
+        "sha256": "090ff5501614c082acb1ef003a0af5972e99ed0a9f6300d192d408009c7fda3a",
+        "sha256_in_prefix": "090ff5501614c082acb1ef003a0af5972e99ed0a9f6300d192d408009c7fda3a",
+        "size_in_bytes": 621
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Line/Line.prj",
+        "path_type": "hardlink",
+        "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "sha256_in_prefix": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "size_in_bytes": 143
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Line/Line.shp",
+        "path_type": "hardlink",
+        "sha256": "f91ae58d15c1b06a92660d436eb404c55e949956d142d88f360e3ee2f655f853",
+        "sha256_in_prefix": "f91ae58d15c1b06a92660d436eb404c55e949956d142d88f360e3ee2f655f853",
+        "size_in_bytes": 564
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Line/Line.shx",
+        "path_type": "hardlink",
+        "sha256": "dd3e33965ea7f1553bca8dcb36cedcee3a02d296b33fb2bfca83e3c4b5ceaf50",
+        "sha256_in_prefix": "dd3e33965ea7f1553bca8dcb36cedcee3a02d296b33fb2bfca83e3c4b5ceaf50",
+        "size_in_bytes": 132
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Line/README.md",
+        "path_type": "hardlink",
+        "sha256": "38bf40790f6f7b837d6ad57d11ba55782002c7689e53d902f1a669d1aa321805",
+        "sha256_in_prefix": "38bf40790f6f7b837d6ad57d11ba55782002c7689e53d902f1a669d1aa321805",
+        "size_in_bytes": 193
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Point/Point.dbf",
+        "path_type": "hardlink",
+        "sha256": "7608e7c161bdaaa1c68bb050869b10348c8642056784950a8d44a3fe2f01e90f",
+        "sha256_in_prefix": "7608e7c161bdaaa1c68bb050869b10348c8642056784950a8d44a3fe2f01e90f",
+        "size_in_bytes": 1236
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Point/Point.prj",
+        "path_type": "hardlink",
+        "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "sha256_in_prefix": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "size_in_bytes": 143
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Point/Point.shp",
+        "path_type": "hardlink",
+        "sha256": "7b1202c8c0e4e7a04fb47c6bc5be8d451c77feb1b137aa3a7bb1721ee86c8c02",
+        "sha256_in_prefix": "7b1202c8c0e4e7a04fb47c6bc5be8d451c77feb1b137aa3a7bb1721ee86c8c02",
+        "size_in_bytes": 352
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Point/Point.shx",
+        "path_type": "hardlink",
+        "sha256": "2b6b6e6c286dc9f57ac74bbd57cfde1ac08373bc987743cec6586cff130a05bf",
+        "sha256_in_prefix": "2b6b6e6c286dc9f57ac74bbd57cfde1ac08373bc987743cec6586cff130a05bf",
+        "size_in_bytes": 172
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Point/README.md",
+        "path_type": "hardlink",
+        "sha256": "f70d0978f80a032b727063f6ef06b215b2e84aeaf46822b78d5444e90e3a5ccd",
+        "sha256_in_prefix": "f70d0978f80a032b727063f6ef06b215b2e84aeaf46822b78d5444e90e3a5ccd",
+        "size_in_bytes": 198
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Polygon/Polygon.dbf",
+        "path_type": "hardlink",
+        "sha256": "d78b401f3d1a02bedff7b5c239f611efcc27d51b8ca87cecbd1ef36a06a40196",
+        "sha256_in_prefix": "d78b401f3d1a02bedff7b5c239f611efcc27d51b8ca87cecbd1ef36a06a40196",
+        "size_in_bytes": 498
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Polygon/Polygon.prj",
+        "path_type": "hardlink",
+        "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "sha256_in_prefix": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "size_in_bytes": 143
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Polygon/Polygon.shp",
+        "path_type": "hardlink",
+        "sha256": "c66474c1edd0fc075bd21acc383fca93c7d8fc363e033e71a915b659543fdb3b",
+        "sha256_in_prefix": "c66474c1edd0fc075bd21acc383fca93c7d8fc363e033e71a915b659543fdb3b",
+        "size_in_bytes": 992
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Polygon/Polygon.shx",
+        "path_type": "hardlink",
+        "sha256": "1c3340f260bfcb58c25ba2b0aee1e1efa6fc87981481e1376eaed20768a9777f",
+        "sha256_in_prefix": "1c3340f260bfcb58c25ba2b0aee1e1efa6fc87981481e1376eaed20768a9777f",
+        "size_in_bytes": 124
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Polygon/README.md",
+        "path_type": "hardlink",
+        "sha256": "93ce78245e41293530d286ee5b92338ee17d83d0260a5ce0d6a2a436ca907eee",
+        "sha256_in_prefix": "93ce78245e41293530d286ee5b92338ee17d83d0260a5ce0d6a2a436ca907eee",
+        "size_in_bytes": 217
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/Polygon_Holes.cpg",
+        "path_type": "hardlink",
+        "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+        "sha256_in_prefix": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/Polygon_Holes.dbf",
+        "path_type": "hardlink",
+        "sha256": "cf06a347ed6aefc4c8bf7cfdd882665cb559cda93357ff465816c6831219f105",
+        "sha256_in_prefix": "cf06a347ed6aefc4c8bf7cfdd882665cb559cda93357ff465816c6831219f105",
+        "size_in_bytes": 498
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/Polygon_Holes.prj",
+        "path_type": "hardlink",
+        "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "sha256_in_prefix": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "size_in_bytes": 143
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/Polygon_Holes.qpj",
+        "path_type": "hardlink",
+        "sha256": "1de411dcdeedce3219242306fc29bfa1d7fa08883e4ff6779baf798ec50d1657",
+        "sha256_in_prefix": "1de411dcdeedce3219242306fc29bfa1d7fa08883e4ff6779baf798ec50d1657",
+        "size_in_bytes": 257
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/Polygon_Holes.shp",
+        "path_type": "hardlink",
+        "sha256": "c12257778b549fb8c8e8aa2dd046906fae548f9e01e62b9f6291ea3fe8fd6043",
+        "sha256_in_prefix": "c12257778b549fb8c8e8aa2dd046906fae548f9e01e62b9f6291ea3fe8fd6043",
+        "size_in_bytes": 1528
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/Polygon_Holes.shx",
+        "path_type": "hardlink",
+        "sha256": "4d12df133c073ae12af2594f3dc2aefd7db779629ef32d02895fe93a92613f6c",
+        "sha256_in_prefix": "4d12df133c073ae12af2594f3dc2aefd7db779629ef32d02895fe93a92613f6c",
+        "size_in_bytes": 124
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/Polygon_Holes/README.md",
+        "path_type": "hardlink",
+        "sha256": "78c2aeb8fa2b5cc1b091de49493d68208ec3510a67ef26cbd592e9efe61f43eb",
+        "sha256_in_prefix": "78c2aeb8fa2b5cc1b091de49493d68208ec3510a67ef26cbd592e9efe61f43eb",
+        "size_in_bytes": 207
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "5d0360e8c3917e40c01df9bb0863ae6807a85f600aa582b88591ff647aada478",
+        "sha256_in_prefix": "5d0360e8c3917e40c01df9bb0863ae6807a85f600aa582b88591ff647aada478",
+        "size_in_bytes": 2160
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/arcgis/README.md",
+        "path_type": "hardlink",
+        "sha256": "6852a8917bac49710d54f9709abf9a35b51651e47ae9fe48846dc8ce656df05c",
+        "sha256_in_prefix": "6852a8917bac49710d54f9709abf9a35b51651e47ae9fe48846dc8ce656df05c",
+        "size_in_bytes": 205
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/arcgis/arcgis_ohio.dbf",
+        "path_type": "hardlink",
+        "sha256": "3363d49be3fc9cc3bbcdd26b354ce77157665bb2625065635b29fadeb5207a5e",
+        "sha256_in_prefix": "3363d49be3fc9cc3bbcdd26b354ce77157665bb2625065635b29fadeb5207a5e",
+        "size_in_bytes": 21876
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/arcgis/arcgis_txt.txt",
+        "path_type": "hardlink",
+        "sha256": "598ba9bf62d66ecc9d8283f371727d50819e12478db58282f78737be82cdcab2",
+        "sha256_in_prefix": "598ba9bf62d66ecc9d8283f371727d50819e12478db58282f78737be82cdcab2",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/baltim/README.md",
+        "path_type": "hardlink",
+        "sha256": "953e4c7a4f43846e75120305d682e2cc5275b531fe1992f9115cd90aa9096665",
+        "sha256_in_prefix": "953e4c7a4f43846e75120305d682e2cc5275b531fe1992f9115cd90aa9096665",
+        "size_in_bytes": 650
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/baltim/baltim.dbf",
+        "path_type": "hardlink",
+        "sha256": "a2bead8464256387228e6b652014ae1e1658942cd97454a8318e3ec9e8b96340",
+        "sha256_in_prefix": "a2bead8464256387228e6b652014ae1e1658942cd97454a8318e3ec9e8b96340",
+        "size_in_bytes": 31595
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/baltim/baltim.shp",
+        "path_type": "hardlink",
+        "sha256": "bcce306ffc90e1aba07641d6d544bf26b22aac4ddc248b21cd3ed3581a12c5d8",
+        "sha256_in_prefix": "bcce306ffc90e1aba07641d6d544bf26b22aac4ddc248b21cd3ed3581a12c5d8",
+        "size_in_bytes": 6008
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/baltim/baltim.shx",
+        "path_type": "hardlink",
+        "sha256": "6f32bf5dadcd34daeab6064aece603192588bed8da9d77d9725c1d18fec87d84",
+        "sha256_in_prefix": "6f32bf5dadcd34daeab6064aece603192588bed8da9d77d9725c1d18fec87d84",
+        "size_in_bytes": 1788
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/baltim/baltim.tri.k12.kwt",
+        "path_type": "hardlink",
+        "sha256": "0955f35ba40e35be73ce5fc346fa30f7764eb256befe1a906414b31f8c2fdb78",
+        "sha256_in_prefix": "0955f35ba40e35be73ce5fc346fa30f7764eb256befe1a906414b31f8c2fdb78",
+        "size_in_bytes": 43196
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/baltim/baltim_k4.gwt",
+        "path_type": "hardlink",
+        "sha256": "a1bfed2728cebb0db9f61fbed1a6aa08b8b0a77458d5bce03c628432123364f0",
+        "sha256_in_prefix": "a1bfed2728cebb0db9f61fbed1a6aa08b8b0a77458d5bce03c628432123364f0",
+        "size_in_bytes": 11825
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/baltim/baltim_q.gal",
+        "path_type": "hardlink",
+        "sha256": "6208422f21976acf408c325afc1fa3aec6f2fc43775950e5118e11daf475a749",
+        "sha256_in_prefix": "6208422f21976acf408c325afc1fa3aec6f2fc43775950e5118e11daf475a749",
+        "size_in_bytes": 5337
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/baltim/baltimore.geojson",
+        "path_type": "hardlink",
+        "sha256": "688d2557dd043c6fb9cbf4c760f1b624c5095db671721be7cf5a430ed7ecfec4",
+        "sha256_in_prefix": "688d2557dd043c6fb9cbf4c760f1b624c5095db671721be7cf5a430ed7ecfec4",
+        "size_in_bytes": 88926
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/base.py",
+        "path_type": "hardlink",
+        "sha256": "e6b9a081a6804ac55e1aff85433222ec33920c5a45a9f0c2725d55310ccb22cc",
+        "sha256_in_prefix": "e6b9a081a6804ac55e1aff85433222ec33920c5a45a9f0c2725d55310ccb22cc",
+        "size_in_bytes": 8900
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/berlin/README.md",
+        "path_type": "hardlink",
+        "sha256": "c2776573a5d777ac384568a1316bf999961fc0bd579f15cac13a2b5c85c8d2b8",
+        "sha256_in_prefix": "c2776573a5d777ac384568a1316bf999961fc0bd579f15cac13a2b5c85c8d2b8",
+        "size_in_bytes": 558
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/berlin/prenz_bound.zip",
+        "path_type": "hardlink",
+        "sha256": "20a15f2200a3a30de512b26fec6c31d4d52ecfd3e6198f8fcf5adb2cdd3e152a",
+        "sha256_in_prefix": "20a15f2200a3a30de512b26fec6c31d4d52ecfd3e6198f8fcf5adb2cdd3e152a",
+        "size_in_bytes": 4809
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/berlin/prenzlauer.zip",
+        "path_type": "hardlink",
+        "sha256": "db96b21858e3879b7ffaa267eb3134c169f9e89112b46397204998452597e718",
+        "sha256_in_prefix": "db96b21858e3879b7ffaa267eb3134c169f9e89112b46397204998452597e718",
+        "size_in_bytes": 111401
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/book/README.md",
+        "path_type": "hardlink",
+        "sha256": "dbb5197113667790ada7aef17089d8e29d9dd9cff0d7e1ea795e2d57db071e14",
+        "sha256_in_prefix": "dbb5197113667790ada7aef17089d8e29d9dd9cff0d7e1ea795e2d57db071e14",
+        "size_in_bytes": 305
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/book/book.gal",
+        "path_type": "hardlink",
+        "sha256": "c2096844704ae58ccd056126b146cccd50eedb2adde0798cc4318ea70d47489e",
+        "sha256_in_prefix": "c2096844704ae58ccd056126b146cccd50eedb2adde0798cc4318ea70d47489e",
+        "size_in_bytes": 191
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/book/book.txt",
+        "path_type": "hardlink",
+        "sha256": "c44fff8c882caed99a79df1b03c623288868e406501a4add166a68948500ec2b",
+        "sha256_in_prefix": "c44fff8c882caed99a79df1b03c623288868e406501a4add166a68948500ec2b",
+        "size_in_bytes": 749
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/builtin.py",
+        "path_type": "hardlink",
+        "sha256": "eda3967bca9097ffca266a6ace9cfa0ee55fe8396264d259a600a6e4a67d4965",
+        "sha256_in_prefix": "eda3967bca9097ffca266a6ace9cfa0ee55fe8396264d259a600a6e4a67d4965",
+        "size_in_bytes": 2707
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/burkitt/README.md",
+        "path_type": "hardlink",
+        "sha256": "fb126e9d1cb909c3ce9b51bdab862c14b5434bca9ee01d45b1185564673c5b28",
+        "sha256_in_prefix": "fb126e9d1cb909c3ce9b51bdab862c14b5434bca9ee01d45b1185564673c5b28",
+        "size_in_bytes": 508
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/burkitt/burkitt.dbf",
+        "path_type": "hardlink",
+        "sha256": "d09b6643c11ddd83fa275fb1f33551655ff56eb62bef161068065cc73e60903b",
+        "sha256_in_prefix": "d09b6643c11ddd83fa275fb1f33551655ff56eb62bef161068065cc73e60903b",
+        "size_in_bytes": 7558
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/burkitt/burkitt.shp",
+        "path_type": "hardlink",
+        "sha256": "731b6bed3895aa3645cc089d60ca7edf19dff33d21e37c2c0ef761572102d28b",
+        "sha256_in_prefix": "731b6bed3895aa3645cc089d60ca7edf19dff33d21e37c2c0ef761572102d28b",
+        "size_in_bytes": 5364
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/burkitt/burkitt.shx",
+        "path_type": "hardlink",
+        "sha256": "8573737320ee01cdf2a22648d1a295f87edd10ff65e913a8937219dadcff96b6",
+        "sha256_in_prefix": "8573737320ee01cdf2a22648d1a295f87edd10ff65e913a8937219dadcff96b6",
+        "size_in_bytes": 1604
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/calemp/README.md",
+        "path_type": "hardlink",
+        "sha256": "d3e802d6d4bb511b250718992f3e1966ad5c951912faec932bcb5c7d924369a4",
+        "sha256_in_prefix": "d3e802d6d4bb511b250718992f3e1966ad5c951912faec932bcb5c7d924369a4",
+        "size_in_bytes": 290
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/calemp/calempdensity.csv",
+        "path_type": "hardlink",
+        "sha256": "cf55ff42bf8d509432fbd709b131f522ee94100d3b1734df8e8b7bb99855a10c",
+        "sha256_in_prefix": "cf55ff42bf8d509432fbd709b131f522ee94100d3b1734df8e8b7bb99855a10c",
+        "size_in_bytes": 7063
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/chicago/Chicago77.dbf",
+        "path_type": "hardlink",
+        "sha256": "f08af37f52cc23a501a29ee1673b07f61a60e1e93cd4b54f206d5b7671cafc55",
+        "sha256_in_prefix": "f08af37f52cc23a501a29ee1673b07f61a60e1e93cd4b54f206d5b7671cafc55",
+        "size_in_bytes": 16787
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/chicago/Chicago77.shp",
+        "path_type": "hardlink",
+        "sha256": "7c62188f419911487ac1033a464f55e4b040f1d1c9afcb769e1c352088b98df7",
+        "sha256_in_prefix": "7c62188f419911487ac1033a464f55e4b040f1d1c9afcb769e1c352088b98df7",
+        "size_in_bytes": 687568
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/chicago/Chicago77.shx",
+        "path_type": "hardlink",
+        "sha256": "a1eec4184edfadfbc3bd540b6effc2ffac1cd4fe2380f7e712b530b011f4ad79",
+        "sha256_in_prefix": "a1eec4184edfadfbc3bd540b6effc2ffac1cd4fe2380f7e712b530b011f4ad79",
+        "size_in_bytes": 716
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/chicago/README.md",
+        "path_type": "hardlink",
+        "sha256": "6a21ee74afff9cb8acc211b253f4d8747843ddab72471d250023e87dbfc02a02",
+        "sha256_in_prefix": "6a21ee74afff9cb8acc211b253f4d8747843ddab72471d250023e87dbfc02a02",
+        "size_in_bytes": 258
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/columbus/README.md",
+        "path_type": "hardlink",
+        "sha256": "e25196f2d87e9b835b9c9ec80064636074c877e357bc734c2669b3a2f3354eb4",
+        "sha256_in_prefix": "e25196f2d87e9b835b9c9ec80064636074c877e357bc734c2669b3a2f3354eb4",
+        "size_in_bytes": 439
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/columbus/columbus.dbf",
+        "path_type": "hardlink",
+        "sha256": "b82171027d294bec701f5a7732eeaf8e0eb6a075b6900daac91c7533bf80bda2",
+        "sha256_in_prefix": "b82171027d294bec701f5a7732eeaf8e0eb6a075b6900daac91c7533bf80bda2",
+        "size_in_bytes": 10082
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/columbus/columbus.gal",
+        "path_type": "hardlink",
+        "sha256": "675da6e3d24603e1907c278be4dfc20107ba4888b9a64b442e3f160a46d3dada",
+        "sha256_in_prefix": "675da6e3d24603e1907c278be4dfc20107ba4888b9a64b442e3f160a46d3dada",
+        "size_in_bytes": 907
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/columbus/columbus.html",
+        "path_type": "hardlink",
+        "sha256": "23cbfafea4c2387596102088b11b3305bacde8fe4914008bfe3804dadd26513c",
+        "sha256_in_prefix": "23cbfafea4c2387596102088b11b3305bacde8fe4914008bfe3804dadd26513c",
+        "size_in_bytes": 2960
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/columbus/columbus.json",
+        "path_type": "hardlink",
+        "sha256": "b80936ba15bdc5b4c5da364e29fe7684eb597f4bbfac546a7e20d1e900101637",
+        "sha256_in_prefix": "b80936ba15bdc5b4c5da364e29fe7684eb597f4bbfac546a7e20d1e900101637",
+        "size_in_bytes": 76602
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/columbus/columbus.shp",
+        "path_type": "hardlink",
+        "sha256": "f79a9a4ea814ef3abbc3780c6f91816a6ee56edf60b2c5592158e66b317a4da1",
+        "sha256_in_prefix": "f79a9a4ea814ef3abbc3780c6f91816a6ee56edf60b2c5592158e66b317a4da1",
+        "size_in_bytes": 21980
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/columbus/columbus.shx",
+        "path_type": "hardlink",
+        "sha256": "ce8fdc2a975081d686533e855d17032f2ddccabd5fd72021cb0d1f3ef8bde0c7",
+        "sha256_in_prefix": "ce8fdc2a975081d686533e855d17032f2ddccabd5fd72021cb0d1f3ef8bde0c7",
+        "size_in_bytes": 492
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/desmith/README.md",
+        "path_type": "hardlink",
+        "sha256": "0f3c60544fa6a62791d3b87222e5efb66af0a9d9ec039ae1b83f9ab120170d55",
+        "sha256_in_prefix": "0f3c60544fa6a62791d3b87222e5efb66af0a9d9ec039ae1b83f9ab120170d55",
+        "size_in_bytes": 330
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/desmith/desmith.gal",
+        "path_type": "hardlink",
+        "sha256": "e13ce74acbc0dd55e73150192f20688801bb79c02ca2d245ba5f70a18238d309",
+        "sha256_in_prefix": "e13ce74acbc0dd55e73150192f20688801bb79c02ca2d245ba5f70a18238d309",
+        "size_in_bytes": 98
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/desmith/desmith.txt",
+        "path_type": "hardlink",
+        "sha256": "7f9af6772156a11062983eedfb9625f78da1e1be0d5f6d82a44b92469e5fafe0",
+        "sha256_in_prefix": "7f9af6772156a11062983eedfb9625f78da1e1be0d5f6d82a44b92469e5fafe0",
+        "size_in_bytes": 89
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/README.md",
+        "path_type": "hardlink",
+        "sha256": "47fa0a9f3b48fcd820a3f596bcc8061fa69b3398859f8f6352e8a618b8b5d6e0",
+        "sha256_in_prefix": "47fa0a9f3b48fcd820a3f596bcc8061fa69b3398859f8f6352e8a618b8b5d6e0",
+        "size_in_bytes": 887
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.dbf",
+        "path_type": "hardlink",
+        "sha256": "026d48de7b39f93c401320cd4e93f2e38aee99e087c34bca9531985bd3914b1a",
+        "sha256_in_prefix": "026d48de7b39f93c401320cd4e93f2e38aee99e087c34bca9531985bd3914b1a",
+        "size_in_bytes": 5551
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.prj",
+        "path_type": "hardlink",
+        "sha256": "2d396c6bec051a38c870b072f54f97bac7e760f68cb2160260ad3bf0d3545ca8",
+        "sha256_in_prefix": "2d396c6bec051a38c870b072f54f97bac7e760f68cb2160260ad3bf0d3545ca8",
+        "size_in_bytes": 484
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.sbn",
+        "path_type": "hardlink",
+        "sha256": "c86a310d10c9361e5dff4948b2800ea802d7eae9ab05cfcac2c1037bc0d423df",
+        "sha256_in_prefix": "c86a310d10c9361e5dff4948b2800ea802d7eae9ab05cfcac2c1037bc0d423df",
+        "size_in_bytes": 3228
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.sbx",
+        "path_type": "hardlink",
+        "sha256": "054322b6d3c96c19c92889204107aed2613f728a6c2d69c9ddce92a480c23028",
+        "sha256_in_prefix": "054322b6d3c96c19c92889204107aed2613f728a6c2d69c9ddce92a480c23028",
+        "size_in_bytes": 428
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.shp",
+        "path_type": "hardlink",
+        "sha256": "0478ec215cf2fe0edc668fa932ab2fd1aa8bdd830ed78b86e7f7df4ba50721cc",
+        "sha256_in_prefix": "0478ec215cf2fe0edc668fa932ab2fd1aa8bdd830ed78b86e7f7df4ba50721cc",
+        "size_in_bytes": 8136
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.shp.xml",
+        "path_type": "hardlink",
+        "sha256": "86f50c59f54b75ea9d88b1d39bb082e4442d05deb2d53e68a35eeb3a712c6d96",
+        "sha256_in_prefix": "86f50c59f54b75ea9d88b1d39bb082e4442d05deb2d53e68a35eeb3a712c6d96",
+        "size_in_bytes": 13083
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/crimes.shx",
+        "path_type": "hardlink",
+        "sha256": "cc519ce4952dffc8e540d41d1b0d132d8a9b80201a95115b3d285c2f67cd70b7",
+        "sha256_in_prefix": "cc519ce4952dffc8e540d41d1b0d132d8a9b80201a95115b3d285c2f67cd70b7",
+        "size_in_bytes": 2396
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.dbf",
+        "path_type": "hardlink",
+        "sha256": "16b2fa85a590738f8011692cd31af6a9b03378034c5d52c4a83ffac1e636aba5",
+        "sha256_in_prefix": "16b2fa85a590738f8011692cd31af6a9b03378034c5d52c4a83ffac1e636aba5",
+        "size_in_bytes": 146
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.prj",
+        "path_type": "hardlink",
+        "sha256": "2d396c6bec051a38c870b072f54f97bac7e760f68cb2160260ad3bf0d3545ca8",
+        "sha256_in_prefix": "2d396c6bec051a38c870b072f54f97bac7e760f68cb2160260ad3bf0d3545ca8",
+        "size_in_bytes": 484
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.sbn",
+        "path_type": "hardlink",
+        "sha256": "d342b2f2f7443b28db0b073865cbc242c28fff19014ec00121421622d77d23a4",
+        "sha256_in_prefix": "d342b2f2f7443b28db0b073865cbc242c28fff19014ec00121421622d77d23a4",
+        "size_in_bytes": 212
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.sbx",
+        "path_type": "hardlink",
+        "sha256": "cf8298db1f4d20a2439d39b40d5292afc3bbca1606a8c30e10ba9f2600a144b2",
+        "sha256_in_prefix": "cf8298db1f4d20a2439d39b40d5292afc3bbca1606a8c30e10ba9f2600a144b2",
+        "size_in_bytes": 124
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.shp",
+        "path_type": "hardlink",
+        "sha256": "50b56966fce27730e4f7997ea27d6b852faa1c3ea3ce586555da06a2786e8ba2",
+        "sha256_in_prefix": "50b56966fce27730e4f7997ea27d6b852faa1c3ea3ce586555da06a2786e8ba2",
+        "size_in_bytes": 324
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.shp.xml",
+        "path_type": "hardlink",
+        "sha256": "08551c9a0270bea4b4f4a96f20435d688ee922034db449e4672204f4729a0174",
+        "sha256_in_prefix": "08551c9a0270bea4b4f4a96f20435d688ee922034db449e4672204f4729a0174",
+        "size_in_bytes": 89303
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/schools.shx",
+        "path_type": "hardlink",
+        "sha256": "65492726ce68894f41fab48d0df7ac08f49328c16961be078a866a53d205b91e",
+        "sha256_in_prefix": "65492726ce68894f41fab48d0df7ac08f49328c16961be078a866a53d205b91e",
+        "size_in_bytes": 164
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/streets.dbf",
+        "path_type": "hardlink",
+        "sha256": "af3c81a215a814b8ddc46052d6c2de9f50d87503f4510a5224d50b7be94c9235",
+        "sha256_in_prefix": "af3c81a215a814b8ddc46052d6c2de9f50d87503f4510a5224d50b7be94c9235",
+        "size_in_bytes": 11525
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/streets.prj",
+        "path_type": "hardlink",
+        "sha256": "2d396c6bec051a38c870b072f54f97bac7e760f68cb2160260ad3bf0d3545ca8",
+        "sha256_in_prefix": "2d396c6bec051a38c870b072f54f97bac7e760f68cb2160260ad3bf0d3545ca8",
+        "size_in_bytes": 484
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/streets.sbn",
+        "path_type": "hardlink",
+        "sha256": "9d9c3b6ed84e8578decd2bcdc81c2eca60a130434b7460acc25c5cfbeac72ee1",
+        "sha256_in_prefix": "9d9c3b6ed84e8578decd2bcdc81c2eca60a130434b7460acc25c5cfbeac72ee1",
+        "size_in_bytes": 3388
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/streets.sbx",
+        "path_type": "hardlink",
+        "sha256": "3c89d943e490e60b197b76158bb34d64d744fca04262057ce1afb3822c20f094",
+        "sha256_in_prefix": "3c89d943e490e60b197b76158bb34d64d744fca04262057ce1afb3822c20f094",
+        "size_in_bytes": 540
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/streets.shp",
+        "path_type": "hardlink",
+        "sha256": "09134fa4018a65c39941e0b7b46e4534a87c9cd1e0567c9e8a69066aa72105f7",
+        "sha256_in_prefix": "09134fa4018a65c39941e0b7b46e4534a87c9cd1e0567c9e8a69066aa72105f7",
+        "size_in_bytes": 26044
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/geodanet/streets.shx",
+        "path_type": "hardlink",
+        "sha256": "afa7dab201fadeb45db4cfc50d1daf8e8a72dabda9df75f18f31a76fccd8e47a",
+        "sha256_in_prefix": "afa7dab201fadeb45db4cfc50d1daf8e8a72dabda9df75f18f31a76fccd8e47a",
+        "size_in_bytes": 2444
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/FB.p",
+        "path_type": "hardlink",
+        "sha256": "5200619da06b48cc5bd0d94e3721233b38e89c385c64638f98f48396f79b1180",
+        "sha256_in_prefix": "5200619da06b48cc5bd0d94e3721233b38e89c385c64638f98f48396f79b1180",
+        "size_in_bytes": 580854
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/GData_utm.csv",
+        "path_type": "hardlink",
+        "sha256": "f3a54d25d3cb578e3284ba6701e3bc2ba38ce749997e006ed72d6789333fcebe",
+        "sha256_in_prefix": "f3a54d25d3cb578e3284ba6701e3bc2ba38ce749997e006ed72d6789333fcebe",
+        "size_in_bytes": 14288
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/G_utm.cpg",
+        "path_type": "hardlink",
+        "sha256": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2",
+        "sha256_in_prefix": "09fc313075748ce8ead962229ed89c919d5a9ff71974ee725a0b48bb87d975a2",
+        "size_in_bytes": 10
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/G_utm.dbf",
+        "path_type": "hardlink",
+        "sha256": "2ce4f154e27e8f9a65dc2f8ceaa2a98dc2ba54a61d7595c862fb0519cc64aefa",
+        "sha256_in_prefix": "2ce4f154e27e8f9a65dc2f8ceaa2a98dc2ba54a61d7595c862fb0519cc64aefa",
+        "size_in_bytes": 49835
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/G_utm.sbn",
+        "path_type": "hardlink",
+        "sha256": "691613c6b422629a76ff442f695e77909e008a9866f660e2aced3e8f0cd58599",
+        "sha256_in_prefix": "691613c6b422629a76ff442f695e77909e008a9866f660e2aced3e8f0cd58599",
+        "size_in_bytes": 1964
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/G_utm.sbx",
+        "path_type": "hardlink",
+        "sha256": "e45beb56fc73f9ef863c37a4445baff74096f2f7cce857003f25b1bcc9dc1b48",
+        "sha256_in_prefix": "e45beb56fc73f9ef863c37a4445baff74096f2f7cce857003f25b1bcc9dc1b48",
+        "size_in_bytes": 340
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/G_utm.shp",
+        "path_type": "hardlink",
+        "sha256": "10a1189649666008807c81153e8d5f2be25e016c52e7831df36f0951fda4f1c5",
+        "sha256_in_prefix": "10a1189649666008807c81153e8d5f2be25e016c52e7831df36f0951fda4f1c5",
+        "size_in_bytes": 242824
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/G_utm.shx",
+        "path_type": "hardlink",
+        "sha256": "791f5066d25f4dde9dea9d859915d9bfdee398950c7483fbca944bb715d3254a",
+        "sha256_in_prefix": "791f5066d25f4dde9dea9d859915d9bfdee398950c7483fbca944bb715d3254a",
+        "size_in_bytes": 1372
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/README.md",
+        "path_type": "hardlink",
+        "sha256": "ed9bfe52daec3de35c708b4bd3a19a31122efee64aea2dcda550d84af3cdbe8e",
+        "sha256_in_prefix": "ed9bfe52daec3de35c708b4bd3a19a31122efee64aea2dcda550d84af3cdbe8e",
+        "size_in_bytes": 1592
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/XB.p",
+        "path_type": "hardlink",
+        "sha256": "5fee7b41a0727c889840a42be698ae14f738d0471f0a8611659a6cb848c8413f",
+        "sha256_in_prefix": "5fee7b41a0727c889840a42be698ae14f738d0471f0a8611659a6cb848c8413f",
+        "size_in_bytes": 10652
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/err.p",
+        "path_type": "hardlink",
+        "sha256": "86248fd59223be0caf7de8b04c8910c0b7439c4b2cd959fb99afb28539ee1cd4",
+        "sha256_in_prefix": "86248fd59223be0caf7de8b04c8910c0b7439c4b2cd959fb99afb28539ee1cd4",
+        "size_in_bytes": 3872
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_BS_F.ctl",
+        "path_type": "hardlink",
+        "sha256": "485ddb437230b16753ac3ff34afcf4531296fb4c7d70a9c751aeff2e5c6090b2",
+        "sha256_in_prefix": "485ddb437230b16753ac3ff34afcf4531296fb4c7d70a9c751aeff2e5c6090b2",
+        "size_in_bytes": 761
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_BS_F_listwise.csv",
+        "path_type": "hardlink",
+        "sha256": "d2cf325cfff8a995f994fa7842aa2379b8492071e5dbf9e03b0731386b672d48",
+        "sha256_in_prefix": "d2cf325cfff8a995f994fa7842aa2379b8492071e5dbf9e03b0731386b672d48",
+        "size_in_bytes": 59696
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_BS_F_summary.txt",
+        "path_type": "hardlink",
+        "sha256": "d00bda0f37e2157f7e6f5d1e01bc4ea84ac58be8d2ab9aab62f87f4b4fb984b3",
+        "sha256_in_prefix": "d00bda0f37e2157f7e6f5d1e01bc4ea84ac58be8d2ab9aab62f87f4b4fb984b3",
+        "size_in_bytes": 8869
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_BS_NN.ctl",
+        "path_type": "hardlink",
+        "sha256": "d700168a3d705744197d4990a7a80f5bbe562c39ea0a1fef1b9440bbcd250796",
+        "sha256_in_prefix": "d700168a3d705744197d4990a7a80f5bbe562c39ea0a1fef1b9440bbcd250796",
+        "size_in_bytes": 763
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_BS_NN_listwise.csv",
+        "path_type": "hardlink",
+        "sha256": "16841a1e77225b9517bacccd242a14b95ce5881140f9b47a81da0c6f7e7900a2",
+        "sha256_in_prefix": "16841a1e77225b9517bacccd242a14b95ce5881140f9b47a81da0c6f7e7900a2",
+        "size_in_bytes": 59696
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_BS_NN_summary.txt",
+        "path_type": "hardlink",
+        "sha256": "15f18bb59ffd48f63f1a5b241b507e3d0b7731f136d0631e11935638ea4da727",
+        "sha256_in_prefix": "15f18bb59ffd48f63f1a5b241b507e3d0b7731f136d0631e11935638ea4da727",
+        "size_in_bytes": 8831
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_GS_F.ctl",
+        "path_type": "hardlink",
+        "sha256": "2ffa61e4c81593684163b196df6c3e167797770dc5c5c96f7820780ac9ac84a9",
+        "sha256_in_prefix": "2ffa61e4c81593684163b196df6c3e167797770dc5c5c96f7820780ac9ac84a9",
+        "size_in_bytes": 761
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_GS_F_listwise.csv",
+        "path_type": "hardlink",
+        "sha256": "5bb923a5f0a5c4fc7a1475e70c477c6cccee45dc5e97f5a71ca62441d3a67779",
+        "sha256_in_prefix": "5bb923a5f0a5c4fc7a1475e70c477c6cccee45dc5e97f5a71ca62441d3a67779",
+        "size_in_bytes": 59696
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_GS_F_summary.txt",
+        "path_type": "hardlink",
+        "sha256": "20ccd0d6a3b944fd81388041967796aa5ea489010b8ea5ffee616f6b627c8a95",
+        "sha256_in_prefix": "20ccd0d6a3b944fd81388041967796aa5ea489010b8ea5ffee616f6b627c8a95",
+        "size_in_bytes": 8708
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_GS_NN.ctl",
+        "path_type": "hardlink",
+        "sha256": "6df39534caa09fdfe710931ac8e06dd09635362ee923cad2fde71a03cf44ce1d",
+        "sha256_in_prefix": "6df39534caa09fdfe710931ac8e06dd09635362ee923cad2fde71a03cf44ce1d",
+        "size_in_bytes": 763
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_GS_NN_listwise.csv",
+        "path_type": "hardlink",
+        "sha256": "2fbb71002ac2b5dc61a0287be172e3e082b863d8b15cc45a74d6de82cf9f3db5",
+        "sha256_in_prefix": "2fbb71002ac2b5dc61a0287be172e3e082b863d8b15cc45a74d6de82cf9f3db5",
+        "size_in_bytes": 59696
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/georgia/georgia_GS_NN_summary.txt",
+        "path_type": "hardlink",
+        "sha256": "60a3f70d283d25aec4b5e7d36ded0d53d5bdfa507645aca6a37fcc14757067f9",
+        "sha256_in_prefix": "60a3f70d283d25aec4b5e7d36ded0d53d5bdfa507645aca6a37fcc14757067f9",
+        "size_in_bytes": 8450
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/juvenile/README.md",
+        "path_type": "hardlink",
+        "sha256": "e9722baadb39f4b17de2135447c366e585b45b383cc451a7d56992f9f8132cec",
+        "sha256_in_prefix": "e9722baadb39f4b17de2135447c366e585b45b383cc451a7d56992f9f8132cec",
+        "size_in_bytes": 441
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/juvenile/juvenile.dbf",
+        "path_type": "hardlink",
+        "sha256": "ff3e99189bcb2656d862363b51ba89dbb0a82784fa74747dbcbbc2e79ce4dc6d",
+        "sha256_in_prefix": "ff3e99189bcb2656d862363b51ba89dbb0a82784fa74747dbcbbc2e79ce4dc6d",
+        "size_in_bytes": 4834
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/juvenile/juvenile.gwt",
+        "path_type": "hardlink",
+        "sha256": "63d099b79a79df8e34cd26d169d6fba6888922ce42819468a4eef9ebecf344a8",
+        "sha256_in_prefix": "63d099b79a79df8e34cd26d169d6fba6888922ce42819468a4eef9ebecf344a8",
+        "size_in_bytes": 71588
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/juvenile/juvenile.shp",
+        "path_type": "hardlink",
+        "sha256": "8269f3c8ceb65f0fbe9d402573fc77e593ba1b6d7eff2837501a3953dd3e1394",
+        "sha256_in_prefix": "8269f3c8ceb65f0fbe9d402573fc77e593ba1b6d7eff2837501a3953dd3e1394",
+        "size_in_bytes": 4804
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/juvenile/juvenile.shx",
+        "path_type": "hardlink",
+        "sha256": "6e8f638435911bcf7a886a770761370de31dc34e734ce2acb24f018634b9c505",
+        "sha256_in_prefix": "6e8f638435911bcf7a886a770761370de31dc34e734ce2acb24f018634b9c505",
+        "size_in_bytes": 1444
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/mexico/README.md",
+        "path_type": "hardlink",
+        "sha256": "30ae9e63081cdecd3a89cf5602e6e78ab9768f1fad36e3fa47e170d33bbf6b63",
+        "sha256_in_prefix": "30ae9e63081cdecd3a89cf5602e6e78ab9768f1fad36e3fa47e170d33bbf6b63",
+        "size_in_bytes": 406
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/mexico/mexico.csv",
+        "path_type": "hardlink",
+        "sha256": "fbf6bbcececf8c7c8f33fb0b04272a553ac018c904817403b96cabe3412d48ee",
+        "sha256_in_prefix": "fbf6bbcececf8c7c8f33fb0b04272a553ac018c904817403b96cabe3412d48ee",
+        "size_in_bytes": 3548
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/mexico/mexico.gal",
+        "path_type": "hardlink",
+        "sha256": "17db5352f7ca711b06a514dff6249bc956c79894ff3a6d02fb79f690f66a7599",
+        "sha256_in_prefix": "17db5352f7ca711b06a514dff6249bc956c79894ff3a6d02fb79f690f66a7599",
+        "size_in_bytes": 923
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/mexico/mexicojoin.dbf",
+        "path_type": "hardlink",
+        "sha256": "153e49f96e799e186f7fa15a9d637c21f75870efabda0d8e068b6e3f089b9383",
+        "sha256_in_prefix": "153e49f96e799e186f7fa15a9d637c21f75870efabda0d8e068b6e3f089b9383",
+        "size_in_bytes": 8258
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/mexico/mexicojoin.prj",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/mexico/mexicojoin.shp",
+        "path_type": "hardlink",
+        "sha256": "25c1a69c9f7ce4e52198fd276e4dfe82859f8b613740563b1ec756f389998224",
+        "sha256_in_prefix": "25c1a69c9f7ce4e52198fd276e4dfe82859f8b613740563b1ec756f389998224",
+        "size_in_bytes": 51924
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/mexico/mexicojoin.shx",
+        "path_type": "hardlink",
+        "sha256": "ca2b893efc8a55a2be3fd3414d202867fc3a42b337fc6f2fd6d4289400ddd97a",
+        "sha256_in_prefix": "ca2b893efc8a55a2be3fd3414d202867fc3a42b337fc6f2fd6d4289400ddd97a",
+        "size_in_bytes": 356
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/README.md",
+        "path_type": "hardlink",
+        "sha256": "965b0b4ad12d84e5d4e3a5c1cdcbc8f0247dd19dad2bc68c523a6010a0629e89",
+        "sha256_in_prefix": "965b0b4ad12d84e5d4e3a5c1cdcbc8f0247dd19dad2bc68c523a6010a0629e89",
+        "size_in_bytes": 796
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net.dbf",
+        "path_type": "hardlink",
+        "sha256": "643e7b1c13e6da2c8472d759fc238ae49d6df490fb2daa6af4e83bb4ec12db32",
+        "sha256_in_prefix": "643e7b1c13e6da2c8472d759fc238ae49d6df490fb2daa6af4e83bb4ec12db32",
+        "size_in_bytes": 1348
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net.shp",
+        "path_type": "hardlink",
+        "sha256": "6a87ac5e2636636e6643040c3ac455df90126baa22fbe492ccceb914415cd4ba",
+        "sha256_in_prefix": "6a87ac5e2636636e6643040c3ac455df90126baa22fbe492ccceb914415cd4ba",
+        "size_in_bytes": 2652
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net.shx",
+        "path_type": "hardlink",
+        "sha256": "1561492efc996f73197dd60cbc777195c56fd22d2effff0e8980aab94cde8f6e",
+        "sha256_in_prefix": "1561492efc996f73197dd60cbc777195c56fd22d2effff0e8980aab94cde8f6e",
+        "size_in_bytes": 332
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net_pts_offnetwork.dbf",
+        "path_type": "hardlink",
+        "sha256": "0a70736af1414e160ae3e82623d05a942ce8e894bdd26f91d1371eda8c3f8b99",
+        "sha256_in_prefix": "0a70736af1414e160ae3e82623d05a942ce8e894bdd26f91d1371eda8c3f8b99",
+        "size_in_bytes": 2197
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net_pts_offnetwork.shp",
+        "path_type": "hardlink",
+        "sha256": "a6e81b77f21439993f498a6b6664b4c858b1e52b0d34a57d2b0a560475ee9dd3",
+        "sha256_in_prefix": "a6e81b77f21439993f498a6b6664b4c858b1e52b0d34a57d2b0a560475ee9dd3",
+        "size_in_bytes": 2900
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net_pts_offnetwork.shx",
+        "path_type": "hardlink",
+        "sha256": "85c9e04fea096eeacf2da0ccc6883c494a5522bb67fdcb4aa92881c79d05534f",
+        "sha256_in_prefix": "85c9e04fea096eeacf2da0ccc6883c494a5522bb67fdcb4aa92881c79d05534f",
+        "size_in_bytes": 900
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net_pts_onnetwork.dbf",
+        "path_type": "hardlink",
+        "sha256": "ae7a029ddb1db0b1b4d5055b26ca048be5a396a1c0a434c7c9eaeb3b88887e88",
+        "sha256_in_prefix": "ae7a029ddb1db0b1b4d5055b26ca048be5a396a1c0a434c7c9eaeb3b88887e88",
+        "size_in_bytes": 1275
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net_pts_onnetwork.shp",
+        "path_type": "hardlink",
+        "sha256": "d02e0c15e7441163085d94a4bd3f1636ec0a5b4d973f77f5cf3834afb51c4509",
+        "sha256_in_prefix": "d02e0c15e7441163085d94a4bd3f1636ec0a5b4d973f77f5cf3834afb51c4509",
+        "size_in_bytes": 3180
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/eberly_net_pts_onnetwork.shx",
+        "path_type": "hardlink",
+        "sha256": "97dd6dd9950bff65f6e656eb84498fbc8c3282b91ecad0998fbf99bb8f46cac2",
+        "sha256_in_prefix": "97dd6dd9950bff65f6e656eb84498fbc8c3282b91ecad0998fbf99bb8f46cac2",
+        "size_in_bytes": 980
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/nonplanarsegments.dbf",
+        "path_type": "hardlink",
+        "sha256": "026d51d653dffa2e5a564f6dc42086cb505fec3ffeca276c0c16dfeb299239f6",
+        "sha256_in_prefix": "026d51d653dffa2e5a564f6dc42086cb505fec3ffeca276c0c16dfeb299239f6",
+        "size_in_bytes": 87
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/nonplanarsegments.prj",
+        "path_type": "hardlink",
+        "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "sha256_in_prefix": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "size_in_bytes": 143
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/nonplanarsegments.qpj",
+        "path_type": "hardlink",
+        "sha256": "1de411dcdeedce3219242306fc29bfa1d7fa08883e4ff6779baf798ec50d1657",
+        "sha256_in_prefix": "1de411dcdeedce3219242306fc29bfa1d7fa08883e4ff6779baf798ec50d1657",
+        "size_in_bytes": 257
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/nonplanarsegments.shp",
+        "path_type": "hardlink",
+        "sha256": "2c6ccb6e6c4e7999dfc329f1c529c507aee91e9ce6d4e90422a06061e3d88a65",
+        "sha256_in_prefix": "2c6ccb6e6c4e7999dfc329f1c529c507aee91e9ce6d4e90422a06061e3d88a65",
+        "size_in_bytes": 308
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/networks/nonplanarsegments.shx",
+        "path_type": "hardlink",
+        "sha256": "d347274519bb4affb69615ce2b3dcf12e23ba25c75b48fa1507e0592b5f25127",
+        "sha256_in_prefix": "d347274519bb4affb69615ce2b3dcf12e23ba25c75b48fa1507e0592b5f25127",
+        "size_in_bytes": 116
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/remotes.py",
+        "path_type": "hardlink",
+        "sha256": "581debe223121278af4350bc4df77dbf52837412b9a555951290e25a96304eb4",
+        "sha256_in_prefix": "581debe223121278af4350bc4df77dbf52837412b9a555951290e25a96304eb4",
+        "size_in_bytes": 27748
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/sids2/README.md",
+        "path_type": "hardlink",
+        "sha256": "35d14d978a53a7612b9fb3adae7027ebae1ac0db25f40b34f2c73034ada3a148",
+        "sha256_in_prefix": "35d14d978a53a7612b9fb3adae7027ebae1ac0db25f40b34f2c73034ada3a148",
+        "size_in_bytes": 455
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/sids2/sids2.dbf",
+        "path_type": "hardlink",
+        "sha256": "da02eb1a8416e008d20d6ddd615616ff283eece647875f64264d2d3b53076ef6",
+        "sha256_in_prefix": "da02eb1a8416e008d20d6ddd615616ff283eece647875f64264d2d3b53076ef6",
+        "size_in_bytes": 23810
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/sids2/sids2.gal",
+        "path_type": "hardlink",
+        "sha256": "25843f92c3cd91540a4781879d6dcd68f690afe6dbee23c83144234deeccd5ab",
+        "sha256_in_prefix": "25843f92c3cd91540a4781879d6dcd68f690afe6dbee23c83144234deeccd5ab",
+        "size_in_bytes": 3591
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/sids2/sids2.html",
+        "path_type": "hardlink",
+        "sha256": "c373c866d825ee7c78e2718533de92311fbbfb73575a55bdbb1fff6b820b25f4",
+        "sha256_in_prefix": "c373c866d825ee7c78e2718533de92311fbbfb73575a55bdbb1fff6b820b25f4",
+        "size_in_bytes": 2723
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/sids2/sids2.shp",
+        "path_type": "hardlink",
+        "sha256": "265f1b1f926e3f8a6067689d3e570b7a6ff451271c27ea555ee3d597a8bc0cf4",
+        "sha256_in_prefix": "265f1b1f926e3f8a6067689d3e570b7a6ff451271c27ea555ee3d597a8bc0cf4",
+        "size_in_bytes": 46196
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/sids2/sids2.shx",
+        "path_type": "hardlink",
+        "sha256": "fb620dca267a30f629ee9955c4f28bb9459310b8499b6113dc6015990df29e6c",
+        "sha256_in_prefix": "fb620dca267a30f629ee9955c4f28bb9459310b8499b6113dc6015990df29e6c",
+        "size_in_bytes": 900
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/sids2/sids2.swm",
+        "path_type": "hardlink",
+        "sha256": "b6f1028fb17a17d44f263daa80e313e55d5b512c2bc9775d4249f4751f815538",
+        "sha256_in_prefix": "b6f1028fb17a17d44f263daa80e313e55d5b512c2bc9775d4249f4751f815538",
+        "size_in_bytes": 7168
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/README.md",
+        "path_type": "hardlink",
+        "sha256": "ae0cea4307e7df42f63080c25953f7b2246399c17b1b1d3ceb07732d07e2b082",
+        "sha256_in_prefix": "ae0cea4307e7df42f63080c25953f7b2246399c17b1b1d3ceb07732d07e2b082",
+        "size_in_bytes": 1079
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoPeople.dbf",
+        "path_type": "hardlink",
+        "sha256": "c2b709031c31be332995779ab2d194fd69a32cd63da4cadae76b8b134001645d",
+        "sha256_in_prefix": "c2b709031c31be332995779ab2d194fd69a32cd63da4cadae76b8b134001645d",
+        "size_in_bytes": 3662
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoPeople.prj",
+        "path_type": "hardlink",
+        "sha256": "f2e7fb14d55bdd8d6a3bc2c272a48729d8f9d0ad72936e20eae6a9a81c2fccd0",
+        "sha256_in_prefix": "f2e7fb14d55bdd8d6a3bc2c272a48729d8f9d0ad72936e20eae6a9a81c2fccd0",
+        "size_in_bytes": 425
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoPeople.sbn",
+        "path_type": "hardlink",
+        "sha256": "f059b731e772b6e5cf3b27e369347fe00a8268931f269e9907f60ca68c51567c",
+        "sha256_in_prefix": "f059b731e772b6e5cf3b27e369347fe00a8268931f269e9907f60ca68c51567c",
+        "size_in_bytes": 3460
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoPeople.sbx",
+        "path_type": "hardlink",
+        "sha256": "74e741c2e441be7dfc5ec2064f318ae1678efa98e5c6d48e9851c8dc9daa1c4f",
+        "sha256_in_prefix": "74e741c2e441be7dfc5ec2064f318ae1678efa98e5c6d48e9851c8dc9daa1c4f",
+        "size_in_bytes": 380
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoPeople.shp",
+        "path_type": "hardlink",
+        "sha256": "7c3fe6db8e0e49ebc61a3a87c4783167edefb53c56c5dbc869c12b6fa5a24a0c",
+        "sha256_in_prefix": "7c3fe6db8e0e49ebc61a3a87c4783167edefb53c56c5dbc869c12b6fa5a24a0c",
+        "size_in_bytes": 9172
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoPeople.shx",
+        "path_type": "hardlink",
+        "sha256": "33b87e44e9035b4ef0063cd31cf287aa766be6dfb7a2c6eb57b21b5afb8efc87",
+        "sha256_in_prefix": "33b87e44e9035b4ef0063cd31cf287aa766be6dfb7a2c6eb57b21b5afb8efc87",
+        "size_in_bytes": 2692
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoWater.dbf",
+        "path_type": "hardlink",
+        "sha256": "74a3f3afc3a0b9c8a0239f4389c6097dd30056202ad2320be800bf66d3a7cb85",
+        "sha256_in_prefix": "74a3f3afc3a0b9c8a0239f4389c6097dd30056202ad2320be800bf66d3a7cb85",
+        "size_in_bytes": 157
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoWater.prj",
+        "path_type": "hardlink",
+        "sha256": "f2e7fb14d55bdd8d6a3bc2c272a48729d8f9d0ad72936e20eae6a9a81c2fccd0",
+        "sha256_in_prefix": "f2e7fb14d55bdd8d6a3bc2c272a48729d8f9d0ad72936e20eae6a9a81c2fccd0",
+        "size_in_bytes": 425
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoWater.sbn",
+        "path_type": "hardlink",
+        "sha256": "b483a0e235637718e8fc381909d620f6c13a4c86c57940ad6a039a00940422ba",
+        "sha256_in_prefix": "b483a0e235637718e8fc381909d620f6c13a4c86c57940ad6a039a00940422ba",
+        "size_in_bytes": 252
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoWater.sbx",
+        "path_type": "hardlink",
+        "sha256": "b4228b9d65d4e36b6efa9cff09c970a8f606a506c75ef8170e39567cb88059cd",
+        "sha256_in_prefix": "b4228b9d65d4e36b6efa9cff09c970a8f606a506c75ef8170e39567cb88059cd",
+        "size_in_bytes": 124
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoWater.shp",
+        "path_type": "hardlink",
+        "sha256": "3f4fc3f6a702cce87d0c1f518fe479a9c7c45420aa2d40d6fce49b3ef376ff65",
+        "sha256_in_prefix": "3f4fc3f6a702cce87d0c1f518fe479a9c7c45420aa2d40d6fce49b3ef376ff65",
+        "size_in_bytes": 464
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/SohoWater.shx",
+        "path_type": "hardlink",
+        "sha256": "84f5cbf101fcf8a6cd22125d4909d042a8c2b972bb9a10f427fc0a9412172541",
+        "sha256_in_prefix": "84f5cbf101fcf8a6cd22125d4909d042a8c2b972bb9a10f427fc0a9412172541",
+        "size_in_bytes": 204
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/Soho_Network.dbf",
+        "path_type": "hardlink",
+        "sha256": "178bca4499bbfe5c9cdbdeceebf47dee61070074cf7b886cce2f0cf96dc6e706",
+        "sha256_in_prefix": "178bca4499bbfe5c9cdbdeceebf47dee61070074cf7b886cce2f0cf96dc6e706",
+        "size_in_bytes": 892
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/Soho_Network.prj",
+        "path_type": "hardlink",
+        "sha256": "f2e7fb14d55bdd8d6a3bc2c272a48729d8f9d0ad72936e20eae6a9a81c2fccd0",
+        "sha256_in_prefix": "f2e7fb14d55bdd8d6a3bc2c272a48729d8f9d0ad72936e20eae6a9a81c2fccd0",
+        "size_in_bytes": 425
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/Soho_Network.sbn",
+        "path_type": "hardlink",
+        "sha256": "20c63eebaecf68aa2db09275b95494e9c2f45ca057aef02980f1a6605c8d0d43",
+        "sha256_in_prefix": "20c63eebaecf68aa2db09275b95494e9c2f45ca057aef02980f1a6605c8d0d43",
+        "size_in_bytes": 1292
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/Soho_Network.sbx",
+        "path_type": "hardlink",
+        "sha256": "01c537404e7c5b87e6102c87b904de5bcec45d0ce943855585f65da3dcd93538",
+        "sha256_in_prefix": "01c537404e7c5b87e6102c87b904de5bcec45d0ce943855585f65da3dcd93538",
+        "size_in_bytes": 228
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/Soho_Network.shp",
+        "path_type": "hardlink",
+        "sha256": "73979b6b3186fc5fa5eb3b6e31f9f9e7f5e3f8b7ed8857098422a1d9adda68bd",
+        "sha256_in_prefix": "73979b6b3186fc5fa5eb3b6e31f9f9e7f5e3f8b7ed8857098422a1d9adda68bd",
+        "size_in_bytes": 11620
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/snow_maps/Soho_Network.shx",
+        "path_type": "hardlink",
+        "sha256": "29d687ca3076e40daf223b2cac7f130215f7a0602f26fc577e14b43a4e69063f",
+        "sha256_in_prefix": "29d687ca3076e40daf223b2cac7f130215f7a0602f26fc577e14b43a4e69063f",
+        "size_in_bytes": 1044
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/stl/README.md",
+        "path_type": "hardlink",
+        "sha256": "9a250ca2e0eb3c15b933d802f8099398bbbcdcdc83b1dcc21f1c3cc60b20ea4e",
+        "sha256_in_prefix": "9a250ca2e0eb3c15b933d802f8099398bbbcdcdc83b1dcc21f1c3cc60b20ea4e",
+        "size_in_bytes": 981
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/stl/stl.gal",
+        "path_type": "hardlink",
+        "sha256": "b40fb7c8a36fed65c3b87ae404a47915183b4bb8fbdd9f8de5739c4c1534fb24",
+        "sha256_in_prefix": "b40fb7c8a36fed65c3b87ae404a47915183b4bb8fbdd9f8de5739c4c1534fb24",
+        "size_in_bytes": 1538
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.csv",
+        "path_type": "hardlink",
+        "sha256": "b72d1e1c85d197d5b72e57fca68ef2967643dc7ec2c8c97747600fdbf623dff6",
+        "sha256_in_prefix": "b72d1e1c85d197d5b72e57fca68ef2967643dc7ec2c8c97747600fdbf623dff6",
+        "size_in_bytes": 76200
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.dbf",
+        "path_type": "hardlink",
+        "sha256": "e1e59b339f3cac09a463e23f14fe99aa96651177aa912b1c2376d03f0c1dd96b",
+        "sha256_in_prefix": "e1e59b339f3cac09a463e23f14fe99aa96651177aa912b1c2376d03f0c1dd96b",
+        "size_in_bytes": 23280
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.html",
+        "path_type": "hardlink",
+        "sha256": "28f87886a11ab850ec0fff9467eeb120267fc258c5d360ddb644839654105c60",
+        "sha256_in_prefix": "28f87886a11ab850ec0fff9467eeb120267fc258c5d360ddb644839654105c60",
+        "size_in_bytes": 3258
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.shp",
+        "path_type": "hardlink",
+        "sha256": "9b34acc6779fe1c7679db2a1070fb29429bcc34ca7152b96a4ef52780c558be8",
+        "sha256_in_prefix": "9b34acc6779fe1c7679db2a1070fb29429bcc34ca7152b96a4ef52780c558be8",
+        "size_in_bytes": 28276
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.shx",
+        "path_type": "hardlink",
+        "sha256": "0107ed0bca62132ed4e245573ce8588d9042938cbcf9ff8c37e872d7124a175f",
+        "sha256_in_prefix": "0107ed0bca62132ed4e245573ce8588d9042938cbcf9ff8c37e872d7124a175f",
+        "size_in_bytes": 724
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.txt",
+        "path_type": "hardlink",
+        "sha256": "51f2902bd92a993bed732bc43964ea1482560d5a92bd84e7d3ff9399ae1d9f3d",
+        "sha256_in_prefix": "51f2902bd92a993bed732bc43964ea1482560d5a92bd84e7d3ff9399ae1d9f3d",
+        "size_in_bytes": 2000
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom.wkt",
+        "path_type": "hardlink",
+        "sha256": "873659ae4c64b6e9fd0e7e0de9a96043064f1c54a360cb74b24dd8cf6a3c6edb",
+        "sha256_in_prefix": "873659ae4c64b6e9fd0e7e0de9a96043064f1c54a360cb74b24dd8cf6a3c6edb",
+        "size_in_bytes": 58430
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/stl/stl_hom_rook.gal",
+        "path_type": "hardlink",
+        "sha256": "05658c5669e0e130d364ccbb10612b9120430f37bc6fda9168f9c21f61afddf6",
+        "sha256_in_prefix": "05658c5669e0e130d364ccbb10612b9120430f37bc6fda9168f9c21f61afddf6",
+        "size_in_bytes": 1559
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/street_net_pts/README.md",
+        "path_type": "hardlink",
+        "sha256": "61fd056a0efd2f4cf0d657a927103cbb075e6df25b87fc3688ab2713f0b75da6",
+        "sha256_in_prefix": "61fd056a0efd2f4cf0d657a927103cbb075e6df25b87fc3688ab2713f0b75da6",
+        "size_in_bytes": 292
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/street_net_pts/street_net_pts.dbf",
+        "path_type": "hardlink",
+        "sha256": "4e764a32b59abe7e013c9c592c73468b3469a89d49d9e1d580acf07e1cb61a24",
+        "sha256_in_prefix": "4e764a32b59abe7e013c9c592c73468b3469a89d49d9e1d580acf07e1cb61a24",
+        "size_in_bytes": 3398
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/street_net_pts/street_net_pts.prj",
+        "path_type": "hardlink",
+        "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "sha256_in_prefix": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "size_in_bytes": 143
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/street_net_pts/street_net_pts.qpj",
+        "path_type": "hardlink",
+        "sha256": "1de411dcdeedce3219242306fc29bfa1d7fa08883e4ff6779baf798ec50d1657",
+        "sha256_in_prefix": "1de411dcdeedce3219242306fc29bfa1d7fa08883e4ff6779baf798ec50d1657",
+        "size_in_bytes": 257
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/street_net_pts/street_net_pts.shp",
+        "path_type": "hardlink",
+        "sha256": "b6623ccccd35a37fb6223781f8c5a1e06b12b052b7e41f354e793cc91729b697",
+        "sha256_in_prefix": "b6623ccccd35a37fb6223781f8c5a1e06b12b052b7e41f354e793cc91729b697",
+        "size_in_bytes": 8584
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/street_net_pts/street_net_pts.shx",
+        "path_type": "hardlink",
+        "sha256": "50078ec94b57efb9e4bb87452f8c9702e3f55912453f640c0bc8d621ca26bd81",
+        "sha256_in_prefix": "50078ec94b57efb9e4bb87452f8c9702e3f55912453f640c0bc8d621ca26bd81",
+        "size_in_bytes": 2524
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tests/test_available.py",
+        "path_type": "hardlink",
+        "sha256": "328fe38974f1618fed12e50faac814e170e640409ea6c07a26c70657c1cf919b",
+        "sha256_in_prefix": "328fe38974f1618fed12e50faac814e170e640409ea6c07a26c70657c1cf919b",
+        "size_in_bytes": 2422
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/README.md",
+        "path_type": "hardlink",
+        "sha256": "1a2d58de3c2f1e54967aaa4591e267f26fdd87e9f4dd727187c250e8ccf9b34d",
+        "sha256_in_prefix": "1a2d58de3c2f1e54967aaa4591e267f26fdd87e9f4dd727187c250e8ccf9b34d",
+        "size_in_bytes": 1516
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/Readme_tokyomortality.txt",
+        "path_type": "hardlink",
+        "sha256": "05f113ff33b90dc55683be47942403e4f740d9fa427636ea2555af230b48f793",
+        "sha256_in_prefix": "05f113ff33b90dc55683be47942403e4f740d9fa427636ea2555af230b48f793",
+        "size_in_bytes": 1693
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/SampleTokyoMortalityGWPR.ctl",
+        "path_type": "hardlink",
+        "sha256": "1fdf5158908283473be83b956eebc892c6bd322d29c53b509eef9da5a7943bda",
+        "sha256_in_prefix": "1fdf5158908283473be83b956eebc892c6bd322d29c53b509eef9da5a7943bda",
+        "size_in_bytes": 732
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/Tokyomortality.csv",
+        "path_type": "hardlink",
+        "sha256": "a68b83f5dc1268a1a967eb0ea7114a64adeab7b8241152ab5a3dfc0312e9a504",
+        "sha256_in_prefix": "a68b83f5dc1268a1a967eb0ea7114a64adeab7b8241152ab5a3dfc0312e9a504",
+        "size_in_bytes": 15066
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/Tokyomortality.txt",
+        "path_type": "hardlink",
+        "sha256": "7e00ce4e30fa04f928ece5f3069865bcfda3a3562fece4f2072822c71cab36dc",
+        "sha256_in_prefix": "7e00ce4e30fa04f928ece5f3069865bcfda3a3562fece4f2072822c71cab36dc",
+        "size_in_bytes": 21038
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_F.ctl",
+        "path_type": "hardlink",
+        "sha256": "5c6ce0fd761fe971442d84b7348002c5c576c40d41b75ddbf523950416d6d401",
+        "sha256_in_prefix": "5c6ce0fd761fe971442d84b7348002c5c576c40d41b75ddbf523950416d6d401",
+        "size_in_bytes": 775
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_F_listwise.csv",
+        "path_type": "hardlink",
+        "sha256": "9b251b832fba530aa4b5bed241cff82c1c38c0f0697e19952d9a661cd9dbeb2b",
+        "sha256_in_prefix": "9b251b832fba530aa4b5bed241cff82c1c38c0f0697e19952d9a661cd9dbeb2b",
+        "size_in_bytes": 98169
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_F_summary.txt",
+        "path_type": "hardlink",
+        "sha256": "a7443303c43a420d0efc51d10afeb9b92f89bad032fd55e667de2b6dbe68d806",
+        "sha256_in_prefix": "a7443303c43a420d0efc51d10afeb9b92f89bad032fd55e667de2b6dbe68d806",
+        "size_in_bytes": 10202
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_NN.ctl",
+        "path_type": "hardlink",
+        "sha256": "917e88a412a80950ef05a48ec4b32bab576ba89f18cc97d8a6224346d54ba6f7",
+        "sha256_in_prefix": "917e88a412a80950ef05a48ec4b32bab576ba89f18cc97d8a6224346d54ba6f7",
+        "size_in_bytes": 777
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_NN_OFF.ctl",
+        "path_type": "hardlink",
+        "sha256": "4a13a41c82b9451d533ea042a4d3182d7af97263b26dbef7809dc67ad0ca639c",
+        "sha256_in_prefix": "4a13a41c82b9451d533ea042a4d3182d7af97263b26dbef7809dc67ad0ca639c",
+        "size_in_bytes": 781
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_NN_OFF_listwise.csv",
+        "path_type": "hardlink",
+        "sha256": "208f7e542efe257cc351a22bcc800daf3b52f61d9a37f2381ab114eea90f8bcf",
+        "sha256_in_prefix": "208f7e542efe257cc351a22bcc800daf3b52f61d9a37f2381ab114eea90f8bcf",
+        "size_in_bytes": 98169
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_NN_OFF_summary.txt",
+        "path_type": "hardlink",
+        "sha256": "a275c70fc61fa9fb6f864fa0d1171ff1e0ff83e7872ebd63a835ec187bc74c03",
+        "sha256_in_prefix": "a275c70fc61fa9fb6f864fa0d1171ff1e0ff83e7872ebd63a835ec187bc74c03",
+        "size_in_bytes": 7813
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_NN_listwise.csv",
+        "path_type": "hardlink",
+        "sha256": "6d7594b65c6486c13cb88da0f504a415f1d572bf6013993559121ea6b587dbfc",
+        "sha256_in_prefix": "6d7594b65c6486c13cb88da0f504a415f1d572bf6013993559121ea6b587dbfc",
+        "size_in_bytes": 98169
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_BS_NN_summary.txt",
+        "path_type": "hardlink",
+        "sha256": "3d37238d52296da214724de692b85cf9581ef1311c26b094238b91dacf43234b",
+        "sha256_in_prefix": "3d37238d52296da214724de692b85cf9581ef1311c26b094238b91dacf43234b",
+        "size_in_bytes": 8581
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_GS_F.ctl",
+        "path_type": "hardlink",
+        "sha256": "45a6cbddd7df45b492c5b89509d644f58aa534359ded14f405aebf41693a8d57",
+        "sha256_in_prefix": "45a6cbddd7df45b492c5b89509d644f58aa534359ded14f405aebf41693a8d57",
+        "size_in_bytes": 775
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_GS_F_listwise.csv",
+        "path_type": "hardlink",
+        "sha256": "4b8aa7f0e2af467a6e0b1153e36148291a1fa2c6b867b9cdeb4eae4fa0e66bd5",
+        "sha256_in_prefix": "4b8aa7f0e2af467a6e0b1153e36148291a1fa2c6b867b9cdeb4eae4fa0e66bd5",
+        "size_in_bytes": 98169
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_GS_F_summary.txt",
+        "path_type": "hardlink",
+        "sha256": "fb3c65c78f72e21b249ccee391b28224b10515bbfe73b1787f10a19848170e4f",
+        "sha256_in_prefix": "fb3c65c78f72e21b249ccee391b28224b10515bbfe73b1787f10a19848170e4f",
+        "size_in_bytes": 10200
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_GS_NN.ctl",
+        "path_type": "hardlink",
+        "sha256": "fb1371d51629d058a6381e96380b3b45e247da6a0c6683966a2d8e29ff67a67f",
+        "sha256_in_prefix": "fb1371d51629d058a6381e96380b3b45e247da6a0c6683966a2d8e29ff67a67f",
+        "size_in_bytes": 777
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_GS_NN_listwise.csv",
+        "path_type": "hardlink",
+        "sha256": "5ca65ce55744d1c0b01e66254d56647f978e771c92a62f12edee9c1dae361b7a",
+        "sha256_in_prefix": "5ca65ce55744d1c0b01e66254d56647f978e771c92a62f12edee9c1dae361b7a",
+        "size_in_bytes": 98169
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyo_GS_NN_summary.txt",
+        "path_type": "hardlink",
+        "sha256": "0d835f5ccb62ffdf04267d2a88f5ef1268cb0c780c4c368a6c886ac571854f05",
+        "sha256_in_prefix": "0d835f5ccb62ffdf04267d2a88f5ef1268cb0c780c4c368a6c886ac571854f05",
+        "size_in_bytes": 8580
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyomet262.dbf",
+        "path_type": "hardlink",
+        "sha256": "c3fcf64f86ee8bbea74dd80748bbb5f5fdfae9bf0bdfd3d2ee3c9a8b3c4efa47",
+        "sha256_in_prefix": "c3fcf64f86ee8bbea74dd80748bbb5f5fdfae9bf0bdfd3d2ee3c9a8b3c4efa47",
+        "size_in_bytes": 8514
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyomet262.prj",
+        "path_type": "hardlink",
+        "sha256": "32bc825d0c2cf98dd21c1c887d21480ad3271e701f0851d75588812fe158cc38",
+        "sha256_in_prefix": "32bc825d0c2cf98dd21c1c887d21480ad3271e701f0851d75588812fe158cc38",
+        "size_in_bytes": 386
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyomet262.shp",
+        "path_type": "hardlink",
+        "sha256": "a4833aef60f45bd987944664523bc7f2ba085b00425d3f3573045cdb32311526",
+        "sha256_in_prefix": "a4833aef60f45bd987944664523bc7f2ba085b00425d3f3573045cdb32311526",
+        "size_in_bytes": 184536
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyomet262.shp.xml",
+        "path_type": "hardlink",
+        "sha256": "234935f0dbc9a25b3c32e73c06f0f772f82d0f8012339d4e0e44922b151ae4fa",
+        "sha256_in_prefix": "234935f0dbc9a25b3c32e73c06f0f772f82d0f8012339d4e0e44922b151ae4fa",
+        "size_in_bytes": 877
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/tokyo/tokyomet262.shx",
+        "path_type": "hardlink",
+        "sha256": "a2143957a1e5336e2cca87db2f6f132ef9258a0131d15d9ed0851e2d4f400437",
+        "sha256_in_prefix": "a2143957a1e5336e2cca87db2f6f132ef9258a0131d15d9ed0851e2d4f400437",
+        "size_in_bytes": 2196
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/us_income/README.md",
+        "path_type": "hardlink",
+        "sha256": "2286f26c4763eebdedcd91df2617ee2ce262c4be075ae560cc322261476e861a",
+        "sha256_in_prefix": "2286f26c4763eebdedcd91df2617ee2ce262c4be075ae560cc322261476e861a",
+        "size_in_bytes": 527
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/us_income/spi_download.csv",
+        "path_type": "hardlink",
+        "sha256": "4462eef2fd062d8e63886c83c3d1cd39a07abbc817624be608489c80c6d1d63c",
+        "sha256_in_prefix": "4462eef2fd062d8e63886c83c3d1cd39a07abbc817624be608489c80c6d1d63c",
+        "size_in_bytes": 18239
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/us_income/states48.gal",
+        "path_type": "hardlink",
+        "sha256": "08ee593424c543ac39a1279374d37eef4819625ca953771ecd9d16db505d3b9f",
+        "sha256_in_prefix": "08ee593424c543ac39a1279374d37eef4819625ca953771ecd9d16db505d3b9f",
+        "size_in_bytes": 831
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/us_income/us48.dbf",
+        "path_type": "hardlink",
+        "sha256": "12565d0d18706aad5841817c2228781f32e9b093ff8bf3e426101dfab7219fe3",
+        "sha256_in_prefix": "12565d0d18706aad5841817c2228781f32e9b093ff8bf3e426101dfab7219fe3",
+        "size_in_bytes": 4274
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/us_income/us48.shp",
+        "path_type": "hardlink",
+        "sha256": "041a6f67137b217a048238a8c2d6badfc3dcebfde4f98cbd923b409e25e30a28",
+        "sha256_in_prefix": "041a6f67137b217a048238a8c2d6badfc3dcebfde4f98cbd923b409e25e30a28",
+        "size_in_bytes": 186476
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/us_income/us48.shx",
+        "path_type": "hardlink",
+        "sha256": "1d75422bdcb6d8afb7294d3c6689d4e77e417754233f8919136365f44dc9497e",
+        "sha256_in_prefix": "1d75422bdcb6d8afb7294d3c6689d4e77e417754233f8919136365f44dc9497e",
+        "size_in_bytes": 484
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/us_income/usjoin.csv",
+        "path_type": "hardlink",
+        "sha256": "01566698b83366c27193ba6cc9d844f92d7c0a1a5dd4b9348aa46935dc9160d8",
+        "sha256_in_prefix": "01566698b83366c27193ba6cc9d844f92d7c0a1a5dd4b9348aa46935dc9160d8",
+        "size_in_bytes": 21197
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/README.md",
+        "path_type": "hardlink",
+        "sha256": "6daff76d09f857f2a04df16fb774d1deb730e984f33dfb14b525e96ccd589b5f",
+        "sha256_in_prefix": "6daff76d09f857f2a04df16fb774d1deb730e984f33dfb14b525e96ccd589b5f",
+        "size_in_bytes": 928
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n.dbf",
+        "path_type": "hardlink",
+        "sha256": "48b8c1e229638581af6085270076077cf3185d7f866c3ba3a4a884513d2fa1cd",
+        "sha256_in_prefix": "48b8c1e229638581af6085270076077cf3185d7f866c3ba3a4a884513d2fa1cd",
+        "size_in_bytes": 11409
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n.prj",
+        "path_type": "hardlink",
+        "sha256": "4f67de70ae9b78e4183de4f97428738d3e1810be86e937bb182c007d378633f1",
+        "sha256_in_prefix": "4f67de70ae9b78e4183de4f97428738d3e1810be86e937bb182c007d378633f1",
+        "size_in_bytes": 390
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n.qpj",
+        "path_type": "hardlink",
+        "sha256": "dd325a0392ee6cdb44d105528b540e8b93118bf91850a2c9384cbd9f23c3b69e",
+        "sha256_in_prefix": "dd325a0392ee6cdb44d105528b540e8b93118bf91850a2c9384cbd9f23c3b69e",
+        "size_in_bytes": 599
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n.shp",
+        "path_type": "hardlink",
+        "sha256": "da3a5dabdbcbafef4ccb67f1fc38f2f22362fcee1d298c4c1d4161fce39506a9",
+        "sha256_in_prefix": "da3a5dabdbcbafef4ccb67f1fc38f2f22362fcee1d298c4c1d4161fce39506a9",
+        "size_in_bytes": 71416
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n.shx",
+        "path_type": "hardlink",
+        "sha256": "a6e6a10b036b7d0a6ed768110336ac0bdc2943f5fa13c7030bd040304f3206ad",
+        "sha256_in_prefix": "a6e6a10b036b7d0a6ed768110336ac0bdc2943f5fa13c7030bd040304f3206ad",
+        "size_in_bytes": 1188
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n_points.dbf",
+        "path_type": "hardlink",
+        "sha256": "56810f69de55140512554d855e770d93258810914faa304a82f3d2220d4f1526",
+        "sha256_in_prefix": "56810f69de55140512554d855e770d93258810914faa304a82f3d2220d4f1526",
+        "size_in_bytes": 2265
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n_points.prj",
+        "path_type": "hardlink",
+        "sha256": "4f67de70ae9b78e4183de4f97428738d3e1810be86e937bb182c007d378633f1",
+        "sha256_in_prefix": "4f67de70ae9b78e4183de4f97428738d3e1810be86e937bb182c007d378633f1",
+        "size_in_bytes": 390
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n_points.qpj",
+        "path_type": "hardlink",
+        "sha256": "dd325a0392ee6cdb44d105528b540e8b93118bf91850a2c9384cbd9f23c3b69e",
+        "sha256_in_prefix": "dd325a0392ee6cdb44d105528b540e8b93118bf91850a2c9384cbd9f23c3b69e",
+        "size_in_bytes": 599
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n_points.shp",
+        "path_type": "hardlink",
+        "sha256": "496a7e21fdd414747c19bb4c484c8ee4c36911cf16878bf747e793181e8f0065",
+        "sha256_in_prefix": "496a7e21fdd414747c19bb4c484c8ee4c36911cf16878bf747e793181e8f0065",
+        "size_in_bytes": 5700
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/vautm17n_points.shx",
+        "path_type": "hardlink",
+        "sha256": "20608bd2bb85102fb8b4942c00787a55a11d09951ce48cd68a1fbc45cf24be65",
+        "sha256_in_prefix": "20608bd2bb85102fb8b4942c00787a55a11d09951ce48cd68a1fbc45cf24be65",
+        "size_in_bytes": 1700
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia.dbf",
+        "path_type": "hardlink",
+        "sha256": "2639d5654672eb65d4699fb1aadfa53bd78e31d5a976ace131721dbadbf09b98",
+        "sha256_in_prefix": "2639d5654672eb65d4699fb1aadfa53bd78e31d5a976ace131721dbadbf09b98",
+        "size_in_bytes": 11410
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia.gal",
+        "path_type": "hardlink",
+        "sha256": "ed23926636cb302c10bcafff403f22d991ba13f4a7a81160d469de54fe5a55f9",
+        "sha256_in_prefix": "ed23926636cb302c10bcafff403f22d991ba13f4a7a81160d469de54fe5a55f9",
+        "size_in_bytes": 2585
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia.json",
+        "path_type": "hardlink",
+        "sha256": "12d55bbe3be143b4e6583981a85421fef3886a55018e1c2092c6125f793e5169",
+        "sha256_in_prefix": "12d55bbe3be143b4e6583981a85421fef3886a55018e1c2092c6125f793e5169",
+        "size_in_bytes": 210300
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia.prj",
+        "path_type": "hardlink",
+        "sha256": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "sha256_in_prefix": "98aaf3d1c0ecadf1a424a4536de261c3daf4e373697cb86c40c43b989daf52eb",
+        "size_in_bytes": 143
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia.shp",
+        "path_type": "hardlink",
+        "sha256": "f5d14f9c9b8a0341a02394939ed39da235a7da00561316af8847908afc37987b",
+        "sha256_in_prefix": "f5d14f9c9b8a0341a02394939ed39da235a7da00561316af8847908afc37987b",
+        "size_in_bytes": 71416
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia.shx",
+        "path_type": "hardlink",
+        "sha256": "f989200564dff502131fc5a448a843392e832e06529557f22d443545146620c6",
+        "sha256_in_prefix": "f989200564dff502131fc5a448a843392e832e06529557f22d443545146620c6",
+        "size_in_bytes": 1188
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.dat",
+        "path_type": "hardlink",
+        "sha256": "db20eb6c55ccda07694729e541ae7ffe99f6323cf9cafed61ef3b19abc071d8e",
+        "sha256_in_prefix": "db20eb6c55ccda07694729e541ae7ffe99f6323cf9cafed61ef3b19abc071d8e",
+        "size_in_bytes": 11134
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.dbf",
+        "path_type": "hardlink",
+        "sha256": "363c9d8be5b6fd6a99db9590d09a769c5ae98dc86696127a7d4ea0db7d607d0c",
+        "sha256_in_prefix": "363c9d8be5b6fd6a99db9590d09a769c5ae98dc86696127a7d4ea0db7d607d0c",
+        "size_in_bytes": 11850
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.gal",
+        "path_type": "hardlink",
+        "sha256": "8a122847a94fe219d257d19887c699a877c9e2a12ba9d19d3108e5061723d6da",
+        "sha256_in_prefix": "8a122847a94fe219d257d19887c699a877c9e2a12ba9d19d3108e5061723d6da",
+        "size_in_bytes": 4609
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.mat",
+        "path_type": "hardlink",
+        "sha256": "3f04ddb1dd81df9a2a8f8eb237f673205b8702fd207a13a95dabcd05290c2a5b",
+        "sha256_in_prefix": "3f04ddb1dd81df9a2a8f8eb237f673205b8702fd207a13a95dabcd05290c2a5b",
+        "size_in_bytes": 148160
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.mtx",
+        "path_type": "hardlink",
+        "sha256": "a7ccd25a99f5e705cd6bbc2d889994beb4c0c71418a45737d1853615d449df73",
+        "sha256_in_prefix": "a7ccd25a99f5e705cd6bbc2d889994beb4c0c71418a45737d1853615d449df73",
+        "size_in_bytes": 4956
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.swm",
+        "path_type": "hardlink",
+        "sha256": "f045e966fee502968731e7e4765ff852349acad2d4cc181a8056ec9f499fe0a1",
+        "sha256_in_prefix": "f045e966fee502968731e7e4765ff852349acad2d4cc181a8056ec9f499fe0a1",
+        "size_in_bytes": 9232
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.txt",
+        "path_type": "hardlink",
+        "sha256": "6743dd0d768f2f63b12b1303bca0dd8111af15cca1e5b0bb17cf130f69abc9b6",
+        "sha256_in_prefix": "6743dd0d768f2f63b12b1303bca0dd8111af15cca1e5b0bb17cf130f69abc9b6",
+        "size_in_bytes": 74804
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_queen.wk1",
+        "path_type": "hardlink",
+        "sha256": "6ca3ba9d599e350fa69e103fa37a0052327a14c54f9acb1f413d472090faa4b2",
+        "sha256_in_prefix": "6ca3ba9d599e350fa69e103fa37a0052327a14c54f9acb1f413d472090faa4b2",
+        "size_in_bytes": 314585
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/virginia/virginia_rook.gal",
+        "path_type": "hardlink",
+        "sha256": "ab566a2646e91d41321a60c38b350a8ec075474505ee1dc9efb10fbd154279a9",
+        "sha256_in_prefix": "ab566a2646e91d41321a60c38b350a8ec075474505ee1dc9efb10fbd154279a9",
+        "size_in_bytes": 2545
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/README.md",
+        "path_type": "hardlink",
+        "sha256": "cdcb87337655b65c478d92e06d9218b1ab10fcc56a335e5805a5322f69bd99f6",
+        "sha256_in_prefix": "cdcb87337655b65c478d92e06d9218b1ab10fcc56a335e5805a5322f69bd99f6",
+        "size_in_bytes": 848
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/geobugs_scot",
+        "path_type": "hardlink",
+        "sha256": "4f6344903c617ecc78f22c4f6b8437fa56c7255058271b2d2351f052e6f7d1d0",
+        "sha256_in_prefix": "4f6344903c617ecc78f22c4f6b8437fa56c7255058271b2d2351f052e6f7d1d0",
+        "size_in_bytes": 1188
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/lattice10x10.shp",
+        "path_type": "hardlink",
+        "sha256": "ef870cf878db06899eb35104795800e213259ee0967ca9132908eb9b0fba6f1e",
+        "sha256_in_prefix": "ef870cf878db06899eb35104795800e213259ee0967ca9132908eb9b0fba6f1e",
+        "size_in_bytes": 13700
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/lattice10x10.shx",
+        "path_type": "hardlink",
+        "sha256": "b2f5afbff9261ee9879c522fd94e36ac790c7a28fe97e78c0bef6d09d8a8f693",
+        "sha256_in_prefix": "b2f5afbff9261ee9879c522fd94e36ac790c7a28fe97e78c0bef6d09d8a8f693",
+        "size_in_bytes": 900
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/ohio.swm",
+        "path_type": "hardlink",
+        "sha256": "d467a3fa5fd50f4d506ce3476471eff432088ea7b70a7d42a22ce69bb29e8be7",
+        "sha256_in_prefix": "d467a3fa5fd50f4d506ce3476471eff432088ea7b70a7d42a22ce69bb29e8be7",
+        "size_in_bytes": 6978
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/rook31.dbf",
+        "path_type": "hardlink",
+        "sha256": "672bec010c7b14f03cfcd817e85aa000ba67d0cf5c3d385b9c8474d3866397c5",
+        "sha256_in_prefix": "672bec010c7b14f03cfcd817e85aa000ba67d0cf5c3d385b9c8474d3866397c5",
+        "size_in_bytes": 161
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/rook31.gal",
+        "path_type": "hardlink",
+        "sha256": "7dfee02e58071f806adf8f41c91aadeb519566be841d3182257176e5b94d11ab",
+        "sha256_in_prefix": "7dfee02e58071f806adf8f41c91aadeb519566be841d3182257176e5b94d11ab",
+        "size_in_bytes": 39
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/rook31.shp",
+        "path_type": "hardlink",
+        "sha256": "636523ea5644ff6ceea520d9bdc160ac9dd581a34db19be25a155cf74cf1de99",
+        "sha256_in_prefix": "636523ea5644ff6ceea520d9bdc160ac9dd581a34db19be25a155cf74cf1de99",
+        "size_in_bytes": 556
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/rook31.shx",
+        "path_type": "hardlink",
+        "sha256": "ebd0affb323d6ff4f717eb550558cff77111c0a98fe842c78f964b7057b8c201",
+        "sha256_in_prefix": "ebd0affb323d6ff4f717eb550558cff77111c0a98fe842c78f964b7057b8c201",
+        "size_in_bytes": 124
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/spat-sym-us.mat",
+        "path_type": "hardlink",
+        "sha256": "12da23361a29f6399cd493398b2c00bdd525a1f53531230c9a561a000770d626",
+        "sha256_in_prefix": "12da23361a29f6399cd493398b2c00bdd525a1f53531230c9a561a000770d626",
+        "size_in_bytes": 416
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/spat-sym-us.wk1",
+        "path_type": "hardlink",
+        "sha256": "689d39977077c3e67b613b227859512605755f4efd40737305fb76e61c384668",
+        "sha256_in_prefix": "689d39977077c3e67b613b227859512605755f4efd40737305fb76e61c384668",
+        "size_in_bytes": 2221
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/spdep_listw2WB_columbus",
+        "path_type": "hardlink",
+        "sha256": "1efd80b00f6d8ba94233184e4903966634eed98e55dfeca62f84392cb25c4404",
+        "sha256_in_prefix": "1efd80b00f6d8ba94233184e4903966634eed98e55dfeca62f84392cb25c4404",
+        "size_in_bytes": 4103
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/stata_full.txt",
+        "path_type": "hardlink",
+        "sha256": "5c49d564e1176f595d30d7b9d379c8e04ba0d17e3354ebbf8c0a7d512cb60f6e",
+        "sha256_in_prefix": "5c49d564e1176f595d30d7b9d379c8e04ba0d17e3354ebbf8c0a7d512cb60f6e",
+        "size_in_bytes": 7106
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/stata_sparse.txt",
+        "path_type": "hardlink",
+        "sha256": "f13ae5bc3a0ef4916625e6a1c5282187548796ac1de448b0ed82bdfb7c8d7867",
+        "sha256_in_prefix": "f13ae5bc3a0ef4916625e6a1c5282187548796ac1de448b0ed82bdfb7c8d7867",
+        "size_in_bytes": 804
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/us48_CONTIGUITY_EDGES_ONLY.swm",
+        "path_type": "hardlink",
+        "sha256": "c7e4a2f1aed98b266fc795b6b891e701bcc0b73c8cc1584c0b6f1cb464e7d9ac",
+        "sha256_in_prefix": "c7e4a2f1aed98b266fc795b6b891e701bcc0b73c8cc1584c0b6f1cb464e7d9ac",
+        "size_in_bytes": 2350
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/us48_INVERSE_DISTANCE.swm",
+        "path_type": "hardlink",
+        "sha256": "530a313bd7d018a1ea0e95c626c06d06433b073890625d9d4caffe441fa7fd67",
+        "sha256_in_prefix": "530a313bd7d018a1ea0e95c626c06d06433b073890625d9d4caffe441fa7fd67",
+        "size_in_bytes": 3654
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/wmat.dat",
+        "path_type": "hardlink",
+        "sha256": "c91f9a7c04462e7b032ba2610ea551e831c07791e42be1aef1eda0ee47de9821",
+        "sha256_in_prefix": "c91f9a7c04462e7b032ba2610ea551e831c07791e42be1aef1eda0ee47de9821",
+        "size_in_bytes": 7191
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/examples/wmat/wmat.mtx",
+        "path_type": "hardlink",
+        "sha256": "02e652a5326aaa1b5babe3cee46ca151498ca364ee4554b5287f66ef542148da",
+        "sha256_in_prefix": "02e652a5326aaa1b5babe3cee46ca151498ca364ee4554b5287f66ef542148da",
+        "size_in_bytes": 3923
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "c105ed1683f8d605a91351315173aeb0a134077dd0cb132297e1674365ad5a5e",
+        "sha256_in_prefix": "c105ed1683f8d605a91351315173aeb0a134077dd0cb132297e1674365ad5a5e",
+        "size_in_bytes": 80
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/_contiguity.py",
+        "path_type": "hardlink",
+        "sha256": "f0e788331800fb2c125084828b01df26455cb6290c780520140f5c6e9f0deb31",
+        "sha256_in_prefix": "f0e788331800fb2c125084828b01df26455cb6290c780520140f5c6e9f0deb31",
+        "size_in_bytes": 11705
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/_indices.py",
+        "path_type": "hardlink",
+        "sha256": "72aefb11e3cc3c6d9d68a0662b65f762c642a8e624e7037f50c6b10072e69f13",
+        "sha256_in_prefix": "72aefb11e3cc3c6d9d68a0662b65f762c642a8e624e7037f50c6b10072e69f13",
+        "size_in_bytes": 1252
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/_kernel.py",
+        "path_type": "hardlink",
+        "sha256": "6b4b3cfa3ab3531b4867c5f48af47faf2bb3215b09d4ca873c0c73ff6410d532",
+        "sha256_in_prefix": "6b4b3cfa3ab3531b4867c5f48af47faf2bb3215b09d4ca873c0c73ff6410d532",
+        "size_in_bytes": 13347
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/_matching.py",
+        "path_type": "hardlink",
+        "sha256": "6c98d7733226892e1146ffa7c53df4887df449b7ae7ce269a9a24b22398fb8c0",
+        "sha256_in_prefix": "6c98d7733226892e1146ffa7c53df4887df449b7ae7ce269a9a24b22398fb8c0",
+        "size_in_bytes": 6302
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/_network.py",
+        "path_type": "hardlink",
+        "sha256": "ad3d114c9821c093f8a72f6a2886c8cc0c58ff276bd230b3376e5960c4c3fef0",
+        "sha256_in_prefix": "ad3d114c9821c093f8a72f6a2886c8cc0c58ff276bd230b3376e5960c4c3fef0",
+        "size_in_bytes": 4407
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/_plotting.py",
+        "path_type": "hardlink",
+        "sha256": "279c4d25d586f91758b48b457ebc0083d8c4437159ac850f3a8b0ff1d5c582a1",
+        "sha256_in_prefix": "279c4d25d586f91758b48b457ebc0083d8c4437159ac850f3a8b0ff1d5c582a1",
+        "size_in_bytes": 8210
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/_raster.py",
+        "path_type": "hardlink",
+        "sha256": "d7c915931923c3a5e6ba1463b1a50c56c57aa103c1a47d8089e3b0a0390abaf5",
+        "sha256_in_prefix": "d7c915931923c3a5e6ba1463b1a50c56c57aa103c1a47d8089e3b0a0390abaf5",
+        "size_in_bytes": 3885
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/_set_ops.py",
+        "path_type": "hardlink",
+        "sha256": "13972f85d6d6a03dd750fbe086655e4e1bc1ab1de1df040c4792dd4bf5d3afcf",
+        "sha256_in_prefix": "13972f85d6d6a03dd750fbe086655e4e1bc1ab1de1df040c4792dd4bf5d3afcf",
+        "size_in_bytes": 6710
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/_spatial_lag.py",
+        "path_type": "hardlink",
+        "sha256": "66b588e79ddee167d2543866e8c2596a622edf1038abdbae631d72f6b74e1573",
+        "sha256_in_prefix": "66b588e79ddee167d2543866e8c2596a622edf1038abdbae631d72f6b74e1573",
+        "size_in_bytes": 6616
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/_summary.py",
+        "path_type": "hardlink",
+        "sha256": "8e8dd0f26c6fa57d4b464130c7d2fa9068d6369952a6f97569f95ccaf3af3ecc",
+        "sha256_in_prefix": "8e8dd0f26c6fa57d4b464130c7d2fa9068d6369952a6f97569f95ccaf3af3ecc",
+        "size_in_bytes": 15995
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/_triangulation.py",
+        "path_type": "hardlink",
+        "sha256": "28808c938f6d62d700a2b10ba328b12ce107a402ccfeab4f6455eb53554faaaa",
+        "sha256_in_prefix": "28808c938f6d62d700a2b10ba328b12ce107a402ccfeab4f6455eb53554faaaa",
+        "size_in_bytes": 25119
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/_utils.py",
+        "path_type": "hardlink",
+        "sha256": "8df8eac4345cc6a934193e6835094b1707340859f74c3d358dc1f10515566906",
+        "sha256_in_prefix": "8df8eac4345cc6a934193e6835094b1707340859f74c3d358dc1f10515566906",
+        "size_in_bytes": 13329
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/base.py",
+        "path_type": "hardlink",
+        "sha256": "d8a11330854afba59d4b9935122aae5d0865f83790b80e91374f5014df7bc9f0",
+        "sha256_in_prefix": "d8a11330854afba59d4b9935122aae5d0865f83790b80e91374f5014df7bc9f0",
+        "size_in_bytes": 106092
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/io/_gal.py",
+        "path_type": "hardlink",
+        "sha256": "3ff8d0cf90aaf9a111e618236c917b5cd9981f95b5d1530e9ce799452f7a25a4",
+        "sha256_in_prefix": "3ff8d0cf90aaf9a111e618236c917b5cd9981f95b5d1530e9ce799452f7a25a4",
+        "size_in_bytes": 1591
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/io/_gwt.py",
+        "path_type": "hardlink",
+        "sha256": "b139179830ea43120c23b0eb6edc1ad09f5c9544b297d7553c7a68af57245616",
+        "sha256_in_prefix": "b139179830ea43120c23b0eb6edc1ad09f5c9544b297d7553c7a68af57245616",
+        "size_in_bytes": 947
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/io/_parquet.py",
+        "path_type": "hardlink",
+        "sha256": "1198fd15ae645bfaedec07566950811745ca2feb1b94c0bbaa520b0ad04b7699",
+        "sha256_in_prefix": "1198fd15ae645bfaedec07566950811745ca2feb1b94c0bbaa520b0ad04b7699",
+        "size_in_bytes": 2336
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/tests/test_base.py",
+        "path_type": "hardlink",
+        "sha256": "9ffc2c8d3d6eed32517b82c5ba2af3bbec713da64b39409cdc2dcf3640082efe",
+        "sha256_in_prefix": "9ffc2c8d3d6eed32517b82c5ba2af3bbec713da64b39409cdc2dcf3640082efe",
+        "size_in_bytes": 44946
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/tests/test_builders.py",
+        "path_type": "hardlink",
+        "sha256": "899798e7c754ad38b271ec5d12e5a7bead7d2e471bc611653f757e8598d12d70",
+        "sha256_in_prefix": "899798e7c754ad38b271ec5d12e5a7bead7d2e471bc611653f757e8598d12d70",
+        "size_in_bytes": 21770
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/tests/test_contiguity.py",
+        "path_type": "hardlink",
+        "sha256": "23d89fe750ea1f2460d723c846f22dfdcc097755193046f4018cc6a0a889cd00",
+        "sha256_in_prefix": "23d89fe750ea1f2460d723c846f22dfdcc097755193046f4018cc6a0a889cd00",
+        "size_in_bytes": 11785
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/tests/test_indices.py",
+        "path_type": "hardlink",
+        "sha256": "a5de67179672f80e5d73436778eec520a623ba05277b9a089a06590b2e33f3a3",
+        "sha256_in_prefix": "a5de67179672f80e5d73436778eec520a623ba05277b9a089a06590b2e33f3a3",
+        "size_in_bytes": 994
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/tests/test_kernel.py",
+        "path_type": "hardlink",
+        "sha256": "650f26f36358dbf810d095723aa953944d6dc72a54f4598bb450dc87bea8d745",
+        "sha256_in_prefix": "650f26f36358dbf810d095723aa953944d6dc72a54f4598bb450dc87bea8d745",
+        "size_in_bytes": 13274
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/tests/test_matching.py",
+        "path_type": "hardlink",
+        "sha256": "c748e60092419defcc87016a9dc71227e35cb6dbe2418aa59c610ddb12aaa5fe",
+        "sha256_in_prefix": "c748e60092419defcc87016a9dc71227e35cb6dbe2418aa59c610ddb12aaa5fe",
+        "size_in_bytes": 3283
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/tests/test_plotting.py",
+        "path_type": "hardlink",
+        "sha256": "aed8aa7ef9d91c5bdb50ddc63a4181dd877f119616872178f23f4c616d8a3376",
+        "sha256_in_prefix": "aed8aa7ef9d91c5bdb50ddc63a4181dd877f119616872178f23f4c616d8a3376",
+        "size_in_bytes": 12667
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/tests/test_raster.py",
+        "path_type": "hardlink",
+        "sha256": "08009c8b73e142cbde0bc782aa4adc05f1c2a2ba29bb7fbc66e1dc98da98adbe",
+        "sha256_in_prefix": "08009c8b73e142cbde0bc782aa4adc05f1c2a2ba29bb7fbc66e1dc98da98adbe",
+        "size_in_bytes": 2699
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/tests/test_set_ops.py",
+        "path_type": "hardlink",
+        "sha256": "bdc4e1be6cd80d01d59e6b1f4ab9ca932b8706d60f69aca13a1842df876bd18e",
+        "sha256_in_prefix": "bdc4e1be6cd80d01d59e6b1f4ab9ca932b8706d60f69aca13a1842df876bd18e",
+        "size_in_bytes": 5531
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/tests/test_spatial_lag.py",
+        "path_type": "hardlink",
+        "sha256": "492aecfd6ac3e5b10ad85d897aba11e2923aee6fabb2b480d48c62b6cd561e1c",
+        "sha256_in_prefix": "492aecfd6ac3e5b10ad85d897aba11e2923aee6fabb2b480d48c62b6cd561e1c",
+        "size_in_bytes": 3032
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/tests/test_summary.py",
+        "path_type": "hardlink",
+        "sha256": "48d006c74d1008b22ad8d07fa26ccbd562acb8edf7d127851d524eb349765e7d",
+        "sha256_in_prefix": "48d006c74d1008b22ad8d07fa26ccbd562acb8edf7d127851d524eb349765e7d",
+        "size_in_bytes": 7742
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/tests/test_triangulation.py",
+        "path_type": "hardlink",
+        "sha256": "b738d485b721088fa2a83b45ef3c548391b02ecbc112edc3bc89e8cd36e1ecb3",
+        "sha256_in_prefix": "b738d485b721088fa2a83b45ef3c548391b02ecbc112edc3bc89e8cd36e1ecb3",
+        "size_in_bytes": 17657
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/graph/tests/test_utils.py",
+        "path_type": "hardlink",
+        "sha256": "18674a9808754db2500fb99425c0f5c0ddf421fd9751b22f87a291d79a48cfc9",
+        "sha256_in_prefix": "18674a9808754db2500fb99425c0f5c0ddf421fd9751b22f87a291d79a48cfc9",
+        "size_in_bytes": 5636
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3caf136cb93a75a109ed44db9170695eaef490b4262a134e69c52483e752d08",
+        "sha256_in_prefix": "e3caf136cb93a75a109ed44db9170695eaef490b4262a134e69c52483e752d08",
+        "size_in_bytes": 125
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/fileio.py",
+        "path_type": "hardlink",
+        "sha256": "0deb2fb17ab04757b89c53d1892fc63cf61abb33c5464e01c4baeab0f40a6678",
+        "sha256_in_prefix": "0deb2fb17ab04757b89c53d1892fc63cf61abb33c5464e01c4baeab0f40a6678",
+        "size_in_bytes": 13559
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/geotable/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0ccb9104bdd25dcd7102c5bd6afbe1f28b2c4e7244ed113f8e03177760a55d4f",
+        "sha256_in_prefix": "0ccb9104bdd25dcd7102c5bd6afbe1f28b2c4e7244ed113f8e03177760a55d4f",
+        "size_in_bytes": 42
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/geotable/dbf.py",
+        "path_type": "hardlink",
+        "sha256": "7be955913d6fe4bbc6f3746680e658e79797f2c69ac0112fc988af3cf5468cde",
+        "sha256_in_prefix": "7be955913d6fe4bbc6f3746680e658e79797f2c69ac0112fc988af3cf5468cde",
+        "size_in_bytes": 6077
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/geotable/file.py",
+        "path_type": "hardlink",
+        "sha256": "499193dcb5c647941b84aba7a95fd33e332039b9ed33f3c5cecf572f84d369d6",
+        "sha256_in_prefix": "499193dcb5c647941b84aba7a95fd33e332039b9ed33f3c5cecf572f84d369d6",
+        "size_in_bytes": 2942
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/geotable/shp.py",
+        "path_type": "hardlink",
+        "sha256": "6852ac31483fa64c323fe5c4ee04eaa26664de6637c18d4d1479cdc9cad8d6fc",
+        "sha256_in_prefix": "6852ac31483fa64c323fe5c4ee04eaa26664de6637c18d4d1479cdc9cad8d6fc",
+        "size_in_bytes": 814
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/geotable/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/geotable/tests/test_utils.py",
+        "path_type": "hardlink",
+        "sha256": "a93de6d3343bd048e077091c034124b9445ee483f8b3b0b2931f97f9b995dc01",
+        "sha256_in_prefix": "a93de6d3343bd048e077091c034124b9445ee483f8b3b0b2931f97f9b995dc01",
+        "size_in_bytes": 358
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/geotable/utils.py",
+        "path_type": "hardlink",
+        "sha256": "5e1b107a270c24ae135364c171a03c3d68ae527cc57cfa21fa6463a4075ca3ac",
+        "sha256_in_prefix": "5e1b107a270c24ae135364c171a03c3d68ae527cc57cfa21fa6463a4075ca3ac",
+        "size_in_bytes": 2670
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/geotable/wrappers.py",
+        "path_type": "hardlink",
+        "sha256": "f4063f617082ff753e53d8927aa822f233d71d27461e5bacd6880bcd6255c220",
+        "sha256_in_prefix": "f4063f617082ff753e53d8927aa822f233d71d27461e5bacd6880bcd6255c220",
+        "size_in_bytes": 1961
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "cf699943c210721a8344d207c09e9432c59db0b883995bc20def0a507c1ae8c4",
+        "sha256_in_prefix": "cf699943c210721a8344d207c09e9432c59db0b883995bc20def0a507c1ae8c4",
+        "size_in_bytes": 367
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/arcgis_dbf.py",
+        "path_type": "hardlink",
+        "sha256": "a6530b6fb9e38e973f825bea43725dfc4f0739e0129db3e27409a979c30e9454",
+        "sha256_in_prefix": "a6530b6fb9e38e973f825bea43725dfc4f0739e0129db3e27409a979c30e9454",
+        "size_in_bytes": 7699
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/arcgis_swm.py",
+        "path_type": "hardlink",
+        "sha256": "3be8da12c3b8fdbf6f16183ddde0233cfd60309f3b79417e0e8b40af1e9bce32",
+        "sha256_in_prefix": "3be8da12c3b8fdbf6f16183ddde0233cfd60309f3b79417e0e8b40af1e9bce32",
+        "size_in_bytes": 10125
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/arcgis_txt.py",
+        "path_type": "hardlink",
+        "sha256": "795445fbc2274c0c4d98709df26b156dd6dda650e69fe77f57710c111d4dce16",
+        "sha256_in_prefix": "795445fbc2274c0c4d98709df26b156dd6dda650e69fe77f57710c111d4dce16",
+        "size_in_bytes": 7304
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/csvWrapper.py",
+        "path_type": "hardlink",
+        "sha256": "f41a057e70fde9dd34277e51ce11905abd09642386b06e77fae34a129568b0c6",
+        "sha256_in_prefix": "f41a057e70fde9dd34277e51ce11905abd09642386b06e77fae34a129568b0c6",
+        "size_in_bytes": 3150
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/dat.py",
+        "path_type": "hardlink",
+        "sha256": "3686287e4b81fae315f3c966a8cff2393663a1b4be1dd042037e4cd6689198ea",
+        "sha256_in_prefix": "3686287e4b81fae315f3c966a8cff2393663a1b4be1dd042037e4cd6689198ea",
+        "size_in_bytes": 3271
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/db.py",
+        "path_type": "hardlink",
+        "sha256": "a01aaa21c8fb4835539c701399b544ec6893233b6155646d87d2ece9e6b325d3",
+        "sha256_in_prefix": "a01aaa21c8fb4835539c701399b544ec6893233b6155646d87d2ece9e6b325d3",
+        "size_in_bytes": 2304
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/gal.py",
+        "path_type": "hardlink",
+        "sha256": "dabb47db5b43e7e32059dd3c7c67994cb0e7f626e1f7007c807e3493fd06bd66",
+        "sha256_in_prefix": "dabb47db5b43e7e32059dd3c7c67994cb0e7f626e1f7007c807e3493fd06bd66",
+        "size_in_bytes": 6642
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/geobugs_txt.py",
+        "path_type": "hardlink",
+        "sha256": "664d99efdb0d6b6ceab3ed6bbc6cee2941fb535b62a6cf1171b6130a6db166f2",
+        "sha256_in_prefix": "664d99efdb0d6b6ceab3ed6bbc6cee2941fb535b62a6cf1171b6130a6db166f2",
+        "size_in_bytes": 7909
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/geoda_txt.py",
+        "path_type": "hardlink",
+        "sha256": "c40fb7b257ff9f74601d867166f6994613a475a26a80bb86ad75c51bde9ef229",
+        "sha256_in_prefix": "c40fb7b257ff9f74601d867166f6994613a475a26a80bb86ad75c51bde9ef229",
+        "size_in_bytes": 2783
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/gwt.py",
+        "path_type": "hardlink",
+        "sha256": "9783c6ff1f45a9da7528e999630efe5484d8dd9c539e3dfd399fdd87267ca0d6",
+        "sha256_in_prefix": "9783c6ff1f45a9da7528e999630efe5484d8dd9c539e3dfd399fdd87267ca0d6",
+        "size_in_bytes": 9965
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/mat.py",
+        "path_type": "hardlink",
+        "sha256": "cbc037d6052b2c542d9033ad2d6c0e30815bc80bc14e2b8ac85fb9b2b34be401",
+        "sha256_in_prefix": "cbc037d6052b2c542d9033ad2d6c0e30815bc80bc14e2b8ac85fb9b2b34be401",
+        "size_in_bytes": 4948
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/mtx.py",
+        "path_type": "hardlink",
+        "sha256": "01fc6e44eaf5045ca0b24f7da1397575e0facc05d944bf71ce6f0ec3d343c2f4",
+        "sha256_in_prefix": "01fc6e44eaf5045ca0b24f7da1397575e0facc05d944bf71ce6f0ec3d343c2f4",
+        "size_in_bytes": 7381
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/pyDbfIO.py",
+        "path_type": "hardlink",
+        "sha256": "50b78ea8659635ca8aec0d22c24ba83ad75578de7dc3fad6919ad53706155fca",
+        "sha256_in_prefix": "50b78ea8659635ca8aec0d22c24ba83ad75578de7dc3fad6919ad53706155fca",
+        "size_in_bytes": 12182
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/pyShpIO.py",
+        "path_type": "hardlink",
+        "sha256": "6b03245b002237d6fd1e15c4f655345425e65b22b9c5aa444674ad33da158af9",
+        "sha256_in_prefix": "6b03245b002237d6fd1e15c4f655345425e65b22b9c5aa444674ad33da158af9",
+        "size_in_bytes": 7811
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/stata_txt.py",
+        "path_type": "hardlink",
+        "sha256": "9a50d01d80499153cac72da84ca61b4de4c48d5bd8ada176362af47bb9baf71e",
+        "sha256_in_prefix": "9a50d01d80499153cac72da84ca61b4de4c48d5bd8ada176362af47bb9baf71e",
+        "size_in_bytes": 7985
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/template.py",
+        "path_type": "hardlink",
+        "sha256": "f985d43d8ecd7241bcc2758d97fe99845dcebe630ba4a5c476988fcb26b50f0a",
+        "sha256_in_prefix": "f985d43d8ecd7241bcc2758d97fe99845dcebe630ba4a5c476988fcb26b50f0a",
+        "size_in_bytes": 5380
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_arcgis_dbf.py",
+        "path_type": "hardlink",
+        "sha256": "9833b087b759c1d2e4f557c86dfd031271bddc0b06e65262321c7806315dea8d",
+        "sha256_in_prefix": "9833b087b759c1d2e4f557c86dfd031271bddc0b06e65262321c7806315dea8d",
+        "size_in_bytes": 1935
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_arcgis_swm.py",
+        "path_type": "hardlink",
+        "sha256": "c65bf597815309254cab606e43fdc139bbe7287e064aeb71e1a8df67799cb715",
+        "sha256_in_prefix": "c65bf597815309254cab606e43fdc139bbe7287e064aeb71e1a8df67799cb715",
+        "size_in_bytes": 1102
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_arcgis_txt.py",
+        "path_type": "hardlink",
+        "sha256": "68a94581c3dd5a367997083ca2e1a4ae87e90a1f06e3e52a9de725e545dc9fbf",
+        "sha256_in_prefix": "68a94581c3dd5a367997083ca2e1a4ae87e90a1f06e3e52a9de725e545dc9fbf",
+        "size_in_bytes": 2340
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_csvWrapper.py",
+        "path_type": "hardlink",
+        "sha256": "dfcf9fe02c776a019fc3a133c5d1fbc06fd8fbd9843dd014e544a79d12a4ecd4",
+        "sha256_in_prefix": "dfcf9fe02c776a019fc3a133c5d1fbc06fd8fbd9843dd014e544a79d12a4ecd4",
+        "size_in_bytes": 2671
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_dat.py",
+        "path_type": "hardlink",
+        "sha256": "77a67f71a6a050e6aad3c8f4b31e85803e333d6ab5cd3d55a79080baba6e2c2d",
+        "sha256_in_prefix": "77a67f71a6a050e6aad3c8f4b31e85803e333d6ab5cd3d55a79080baba6e2c2d",
+        "size_in_bytes": 1083
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_db.py",
+        "path_type": "hardlink",
+        "sha256": "884039cf74314400ec445da370a3e95f55efe326e6c2dfbfc84348a2d6cbb439",
+        "sha256_in_prefix": "884039cf74314400ec445da370a3e95f55efe326e6c2dfbfc84348a2d6cbb439",
+        "size_in_bytes": 1999
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_gal.py",
+        "path_type": "hardlink",
+        "sha256": "3b5fd9e1277f327182c67e7e56a0e625e9348d4a1c1ee255e5447a43cd1ea1c1",
+        "sha256_in_prefix": "3b5fd9e1277f327182c67e7e56a0e625e9348d4a1c1ee255e5447a43cd1ea1c1",
+        "size_in_bytes": 1205
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_geobugs_txt.py",
+        "path_type": "hardlink",
+        "sha256": "9b497c7bb6b63e574ad013a4306b68fa9e8269cb0aa39451d1c9300534907b13",
+        "sha256_in_prefix": "9b497c7bb6b63e574ad013a4306b68fa9e8269cb0aa39451d1c9300534907b13",
+        "size_in_bytes": 1784
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_geoda_txt.py",
+        "path_type": "hardlink",
+        "sha256": "145a0dfd995e0f312fe59a86c947066984c61d24874ffb38c2c854b41ae38041",
+        "sha256_in_prefix": "145a0dfd995e0f312fe59a86c947066984c61d24874ffb38c2c854b41ae38041",
+        "size_in_bytes": 613
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_gwt.py",
+        "path_type": "hardlink",
+        "sha256": "46f78fea6be86a527d7c214dcea4d2069d20aa4ce31b23c5f14dc435d5d035e1",
+        "sha256_in_prefix": "46f78fea6be86a527d7c214dcea4d2069d20aa4ce31b23c5f14dc435d5d035e1",
+        "size_in_bytes": 1631
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_mat.py",
+        "path_type": "hardlink",
+        "sha256": "36b08cae7fc4e7df26afdd3d50c981cc6ff5932a5f83d919d143a719d7a848f4",
+        "sha256_in_prefix": "36b08cae7fc4e7df26afdd3d50c981cc6ff5932a5f83d919d143a719d7a848f4",
+        "size_in_bytes": 1318
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_mtx.py",
+        "path_type": "hardlink",
+        "sha256": "ac3a47208ebbf33f9cf489df485074554e13e8aa219c5e95391f9510029fa6a9",
+        "sha256_in_prefix": "ac3a47208ebbf33f9cf489df485074554e13e8aa219c5e95391f9510029fa6a9",
+        "size_in_bytes": 1516
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_pyDbfIO.py",
+        "path_type": "hardlink",
+        "sha256": "e3c4a98ec6436dee9eaf4eaf030e91845d0202800699056fb120a9759da56d21",
+        "sha256_in_prefix": "e3c4a98ec6436dee9eaf4eaf030e91845d0202800699056fb120a9759da56d21",
+        "size_in_bytes": 3752
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_pyShpIO.py",
+        "path_type": "hardlink",
+        "sha256": "b5fdc41a84fbcbcfe4fb3ed7f6c7a92ae6f12295cb2e863302f1acbfe980b870",
+        "sha256_in_prefix": "b5fdc41a84fbcbcfe4fb3ed7f6c7a92ae6f12295cb2e863302f1acbfe980b870",
+        "size_in_bytes": 2427
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_stata_txt.py",
+        "path_type": "hardlink",
+        "sha256": "2c6ecc33b3ee0954c18df04d196321b9c0146cd38d75466f227c59be5e8ddeeb",
+        "sha256_in_prefix": "2c6ecc33b3ee0954c18df04d196321b9c0146cd38d75466f227c59be5e8ddeeb",
+        "size_in_bytes": 1919
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_wk1.py",
+        "path_type": "hardlink",
+        "sha256": "dcf39aff98e55dbded465be55ad07e5b8a76d674dca57178e132073d125db37b",
+        "sha256_in_prefix": "dcf39aff98e55dbded465be55ad07e5b8a76d674dca57178e132073d125db37b",
+        "size_in_bytes": 1098
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/tests/test_wkt.py",
+        "path_type": "hardlink",
+        "sha256": "202739bbd022fea6f4810f9f450bee0856781f743c8dd384ae2071c780c2ec72",
+        "sha256_in_prefix": "202739bbd022fea6f4810f9f450bee0856781f743c8dd384ae2071c780c2ec72",
+        "size_in_bytes": 760
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/wk1.py",
+        "path_type": "hardlink",
+        "sha256": "79f02aa6e5da4bb4fc1a6a4778f0314875999a36599076fac087ee04367fa7a6",
+        "sha256_in_prefix": "79f02aa6e5da4bb4fc1a6a4778f0314875999a36599076fac087ee04367fa7a6",
+        "size_in_bytes": 18212
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/iohandlers/wkt.py",
+        "path_type": "hardlink",
+        "sha256": "ed9741d12129a4a398b8b72ed771c37c7a02958aa05b009a61cb5675c48af4b5",
+        "sha256_in_prefix": "ed9741d12129a4a398b8b72ed771c37c7a02958aa05b009a61cb5675c48af4b5",
+        "size_in_bytes": 2720
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/tables.py",
+        "path_type": "hardlink",
+        "sha256": "f0cf5a62e95849ca3dd8d303a92b410d2a0019a43f11f985c12c54eae4023daf",
+        "sha256_in_prefix": "f0cf5a62e95849ca3dd8d303a92b410d2a0019a43f11f985c12c54eae4023daf",
+        "size_in_bytes": 8661
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/tests/test_FileIO.py",
+        "path_type": "hardlink",
+        "sha256": "0339e4386ec6991e219ab02da347e8c3c49d5d532c94a34e50dedf7d9fafab85",
+        "sha256_in_prefix": "0339e4386ec6991e219ab02da347e8c3c49d5d532c94a34e50dedf7d9fafab85",
+        "size_in_bytes": 360
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/tests/test_Tables.py",
+        "path_type": "hardlink",
+        "sha256": "abff1fb9adb4d288d307244d6cd233baff64682330918a1ab05d53e874952fbd",
+        "sha256_in_prefix": "abff1fb9adb4d288d307244d6cd233baff64682330918a1ab05d53e874952fbd",
+        "size_in_bytes": 1049
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/util/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "c9daaeb4a2e3b527ce4e0b4411b77f579260523f06406c0448932f8bef2363f2",
+        "sha256_in_prefix": "c9daaeb4a2e3b527ce4e0b4411b77f579260523f06406c0448932f8bef2363f2",
+        "size_in_bytes": 63
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/util/shapefile.py",
+        "path_type": "hardlink",
+        "sha256": "a0e9fa57f6d93fd4f2d95bfcd351a8e9afd9af0c4d0187dca347074bed640f20",
+        "sha256_in_prefix": "a0e9fa57f6d93fd4f2d95bfcd351a8e9afd9af0c4d0187dca347074bed640f20",
+        "size_in_bytes": 33095
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/util/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/util/tests/test_shapefile.py",
+        "path_type": "hardlink",
+        "sha256": "fb076e1939524b85ace82fb2cb0d186360522717bac348b2d27eed654f8543ca",
+        "sha256_in_prefix": "fb076e1939524b85ace82fb2cb0d186360522717bac348b2d27eed654f8543ca",
+        "size_in_bytes": 17117
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/util/tests/test_weight_converter.py",
+        "path_type": "hardlink",
+        "sha256": "2b6468cbf9dc9ff11e0ed65874de1c37ce57ff3f0de57a49dd3f1002fca4baae",
+        "sha256_in_prefix": "2b6468cbf9dc9ff11e0ed65874de1c37ce57ff3f0de57a49dd3f1002fca4baae",
+        "size_in_bytes": 6923
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/util/tests/test_wkt.py",
+        "path_type": "hardlink",
+        "sha256": "0cd50b8510d3e25906ac3347db583ae9a5c8a7f9265dfba380773efb411f11b6",
+        "sha256_in_prefix": "0cd50b8510d3e25906ac3347db583ae9a5c8a7f9265dfba380773efb411f11b6",
+        "size_in_bytes": 2108
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/util/weight_converter.py",
+        "path_type": "hardlink",
+        "sha256": "ee105c760cc3dad668fc8a523375df2602c95b8a2fc5eaaa942a23f883eeeb50",
+        "sha256_in_prefix": "ee105c760cc3dad668fc8a523375df2602c95b8a2fc5eaaa942a23f883eeeb50",
+        "size_in_bytes": 8460
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/util/wkb.py",
+        "path_type": "hardlink",
+        "sha256": "2e1df53901df0414eb1b9e5620988b6ade7a34b25effda8c2130a54155ce3285",
+        "sha256_in_prefix": "2e1df53901df0414eb1b9e5620988b6ade7a34b25effda8c2130a54155ce3285",
+        "size_in_bytes": 8354
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/io/util/wkt.py",
+        "path_type": "hardlink",
+        "sha256": "57940991ea3e2e9f83387dc86624d5b78a7ed5b1ee397ad101be609d2528dc7a",
+        "sha256_in_prefix": "57940991ea3e2e9f83387dc86624d5b78a7ed5b1ee397ad101be609d2528dc7a",
+        "size_in_bytes": 4209
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6164295a08472c27d38ea2f238548b8f89113212625ee487112a7dfbb70a00be",
+        "sha256_in_prefix": "6164295a08472c27d38ea2f238548b8f89113212625ee487112a7dfbb70a00be",
+        "size_in_bytes": 290
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/_contW_lists.py",
+        "path_type": "hardlink",
+        "sha256": "115ce677bbf2ffc139aafd9e63773162e3510ad2ff8bb9f1d4ee9f09d52009cc",
+        "sha256_in_prefix": "115ce677bbf2ffc139aafd9e63773162e3510ad2ff8bb9f1d4ee9f09d52009cc",
+        "size_in_bytes": 3703
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/adjtools.py",
+        "path_type": "hardlink",
+        "sha256": "a71232ce8c24569bb6411caf00c17b9ff6579e3523e7a6365aa94f833a39dfc3",
+        "sha256_in_prefix": "a71232ce8c24569bb6411caf00c17b9ff6579e3523e7a6365aa94f833a39dfc3",
+        "size_in_bytes": 9924
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/contiguity.py",
+        "path_type": "hardlink",
+        "sha256": "ed3c6f57fced0eb87e989c1949e4d0ba84d39bef05a9636da1a74023a5bd6044",
+        "sha256_in_prefix": "ed3c6f57fced0eb87e989c1949e4d0ba84d39bef05a9636da1a74023a5bd6044",
+        "size_in_bytes": 26261
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/distance.py",
+        "path_type": "hardlink",
+        "sha256": "f322c3e9c9f5e451197c49da37bb6378b8bec326f96007d2802644aa3829d767",
+        "sha256_in_prefix": "f322c3e9c9f5e451197c49da37bb6378b8bec326f96007d2802644aa3829d767",
+        "size_in_bytes": 33410
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/gabriel.py",
+        "path_type": "hardlink",
+        "sha256": "67c7277a2a79e4156bc8f69b9f9ea2d54eb94fd6af39a2660ed4f952c0e29310",
+        "sha256_in_prefix": "67c7277a2a79e4156bc8f69b9f9ea2d54eb94fd6af39a2660ed4f952c0e29310",
+        "size_in_bytes": 13606
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/raster.py",
+        "path_type": "hardlink",
+        "sha256": "8d46ac6db580597ec0415b03ed46d9b9f7c5365d7539f08a43fbcf3661f79cc7",
+        "sha256_in_prefix": "8d46ac6db580597ec0415b03ed46d9b9f7c5365d7539f08a43fbcf3661f79cc7",
+        "size_in_bytes": 28496
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/set_operations.py",
+        "path_type": "hardlink",
+        "sha256": "60767bc5404bef3aa5c470bbdf94228327b02cf86f4c74db6d7f72dea0a97eeb",
+        "sha256_in_prefix": "60767bc5404bef3aa5c470bbdf94228327b02cf86f4c74db6d7f72dea0a97eeb",
+        "size_in_bytes": 17820
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/spatial_lag.py",
+        "path_type": "hardlink",
+        "sha256": "b75362e46fe007e3f6944a9efff73aaebbfe83a39f8d26f2144853118e9e20d8",
+        "sha256_in_prefix": "b75362e46fe007e3f6944a9efff73aaebbfe83a39f8d26f2144853118e9e20d8",
+        "size_in_bytes": 8972
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/spintW.py",
+        "path_type": "hardlink",
+        "sha256": "6c20b0434d2645ef2a0d5da62468137f062d5532f934f4b7b8b19f036c6fef27",
+        "sha256_in_prefix": "6c20b0434d2645ef2a0d5da62468137f062d5532f934f4b7b8b19f036c6fef27",
+        "size_in_bytes": 9634
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test_Wsets.py",
+        "path_type": "hardlink",
+        "sha256": "5a67d23699219daf9ac5c0ee4b2f5dac3a23eccda77543aa27a96b98193ea59f",
+        "sha256_in_prefix": "5a67d23699219daf9ac5c0ee4b2f5dac3a23eccda77543aa27a96b98193ea59f",
+        "size_in_bytes": 2878
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test__contW_lists.py",
+        "path_type": "hardlink",
+        "sha256": "79e357681ca8d71ddfddde54b278ec37d374713dd9ea51f9901b3e90f5c2c061",
+        "sha256_in_prefix": "79e357681ca8d71ddfddde54b278ec37d374713dd9ea51f9901b3e90f5c2c061",
+        "size_in_bytes": 5147
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test_adjlist.py",
+        "path_type": "hardlink",
+        "sha256": "744329bb288fcb3ae0a77e57766e56ad476afb9794aea9eac5480b6bc1a312bd",
+        "sha256_in_prefix": "744329bb288fcb3ae0a77e57766e56ad476afb9794aea9eac5480b6bc1a312bd",
+        "size_in_bytes": 7608
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test_contiguity.py",
+        "path_type": "hardlink",
+        "sha256": "bef6f9b86450a47caafc8433a74197074cca17c9c61f15095c5af44a48c3f2ab",
+        "sha256_in_prefix": "bef6f9b86450a47caafc8433a74197074cca17c9c61f15095c5af44a48c3f2ab",
+        "size_in_bytes": 6821
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test_distance.py",
+        "path_type": "hardlink",
+        "sha256": "e90c39e701298d4b110ec499381552a64a505c370b209167871e75e92ed5a562",
+        "sha256_in_prefix": "e90c39e701298d4b110ec499381552a64a505c370b209167871e75e92ed5a562",
+        "size_in_bytes": 13636
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test_gabriel.py",
+        "path_type": "hardlink",
+        "sha256": "c043a30e5812ac9fdcb31224b988506575714364bd6f9a7df1fda67ddc5d9e52",
+        "sha256_in_prefix": "c043a30e5812ac9fdcb31224b988506575714364bd6f9a7df1fda67ddc5d9e52",
+        "size_in_bytes": 1188
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test_nx.py",
+        "path_type": "hardlink",
+        "sha256": "b3823422ccd62ee8efd8bcb4f2b760785efc2f9ff57b4f8be551d82b78ef6159",
+        "sha256_in_prefix": "b3823422ccd62ee8efd8bcb4f2b760785efc2f9ff57b4f8be551d82b78ef6159",
+        "size_in_bytes": 949
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test_raster.py",
+        "path_type": "hardlink",
+        "sha256": "43c8deb16ba69571284f1bbce4771fd212598e5606f2a3a675371b0a4fd3d2c9",
+        "sha256_in_prefix": "43c8deb16ba69571284f1bbce4771fd212598e5606f2a3a675371b0a4fd3d2c9",
+        "size_in_bytes": 3938
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test_spatial_lag.py",
+        "path_type": "hardlink",
+        "sha256": "936d1dad15aeb648eec5bf08436e51b6f3f7f9cd54b6c4046256063cb69283da",
+        "sha256_in_prefix": "936d1dad15aeb648eec5bf08436e51b6f3f7f9cd54b6c4046256063cb69283da",
+        "size_in_bytes": 2170
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test_spintW.py",
+        "path_type": "hardlink",
+        "sha256": "08cdf1be515c1bc39696b7cc450320ed8a8c604f4f9dc31923483e6966a80808",
+        "sha256_in_prefix": "08cdf1be515c1bc39696b7cc450320ed8a8c604f4f9dc31923483e6966a80808",
+        "size_in_bytes": 14600
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test_user.py",
+        "path_type": "hardlink",
+        "sha256": "a5acb30e232288d71d4678d301a3896ad9ac2a60269f3fe1e12c038769fbc9cf",
+        "sha256_in_prefix": "a5acb30e232288d71d4678d301a3896ad9ac2a60269f3fe1e12c038769fbc9cf",
+        "size_in_bytes": 618
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test_util.py",
+        "path_type": "hardlink",
+        "sha256": "60c085970233e8524895d2f34cf3318fd4e6d618d46f977ab58da22d4dac1645",
+        "sha256_in_prefix": "60c085970233e8524895d2f34cf3318fd4e6d618d46f977ab58da22d4dac1645",
+        "size_in_bytes": 11164
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test_weights.py",
+        "path_type": "hardlink",
+        "sha256": "e3671a82fa665c99c46319aaa4b1f0b0f59f56f99a04295ab498ca442f8deeb5",
+        "sha256_in_prefix": "e3671a82fa665c99c46319aaa4b1f0b0f59f56f99a04295ab498ca442f8deeb5",
+        "size_in_bytes": 22941
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/tests/test_weights_IO.py",
+        "path_type": "hardlink",
+        "sha256": "b36e8b934d9e8855ed0cc63f7df0ece69bef98a211597063a41d1a8091a06e32",
+        "sha256_in_prefix": "b36e8b934d9e8855ed0cc63f7df0ece69bef98a211597063a41d1a8091a06e32",
+        "size_in_bytes": 932
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/user.py",
+        "path_type": "hardlink",
+        "sha256": "78d9c6687d0f0e8d7f96f5a328a6b9992cf229a83eb1848ff55e0e6996312367",
+        "sha256_in_prefix": "78d9c6687d0f0e8d7f96f5a328a6b9992cf229a83eb1848ff55e0e6996312367",
+        "size_in_bytes": 4072
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/util.py",
+        "path_type": "hardlink",
+        "sha256": "fb777d86819abba23f827261c3dd52f665628d32e88a7706869d2f05a1378b3e",
+        "sha256_in_prefix": "fb777d86819abba23f827261c3dd52f665628d32e88a7706869d2f05a1378b3e",
+        "size_in_bytes": 47063
+      },
+      {
+        "_path": "lib/python3.12/site-packages/libpysal/weights/weights.py",
+        "path_type": "hardlink",
+        "sha256": "209a17fcf2dcf29e7cfbd3359a6ce98a4f1429135fd868f698ead4d0589c88bb",
+        "sha256_in_prefix": "209a17fcf2dcf29e7cfbd3359a6ce98a4f1429135fd868f698ead4d0589c88bb",
+        "size_in_bytes": 53712
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/libpysal-4.12.1-pyhd8ed1ab_0",
+    "type": 1
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "arch": "x86_64",
+  "build": "py312h7900ff3_0",
+  "build_number": 0,
+  "depends": [
+    "matplotlib-base >=3.9.3,<3.9.4.0a0",
+    "pyside6 >=6.7.2",
+    "python >=3.12,<3.13.0a0",
+    "python_abi 3.12.* *_cp312",
+    "tornado >=5"
+  ],
+  "license": "PSF-2.0",
+  "license_family": "PSF",
+  "md5": "4297d8db465b02727a206d6e60477246",
+  "name": "matplotlib",
+  "platform": "linux",
+  "sha256": "c72176bbb4bb000e6b602f1fc2c3ef21caf9a0f4b6d2f4b0e183cbcb88e6c5a4",
+  "size": 16831,
+  "subdir": "linux-64",
+  "timestamp": 1733176212063,
+  "version": "3.9.3",
+  "fn": "matplotlib-3.9.3-py312h7900ff3_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/matplotlib-3.9.3-py312h7900ff3_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/matplotlib-3.9.3-py312h7900ff3_0",
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/matplotlib-3.9.3-py312h7900ff3_0",
+    "type": 1
+  }
+}

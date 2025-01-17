@@ -1,0 +1,50 @@
+{
+  "arch": "x86_64",
+  "build": "ha4b6fd6_2",
+  "build_number": 2,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libglvnd 1.7.0 ha4b6fd6_2",
+    "xorg-libx11 >=1.8.10,<2.0a0"
+  ],
+  "license": "LicenseRef-libglvnd",
+  "md5": "c8013e438185f33b13814c5c488acd5c",
+  "name": "libglx",
+  "platform": "linux",
+  "sha256": "2d35a679624a93ce5b3e9dd301fff92343db609b79f0363e6d0ceb3a6478bfa7",
+  "size": 75504,
+  "subdir": "linux-64",
+  "timestamp": 1731330988898,
+  "version": "1.7.0",
+  "fn": "libglx-1.7.0-ha4b6fd6_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libglx-1.7.0-ha4b6fd6_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/libglx-1.7.0-ha4b6fd6_2",
+  "files": [
+    "lib/libGLX.so.0",
+    "lib/libGLX.so.0.0.0"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libGLX.so.0",
+        "path_type": "softlink",
+        "sha256": "88b4a062d4a8ea20cc57b88bd99eb65408e9a8d6888add3eaff46972518349f7",
+        "sha256_in_prefix": "f377dd21c4602ca28ac2054fd5d903da74bf32c912c7e48a7a32023967267ff8",
+        "size_in_bytes": 348424
+      },
+      {
+        "_path": "lib/libGLX.so.0.0.0",
+        "path_type": "hardlink",
+        "sha256": "88b4a062d4a8ea20cc57b88bd99eb65408e9a8d6888add3eaff46972518349f7",
+        "sha256_in_prefix": "88b4a062d4a8ea20cc57b88bd99eb65408e9a8d6888add3eaff46972518349f7",
+        "size_in_bytes": 348424
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/libglx-1.7.0-ha4b6fd6_2",
+    "type": 1
+  }
+}

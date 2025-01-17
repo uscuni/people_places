@@ -1,0 +1,102 @@
+{
+  "arch": "x86_64",
+  "build": "h5888daf_1_cpu",
+  "build_number": 1,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libarrow 18.1.0 he15abb1_1_cpu",
+    "libgcc >=13",
+    "libstdcxx >=13"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "6197dcb930f6254e9b2fdc416be56b71",
+  "name": "libarrow-acero",
+  "platform": "linux",
+  "sha256": "3de5719a7035baad7e665116dce7bb3d069f0c1916e163c553e2e491bbe8b614",
+  "size": 611272,
+  "subdir": "linux-64",
+  "timestamp": 1732863586114,
+  "version": "18.1.0",
+  "fn": "libarrow-acero-18.1.0-h5888daf_1_cpu.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libarrow-acero-18.1.0-h5888daf_1_cpu.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/libarrow-acero-18.1.0-h5888daf_1_cpu",
+  "files": [
+    "lib/cmake/ArrowAcero/ArrowAceroConfig.cmake",
+    "lib/cmake/ArrowAcero/ArrowAceroConfigVersion.cmake",
+    "lib/cmake/ArrowAcero/ArrowAceroTargets-release.cmake",
+    "lib/cmake/ArrowAcero/ArrowAceroTargets.cmake",
+    "lib/libarrow_acero.so",
+    "lib/libarrow_acero.so.1801",
+    "lib/libarrow_acero.so.1801.0.0",
+    "lib/pkgconfig/arrow-acero.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/cmake/ArrowAcero/ArrowAceroConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "9aef90617c1220cb6995689c06165d9a98aaf7357128aa3af1961dbb9ee14715",
+        "sha256_in_prefix": "9aef90617c1220cb6995689c06165d9a98aaf7357128aa3af1961dbb9ee14715",
+        "size_in_bytes": 2333
+      },
+      {
+        "_path": "lib/cmake/ArrowAcero/ArrowAceroConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "b3111d4e76f07f07f9547f0adde9a93ac7962c777a9ffe40bbd72ab065095dff",
+        "sha256_in_prefix": "b3111d4e76f07f07f9547f0adde9a93ac7962c777a9ffe40bbd72ab065095dff",
+        "size_in_bytes": 2765
+      },
+      {
+        "_path": "lib/cmake/ArrowAcero/ArrowAceroTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "03014901218d691bce0bd56544218e499a7f719f2d910041441c140569ae5cc3",
+        "sha256_in_prefix": "03014901218d691bce0bd56544218e499a7f719f2d910041441c140569ae5cc3",
+        "size_in_bytes": 954
+      },
+      {
+        "_path": "lib/cmake/ArrowAcero/ArrowAceroTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "0cb076ea4841ed49ff1f7342c1d75a7f7d45cfe091c9589371b4239b8830bb88",
+        "sha256_in_prefix": "0cb076ea4841ed49ff1f7342c1d75a7f7d45cfe091c9589371b4239b8830bb88",
+        "size_in_bytes": 4237
+      },
+      {
+        "_path": "lib/libarrow_acero.so",
+        "path_type": "softlink",
+        "sha256": "1f72a47ce0ccc0c4b9ea1058ac5f709377d1538fca5d229def9fb01db4d46d1e",
+        "sha256_in_prefix": "6f80626b2d8f0964f31465dc6c1814a86c0c097d77a29d962bf67ebf1cca426d",
+        "size_in_bytes": 2182816
+      },
+      {
+        "_path": "lib/libarrow_acero.so.1801",
+        "path_type": "softlink",
+        "sha256": "1f72a47ce0ccc0c4b9ea1058ac5f709377d1538fca5d229def9fb01db4d46d1e",
+        "sha256_in_prefix": "6f80626b2d8f0964f31465dc6c1814a86c0c097d77a29d962bf67ebf1cca426d",
+        "size_in_bytes": 2182816
+      },
+      {
+        "_path": "lib/libarrow_acero.so.1801.0.0",
+        "path_type": "hardlink",
+        "sha256": "1f72a47ce0ccc0c4b9ea1058ac5f709377d1538fca5d229def9fb01db4d46d1e",
+        "sha256_in_prefix": "1f72a47ce0ccc0c4b9ea1058ac5f709377d1538fca5d229def9fb01db4d46d1e",
+        "size_in_bytes": 2182816
+      },
+      {
+        "_path": "lib/pkgconfig/arrow-acero.pc",
+        "path_type": "hardlink",
+        "sha256": "37735c34285db9aaaf9e6283ddae03889b2d61e6f9a4e7aa0d3861c5d300b806",
+        "sha256_in_prefix": "2322b9fec81de060723bfb651f227cefca3afdff8a06b25fc6bdd982e8722a66",
+        "size_in_bytes": 1071,
+        "file_mode": "text",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/apache-arrow_1732859754806/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol"
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/libarrow-acero-18.1.0-h5888daf_1_cpu",
+    "type": 1
+  }
+}

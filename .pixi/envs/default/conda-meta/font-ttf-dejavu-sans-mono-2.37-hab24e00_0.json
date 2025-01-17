@@ -1,0 +1,38 @@
+{
+  "build": "hab24e00_0",
+  "build_number": 0,
+  "depends": [],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "0c96522c6bdaed4b1566d11387caaf45",
+  "name": "font-ttf-dejavu-sans-mono",
+  "noarch": "generic",
+  "sha256": "58d7f40d2940dd0a8aa28651239adbf5613254df0f75789919c4e6762054403b",
+  "size": 397370,
+  "subdir": "noarch",
+  "timestamp": 1566932522327,
+  "version": "2.37",
+  "fn": "font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
+  "files": [
+    "fonts/DejaVuSans.ttf"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "fonts/DejaVuSans.ttf",
+        "path_type": "hardlink",
+        "sha256": "7da195a74c55bef988d0d48f9508bd5d849425c1770dba5d7bfc6ce9ed848954",
+        "sha256_in_prefix": "7da195a74c55bef988d0d48f9508bd5d849425c1770dba5d7bfc6ce9ed848954",
+        "size_in_bytes": 757076
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/font-ttf-dejavu-sans-mono-2.37-hab24e00_0",
+    "type": 1
+  }
+}

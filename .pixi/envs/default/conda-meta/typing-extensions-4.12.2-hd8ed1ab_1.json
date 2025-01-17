@@ -1,0 +1,30 @@
+{
+  "build": "hd8ed1ab_1",
+  "build_number": 1,
+  "depends": [
+    "typing_extensions 4.12.2 pyha770c72_1"
+  ],
+  "license": "PSF-2.0",
+  "license_family": "PSF",
+  "md5": "b6a408c64b78ec7b779a3e5c7a902433",
+  "name": "typing-extensions",
+  "noarch": "python",
+  "sha256": "c8e9c1c467b5f960b627d7adc1c65fece8e929a3de89967e91ef0f726422fd32",
+  "size": 10075,
+  "subdir": "noarch",
+  "timestamp": 1733188758872,
+  "version": "4.12.2",
+  "fn": "typing-extensions-4.12.2-hd8ed1ab_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/typing-extensions-4.12.2-hd8ed1ab_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/typing-extensions-4.12.2-hd8ed1ab_1",
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/typing-extensions-4.12.2-hd8ed1ab_1",
+    "type": 1
+  }
+}

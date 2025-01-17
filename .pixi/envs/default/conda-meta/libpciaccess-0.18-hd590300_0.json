@@ -1,0 +1,77 @@
+{
+  "arch": "x86_64",
+  "build": "hd590300_0",
+  "build_number": 0,
+  "depends": [
+    "libgcc-ng >=12"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "48f4330bfcd959c3cfb704d424903c82",
+  "name": "libpciaccess",
+  "platform": "linux",
+  "sha256": "c0a30ac74eba66ea76a4f0a39acc7833f5ed783a632ca3bb6665b2d81aabd2fb",
+  "size": 28361,
+  "subdir": "linux-64",
+  "timestamp": 1707101388552,
+  "version": "0.18",
+  "fn": "libpciaccess-0.18-hd590300_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libpciaccess-0.18-hd590300_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/libpciaccess-0.18-hd590300_0",
+  "files": [
+    "include/pciaccess.h",
+    "lib/libpciaccess.so",
+    "lib/libpciaccess.so.0",
+    "lib/libpciaccess.so.0.11.1",
+    "lib/pkgconfig/pciaccess.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/pciaccess.h",
+        "path_type": "hardlink",
+        "sha256": "82faf55af1ac86cd101a4c91a5e37089cc242eb805c964a0b0d20584a7e58869",
+        "sha256_in_prefix": "82faf55af1ac86cd101a4c91a5e37089cc242eb805c964a0b0d20584a7e58869",
+        "size_in_bytes": 15504
+      },
+      {
+        "_path": "lib/libpciaccess.so",
+        "path_type": "softlink",
+        "sha256": "288ad372cabba8550a34a12e1993c7b92a426cf668221ccce22710325dd9ff5b",
+        "sha256_in_prefix": "fa26d2981b18bb315aceb27abfd4e113221c8a572bd32b325293503080197eef",
+        "size_in_bytes": 50848
+      },
+      {
+        "_path": "lib/libpciaccess.so.0",
+        "path_type": "softlink",
+        "sha256": "288ad372cabba8550a34a12e1993c7b92a426cf668221ccce22710325dd9ff5b",
+        "sha256_in_prefix": "fa26d2981b18bb315aceb27abfd4e113221c8a572bd32b325293503080197eef",
+        "size_in_bytes": 50848
+      },
+      {
+        "_path": "lib/libpciaccess.so.0.11.1",
+        "path_type": "hardlink",
+        "sha256": "288ad372cabba8550a34a12e1993c7b92a426cf668221ccce22710325dd9ff5b",
+        "sha256_in_prefix": "b1af955e01d0e01e6424d40cd5c7065a8a7377be3f401b2900977731382ff18b",
+        "size_in_bytes": 50848,
+        "file_mode": "binary",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/libpciaccess_1707101229788/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol"
+      },
+      {
+        "_path": "lib/pkgconfig/pciaccess.pc",
+        "path_type": "hardlink",
+        "sha256": "b14e6d09477700efbd07b5024fd72f5c494815af588a96e34c5ae27856a678fb",
+        "sha256_in_prefix": "ccb037f038373fefe96c770fcf0c1a75edf1477ec5a37aaf59211e2c62de7b49",
+        "size_in_bytes": 267,
+        "file_mode": "text",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/libpciaccess_1707101229788/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehol"
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/libpciaccess-0.18-hd590300_0",
+    "type": 1
+  }
+}

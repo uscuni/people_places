@@ -1,0 +1,57 @@
+{
+  "arch": "x86_64",
+  "build": "h0121fbd_0",
+  "build_number": 0,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libabseil",
+    "libcrc32c >=1.1.2,<1.2.0a0",
+    "libcurl",
+    "libgcc >=13",
+    "libgoogle-cloud 2.31.0 h804f50b_0",
+    "libstdcxx >=13",
+    "libzlib >=1.3.1,<2.0a0",
+    "openssl"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "md5": "568d6a09a6ed76337a7b97c84ae7c0f8",
+  "name": "libgoogle-cloud-storage",
+  "platform": "linux",
+  "sha256": "3c38b0a80441f82323dc5a72b96c0dd7476bd5184fbfcdf825a8e15249c849af",
+  "size": 782150,
+  "subdir": "linux-64",
+  "timestamp": 1731122728715,
+  "version": "2.31.0",
+  "fn": "libgoogle-cloud-storage-2.31.0-h0121fbd_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libgoogle-cloud-storage-2.31.0-h0121fbd_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/libgoogle-cloud-storage-2.31.0-h0121fbd_0",
+  "files": [
+    "lib/libgoogle_cloud_cpp_storage.so.2",
+    "lib/libgoogle_cloud_cpp_storage.so.2.31.0"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libgoogle_cloud_cpp_storage.so.2",
+        "path_type": "softlink",
+        "sha256": "7924bca696e121c8987d4bda7a69535180e06d06a77b497fa2dfae3896e58ea1",
+        "sha256_in_prefix": "548ab618f9a1e55fbf044aa6af788d0c31a34e02c7cb7dd8a0eaa9599c0fc485",
+        "size_in_bytes": 3394240
+      },
+      {
+        "_path": "lib/libgoogle_cloud_cpp_storage.so.2.31.0",
+        "path_type": "hardlink",
+        "sha256": "7924bca696e121c8987d4bda7a69535180e06d06a77b497fa2dfae3896e58ea1",
+        "sha256_in_prefix": "7924bca696e121c8987d4bda7a69535180e06d06a77b497fa2dfae3896e58ea1",
+        "size_in_bytes": 3394240
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/libgoogle-cloud-storage-2.31.0-h0121fbd_0",
+    "type": 1
+  }
+}

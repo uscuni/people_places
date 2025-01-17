@@ -1,0 +1,54 @@
+{
+  "arch": "x86_64",
+  "build": "h1909e37_2",
+  "build_number": 2,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "aom >=3.9.1,<3.10.0a0",
+    "dav1d >=1.2.1,<1.2.2.0a0",
+    "libgcc >=13",
+    "rav1e >=0.6.6,<1.0a0",
+    "svt-av1 >=2.3.0,<2.3.1.0a0"
+  ],
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "md5": "21e468ed3786ebcb2124b123aa2484b7",
+  "name": "libavif16",
+  "platform": "linux",
+  "sha256": "e06da844b007a64a9ac35d4e3dc4dbc66583f79b57d08166cf58f2f08723a6e8",
+  "size": 116202,
+  "subdir": "linux-64",
+  "timestamp": 1730268687453,
+  "version": "1.1.1",
+  "fn": "libavif16-1.1.1-h1909e37_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/libavif16-1.1.1-h1909e37_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/libavif16-1.1.1-h1909e37_2",
+  "files": [
+    "lib/libavif.so.16",
+    "lib/libavif.so.16.1.1"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/libavif.so.16",
+        "path_type": "softlink",
+        "sha256": "bb5c1032d40462e870391efad9d197b12590b2bbb3c15f6da02e725479985c71",
+        "sha256_in_prefix": "3e10fa2c424a184c453d6f8622d22defb5f62bbcd52c5ee0fff224e55a94ccfd",
+        "size_in_bytes": 223264
+      },
+      {
+        "_path": "lib/libavif.so.16.1.1",
+        "path_type": "hardlink",
+        "sha256": "bb5c1032d40462e870391efad9d197b12590b2bbb3c15f6da02e725479985c71",
+        "sha256_in_prefix": "bb5c1032d40462e870391efad9d197b12590b2bbb3c15f6da02e725479985c71",
+        "size_in_bytes": 223264
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/libavif16-1.1.1-h1909e37_2",
+    "type": 1
+  }
+}

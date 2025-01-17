@@ -1,0 +1,143 @@
+{
+  "arch": "x86_64",
+  "build": "py312ha738696_0",
+  "build_number": 0,
+  "constrains": [
+    "__glibc >=2.17"
+  ],
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "python >=3.12,<3.13.0a0",
+    "python_abi 3.12.* *_cp312"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "01d282f084bf1bad1cd41e6413ff0eff",
+  "name": "arro3-core",
+  "platform": "linux",
+  "sha256": "e37d39da1ba1aaa1d5deb98411de903180c286920165dc83cc09085f619a6e9d",
+  "size": 1755764,
+  "subdir": "linux-64",
+  "timestamp": 1732226589289,
+  "version": "0.4.3",
+  "fn": "arro3-core-0.4.3-py312ha738696_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/arro3-core-0.4.3-py312ha738696_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/arro3-core-0.4.3-py312ha738696_0",
+  "files": [
+    "lib/python3.12/site-packages/arro3/core/__init__.py",
+    "lib/python3.12/site-packages/arro3/core/__pycache__/__init__.cpython-312.pyc",
+    "lib/python3.12/site-packages/arro3/core/__pycache__/types.cpython-312.pyc",
+    "lib/python3.12/site-packages/arro3/core/_core.cpython-312-x86_64-linux-gnu.so",
+    "lib/python3.12/site-packages/arro3/core/_core.pyi",
+    "lib/python3.12/site-packages/arro3/core/py.typed",
+    "lib/python3.12/site-packages/arro3/core/types.py",
+    "lib/python3.12/site-packages/arro3_core-0.4.3.dist-info/INSTALLER",
+    "lib/python3.12/site-packages/arro3_core-0.4.3.dist-info/METADATA",
+    "lib/python3.12/site-packages/arro3_core-0.4.3.dist-info/RECORD",
+    "lib/python3.12/site-packages/arro3_core-0.4.3.dist-info/REQUESTED",
+    "lib/python3.12/site-packages/arro3_core-0.4.3.dist-info/WHEEL",
+    "lib/python3.12/site-packages/arro3_core-0.4.3.dist-info/direct_url.json"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/python3.12/site-packages/arro3/core/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "83559944fbc8e9201d231bb6e7c461b53d5f1bb815cf18a76f54de278ef3c9b8",
+        "sha256_in_prefix": "83559944fbc8e9201d231bb6e7c461b53d5f1bb815cf18a76f54de278ef3c9b8",
+        "size_in_bytes": 84
+      },
+      {
+        "_path": "lib/python3.12/site-packages/arro3/core/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "366d67a9f5a89c71e77ad2b07cf8083252f72b931bf2f6dd9ffda3c8e3d456eb",
+        "sha256_in_prefix": "366d67a9f5a89c71e77ad2b07cf8083252f72b931bf2f6dd9ffda3c8e3d456eb",
+        "size_in_bytes": 287
+      },
+      {
+        "_path": "lib/python3.12/site-packages/arro3/core/__pycache__/types.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "d4ae8f0e317f2d4d0a52ecc58ce220b2e00055659e2c24d75da38f8b2dabbd7c",
+        "sha256_in_prefix": "d4ae8f0e317f2d4d0a52ecc58ce220b2e00055659e2c24d75da38f8b2dabbd7c",
+        "size_in_bytes": 4241
+      },
+      {
+        "_path": "lib/python3.12/site-packages/arro3/core/_core.cpython-312-x86_64-linux-gnu.so",
+        "path_type": "hardlink",
+        "sha256": "13be0db85e0f3b687dcef05353a5f3ac3d01a021737ff25fd6e809aa9ffb1fbb",
+        "sha256_in_prefix": "13be0db85e0f3b687dcef05353a5f3ac3d01a021737ff25fd6e809aa9ffb1fbb",
+        "size_in_bytes": 9215504
+      },
+      {
+        "_path": "lib/python3.12/site-packages/arro3/core/_core.pyi",
+        "path_type": "hardlink",
+        "sha256": "ce2a2c207023d7b6ed458288a9a5df45f82197dfe8aa9234c022089f7d603e31",
+        "sha256_in_prefix": "ce2a2c207023d7b6ed458288a9a5df45f82197dfe8aa9234c022089f7d603e31",
+        "size_in_bytes": 69663
+      },
+      {
+        "_path": "lib/python3.12/site-packages/arro3/core/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/arro3/core/types.py",
+        "path_type": "hardlink",
+        "sha256": "01e4af4b9fdfcaf555e5b0cf4838ff46c903bd2c47a75661491257e1cd01ace7",
+        "sha256_in_prefix": "01e4af4b9fdfcaf555e5b0cf4838ff46c903bd2c47a75661491257e1cd01ace7",
+        "size_in_bytes": 3454
+      },
+      {
+        "_path": "lib/python3.12/site-packages/arro3_core-0.4.3.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.12/site-packages/arro3_core-0.4.3.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "13837dd463d749a929864e5ff1df1a111070a8d59468066bf4c9051c464a2a4f",
+        "sha256_in_prefix": "13837dd463d749a929864e5ff1df1a111070a8d59468066bf4c9051c464a2a4f",
+        "size_in_bytes": 885
+      },
+      {
+        "_path": "lib/python3.12/site-packages/arro3_core-0.4.3.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "6288157f729d6fc8f6ba5752cb887528e3d7ccff9ab569d1859ba923ac288a51",
+        "sha256_in_prefix": "6288157f729d6fc8f6ba5752cb887528e3d7ccff9ab569d1859ba923ac288a51",
+        "size_in_bytes": 1014
+      },
+      {
+        "_path": "lib/python3.12/site-packages/arro3_core-0.4.3.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/arro3_core-0.4.3.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "fb8f0474d53507bd08ab694ec424fc8108651ddbe8e8d90eacdee676fb1a3f3c",
+        "sha256_in_prefix": "fb8f0474d53507bd08ab694ec424fc8108651ddbe8e8d90eacdee676fb1a3f3c",
+        "size_in_bytes": 99
+      },
+      {
+        "_path": "lib/python3.12/site-packages/arro3_core-0.4.3.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "f417a7cf59b2ceacb5b408bfb8e927f06b205c4469e4d84cd3de903850063f7b",
+        "sha256_in_prefix": "f417a7cf59b2ceacb5b408bfb8e927f06b205c4469e4d84cd3de903850063f7b",
+        "size_in_bytes": 117
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/arro3-core-0.4.3-py312ha738696_0",
+    "type": 1
+  }
+}

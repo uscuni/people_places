@@ -1,0 +1,168 @@
+{
+  "build": "pyhd8ed1ab_1",
+  "build_number": 1,
+  "depends": [
+    "python >=3.8"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "c79cea50b258f652010cb6c8d81591b5",
+  "name": "xyzservices",
+  "noarch": "python",
+  "sha256": "5f8757092fc985d7586f2659505ec28757c05fd65d8d6ae549a5cec7e3376977",
+  "size": 46860,
+  "subdir": "noarch",
+  "timestamp": 1733143536777,
+  "version": "2024.9.0",
+  "fn": "xyzservices-2024.9.0-pyhd8ed1ab_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/xyzservices-2024.9.0-pyhd8ed1ab_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/xyzservices-2024.9.0-pyhd8ed1ab_1",
+  "files": [
+    "share/xyzservices/providers.json",
+    "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/INSTALLER",
+    "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/LICENSE",
+    "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/METADATA",
+    "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/RECORD",
+    "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/REQUESTED",
+    "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/WHEEL",
+    "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/direct_url.json",
+    "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/top_level.txt",
+    "lib/python3.12/site-packages/xyzservices/__init__.py",
+    "lib/python3.12/site-packages/xyzservices/data/__init__.py",
+    "lib/python3.12/site-packages/xyzservices/data/providers.json",
+    "lib/python3.12/site-packages/xyzservices/lib.py",
+    "lib/python3.12/site-packages/xyzservices/providers.py",
+    "lib/python3.12/site-packages/xyzservices/tests/__init__.py",
+    "lib/python3.12/site-packages/xyzservices/tests/test_lib.py",
+    "lib/python3.12/site-packages/xyzservices/tests/test_providers.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "share/xyzservices/providers.json",
+        "path_type": "hardlink",
+        "sha256": "505b2400319e745c1101b3da1685e3c65accb3ae71780b10e2bc07b868190fc2",
+        "sha256_in_prefix": "505b2400319e745c1101b3da1685e3c65accb3ae71780b10e2bc07b868190fc2",
+        "size_in_bytes": 731357
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "d866b8c6c0e77e67b2c3f6d2cca771ffc05f65bbde1674dcf2e0ec55abb6ad61",
+        "sha256_in_prefix": "d866b8c6c0e77e67b2c3f6d2cca771ffc05f65bbde1674dcf2e0ec55abb6ad61",
+        "size_in_bytes": 1517
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "5c2f3e1ef89fd91d506232d2982571e95d276bef1eb046a53aff94299e6ea872",
+        "sha256_in_prefix": "5c2f3e1ef89fd91d506232d2982571e95d276bef1eb046a53aff94299e6ea872",
+        "size_in_bytes": 4080
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "76d3c05809e432ae9f05a16583762e7fcf52aa4731cad1332a30fa8a435aa7e8",
+        "sha256_in_prefix": "76d3c05809e432ae9f05a16583762e7fcf52aa4731cad1332a30fa8a435aa7e8",
+        "size_in_bytes": 1878
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "3fd8f0fa01237bc07207bfe15e82029c7b550ab13031087eeb7d2d2af4167a17",
+        "sha256_in_prefix": "3fd8f0fa01237bc07207bfe15e82029c7b550ab13031087eeb7d2d2af4167a17",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "7876f1413f435b4056601b11654efd578ac5478cb9a6f21d9777e16d9061038c",
+        "sha256_in_prefix": "7876f1413f435b4056601b11654efd578ac5478cb9a6f21d9777e16d9061038c",
+        "size_in_bytes": 107
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices-2024.9.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "d31199af918719e5438e07764e67077748cd822c5e173090acf32fb966baee3a",
+        "sha256_in_prefix": "d31199af918719e5438e07764e67077748cd822c5e173090acf32fb966baee3a",
+        "size_in_bytes": 12
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b7ca696000db859dd3077a6864553f4f96673608529d9195a50b791f2736527c",
+        "sha256_in_prefix": "b7ca696000db859dd3077a6864553f4f96673608529d9195a50b791f2736527c",
+        "size_in_bytes": 256
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices/data/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices/data/providers.json",
+        "path_type": "hardlink",
+        "sha256": "505b2400319e745c1101b3da1685e3c65accb3ae71780b10e2bc07b868190fc2",
+        "sha256_in_prefix": "505b2400319e745c1101b3da1685e3c65accb3ae71780b10e2bc07b868190fc2",
+        "size_in_bytes": 731357
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices/lib.py",
+        "path_type": "hardlink",
+        "sha256": "7595c7a1f46e550fa4d9314a456f5147721571b04d78a9c7c0eaf3690b5d454b",
+        "sha256_in_prefix": "7595c7a1f46e550fa4d9314a456f5147721571b04d78a9c7c0eaf3690b5d454b",
+        "size_in_bytes": 21476
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices/providers.py",
+        "path_type": "hardlink",
+        "sha256": "1f59a0c3a2f7822693b30bf70d1dc54ea868e18981b69ae22fcc31acb6f77661",
+        "sha256_in_prefix": "1f59a0c3a2f7822693b30bf70d1dc54ea868e18981b69ae22fcc31acb6f77661",
+        "size_in_bytes": 333
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices/tests/test_lib.py",
+        "path_type": "hardlink",
+        "sha256": "18206828b617413b7691af8df1fd9e7c352714314395890e2578c99e81b6eda1",
+        "sha256_in_prefix": "18206828b617413b7691af8df1fd9e7c352714314395890e2578c99e81b6eda1",
+        "size_in_bytes": 9103
+      },
+      {
+        "_path": "lib/python3.12/site-packages/xyzservices/tests/test_providers.py",
+        "path_type": "hardlink",
+        "sha256": "b233632f38b448411cc87eddff44dcb10b5044b329f2796a73711bcbb7f85e19",
+        "sha256_in_prefix": "b233632f38b448411cc87eddff44dcb10b5044b329f2796a73711bcbb7f85e19",
+        "size_in_bytes": 6883
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/xyzservices-2024.9.0-pyhd8ed1ab_1",
+    "type": 1
+  }
+}

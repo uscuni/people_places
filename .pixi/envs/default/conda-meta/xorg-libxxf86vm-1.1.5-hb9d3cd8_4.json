@@ -1,0 +1,78 @@
+{
+  "arch": "x86_64",
+  "build": "hb9d3cd8_4",
+  "build_number": 4,
+  "depends": [
+    "__glibc >=2.17,<3.0.a0",
+    "libgcc >=13",
+    "xorg-libx11 >=1.8.10,<2.0a0",
+    "xorg-libxext >=1.3.6,<2.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "7da9007c0582712c4bad4131f89c8372",
+  "name": "xorg-libxxf86vm",
+  "platform": "linux",
+  "sha256": "0b8f062a5b4a2c3833267285b7d41b3542f54d2c935c86ca98504c3e5296354c",
+  "size": 18072,
+  "subdir": "linux-64",
+  "timestamp": 1728920051869,
+  "version": "1.1.5",
+  "fn": "xorg-libxxf86vm-1.1.5-hb9d3cd8_4.conda",
+  "url": "https://conda.anaconda.org/conda-forge/linux-64/xorg-libxxf86vm-1.1.5-hb9d3cd8_4.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/xorg-libxxf86vm-1.1.5-hb9d3cd8_4",
+  "files": [
+    "include/X11/extensions/xf86vmode.h",
+    "lib/libXxf86vm.so",
+    "lib/libXxf86vm.so.1",
+    "lib/libXxf86vm.so.1.0.0",
+    "lib/pkgconfig/xxf86vm.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "include/X11/extensions/xf86vmode.h",
+        "path_type": "hardlink",
+        "sha256": "06be35454c49bde32c6e84e1543382bc11c854fc193339d64277b2110ca2f21d",
+        "sha256_in_prefix": "06be35454c49bde32c6e84e1543382bc11c854fc193339d64277b2110ca2f21d",
+        "size_in_bytes": 7619
+      },
+      {
+        "_path": "lib/libXxf86vm.so",
+        "path_type": "softlink",
+        "sha256": "fd4e99fedfbaa5abab34be89576d7cb3c6c3e52c4924a7c34cc7cbb90cc853bd",
+        "sha256_in_prefix": "fe674159c0d29c7a5d6fda029db8539faa6110d7930302987b51276a23f3ec92",
+        "size_in_bytes": 29624
+      },
+      {
+        "_path": "lib/libXxf86vm.so.1",
+        "path_type": "softlink",
+        "sha256": "fd4e99fedfbaa5abab34be89576d7cb3c6c3e52c4924a7c34cc7cbb90cc853bd",
+        "sha256_in_prefix": "fe674159c0d29c7a5d6fda029db8539faa6110d7930302987b51276a23f3ec92",
+        "size_in_bytes": 29624
+      },
+      {
+        "_path": "lib/libXxf86vm.so.1.0.0",
+        "path_type": "hardlink",
+        "sha256": "fd4e99fedfbaa5abab34be89576d7cb3c6c3e52c4924a7c34cc7cbb90cc853bd",
+        "sha256_in_prefix": "fd4e99fedfbaa5abab34be89576d7cb3c6c3e52c4924a7c34cc7cbb90cc853bd",
+        "size_in_bytes": 29624
+      },
+      {
+        "_path": "lib/pkgconfig/xxf86vm.pc",
+        "path_type": "hardlink",
+        "sha256": "3c0c9c7e0e4d5fde456e8a4e26c7aa99ead09e2e1cd8a8ffa88afa88244d4df9",
+        "sha256_in_prefix": "d72f4a350061be191ef4809d2b9c5d9035b463b8e50ce6a491af68f95b36be8b",
+        "size_in_bytes": 322,
+        "file_mode": "text",
+        "prefix_placeholder": "/home/conda/feedstock_root/build_artifacts/xorg-libxxf86vm_1728919870799/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_place"
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/xorg-libxxf86vm-1.1.5-hb9d3cd8_4",
+    "type": 1
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "build": "pyhd8ed1ab_1",
+  "build_number": 1,
+  "depends": [
+    "python >=3.9"
+  ],
+  "license": "BSD-2-Clause",
+  "md5": "d622d8d7ee8868870f9cbe259f381181",
+  "name": "decorator",
+  "noarch": "python",
+  "sha256": "84e5120c97502a3785e8c3241c3bf51f64b4d445f13b4d2445db00d9816fe479",
+  "size": 14068,
+  "subdir": "noarch",
+  "timestamp": 1733236549190,
+  "version": "5.1.1",
+  "fn": "decorator-5.1.1-pyhd8ed1ab_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/decorator-5.1.1-pyhd8ed1ab_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "/home/anna/.cache/rattler/cache/pkgs/decorator-5.1.1-pyhd8ed1ab_1",
+  "files": [
+    "lib/python3.12/site-packages/decorator-5.1.1.dist-info/INSTALLER",
+    "lib/python3.12/site-packages/decorator-5.1.1.dist-info/LICENSE.txt",
+    "lib/python3.12/site-packages/decorator-5.1.1.dist-info/METADATA",
+    "lib/python3.12/site-packages/decorator-5.1.1.dist-info/RECORD",
+    "lib/python3.12/site-packages/decorator-5.1.1.dist-info/REQUESTED",
+    "lib/python3.12/site-packages/decorator-5.1.1.dist-info/WHEEL",
+    "lib/python3.12/site-packages/decorator-5.1.1.dist-info/direct_url.json",
+    "lib/python3.12/site-packages/decorator-5.1.1.dist-info/pbr.json",
+    "lib/python3.12/site-packages/decorator-5.1.1.dist-info/top_level.txt",
+    "lib/python3.12/site-packages/decorator.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "lib/python3.12/site-packages/decorator-5.1.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "lib/python3.12/site-packages/decorator-5.1.1.dist-info/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "fd11660cabf0532082c45706862fafc294907ec7f8e217818240a4999806782e",
+        "sha256_in_prefix": "fd11660cabf0532082c45706862fafc294907ec7f8e217818240a4999806782e",
+        "size_in_bytes": 1309
+      },
+      {
+        "_path": "lib/python3.12/site-packages/decorator-5.1.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "ee2759b001d0a7911884d1be3580a6e88da985c145461b74ada6b189c3ac91ae",
+        "sha256_in_prefix": "ee2759b001d0a7911884d1be3580a6e88da985c145461b74ada6b189c3ac91ae",
+        "size_in_bytes": 3979
+      },
+      {
+        "_path": "lib/python3.12/site-packages/decorator-5.1.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "fee471d593ca05276e47eb33f13ca6150efcf910f923c3ae79d61d5c9ffb9921",
+        "sha256_in_prefix": "fee471d593ca05276e47eb33f13ca6150efcf910f923c3ae79d61d5c9ffb9921",
+        "size_in_bytes": 884
+      },
+      {
+        "_path": "lib/python3.12/site-packages/decorator-5.1.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "lib/python3.12/site-packages/decorator-5.1.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "3d9504c5d7fbd548bfb28ebb417a724ae1ed0a2dfe277c2f1783912ba93f4bc5",
+        "sha256_in_prefix": "3d9504c5d7fbd548bfb28ebb417a724ae1ed0a2dfe277c2f1783912ba93f4bc5",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "lib/python3.12/site-packages/decorator-5.1.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "6513f32a76595d4071eaa34d58da895f1ece557d2923f97e67be1af7cd69f27f",
+        "sha256_in_prefix": "6513f32a76595d4071eaa34d58da895f1ece557d2923f97e67be1af7cd69f27f",
+        "size_in_bytes": 105
+      },
+      {
+        "_path": "lib/python3.12/site-packages/decorator-5.1.1.dist-info/pbr.json",
+        "path_type": "hardlink",
+        "sha256": "00bf38a14516407c2477c3823e12d1a363498d4e4c0dd99732a447bfea68b2ab",
+        "sha256_in_prefix": "00bf38a14516407c2477c3823e12d1a363498d4e4c0dd99732a447bfea68b2ab",
+        "size_in_bytes": 47
+      },
+      {
+        "_path": "lib/python3.12/site-packages/decorator-5.1.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "2a7e9e423a3cddcb56c5757204c398b74fd8a634630739ca615b8dcae0bf0d22",
+        "sha256_in_prefix": "2a7e9e423a3cddcb56c5757204c398b74fd8a634630739ca615b8dcae0bf0d22",
+        "size_in_bytes": 10
+      },
+      {
+        "_path": "lib/python3.12/site-packages/decorator.py",
+        "path_type": "hardlink",
+        "sha256": "7a5e5c0048284c4a5140deb9b4ec4684496e7be09c70cbf4c6897e27633039cd",
+        "sha256_in_prefix": "7a5e5c0048284c4a5140deb9b4ec4684496e7be09c70cbf4c6897e27633039cd",
+        "size_in_bytes": 16752
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/anna/.cache/rattler/cache/pkgs/decorator-5.1.1-pyhd8ed1ab_1",
+    "type": 1
+  }
+}
