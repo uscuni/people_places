@@ -1,7 +1,0 @@
-prefix=/home/anna/people_places_germany/.pixi/envs/default
-includedir=${prefix}/include
- 
-Name: XF86BigFontProto
-Description: XF86BigFont extension headers
-Version: 1.2.0
-Cflags: -I${includedir}

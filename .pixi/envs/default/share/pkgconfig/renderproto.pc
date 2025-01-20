@@ -1,7 +1,0 @@
-prefix=/home/anna/people_places_germany/.pixi/envs/default
-includedir=${prefix}/include
-
-Name: RenderProto
-Description: Render extension headers
-Version: 0.11.1
-Cflags: -I${includedir}
