@@ -1,0 +1,7 @@
+Frankfurt
+cluster 17 and 6,22,14,5,15 should be split (includes commi blocks and industrial)
+
+
+the commi blocks dont have their cluster
+
+missing building in 63756_77_3
