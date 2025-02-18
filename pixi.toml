@@ -2,7 +2,7 @@
 authors = ["Kryndlea <kryndlea@natur.cuni.cz>"]
 channels = ["conda-forge"]
 description = "Add a short description here"
-name = "people_places_germany"
+name = "people_places"
 platforms = ["linux-64"]
 version = "0.1.0"
 
