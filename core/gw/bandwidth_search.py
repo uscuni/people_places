@@ -6,9 +6,6 @@ import pandas as pd
 from scipy.spatial.distance import pdist
 from sklearn import metrics
 
-from .base import BaseClassifier
-
-
 class BandwidthSearch:
     """Optimal bandwidth search for geographically-weighted models
 
@@ -81,8 +78,7 @@ class BandwidthSearch:
         In case of invariant y in a local model, returns -np.inf
         """
         try:
-            rf = BaseClassifier(
-                model=self.model,
+            gwm = self.model(
                 bandwidth=bw,
                 fixed=self.fixed,
                 kernel=self.kernel,
@@ -92,7 +88,7 @@ class BandwidthSearch:
                 strict=True,
                 **self.model_kwargs,
             ).fit(X=X, y=y, geometry=geometry)
-            log_likelihood = -metrics.log_loss(y, rf.focal_proba_)
+            log_likelihood = -metrics.log_loss(y, gwm.focal_proba_)
             n, k = X.shape
             match self.criterion:
                 case "aic":
