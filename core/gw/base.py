@@ -186,6 +186,7 @@ class BaseClassifier:
                 models,
             ) = zip(*traning_output, strict=False)
             self.local_models = pd.Series(models, index=self._names)
+            self._geometry = geometry
         else:
             self._names, self._score_data, self._feature_importances, focal_proba = zip(
                 *traning_output, strict=False
@@ -288,3 +289,40 @@ class BaseClassifier:
 
     def _get_score_data(self, true, pred):
         return sum(true.flatten() == pred), len(pred)
+
+    def predict_proba(self, X, geometry):
+        # TODO: generalise for mutliple samples
+        if self.fixed:
+            within = self._geometry.index[
+                self._geometry.sindex.query(
+                    geometry, predicate="dwithin", distance=self.bandwidth
+                )
+            ]
+            distance = _kernel_functions[self.kernel](
+                self._geometry[within].distance(geometry), self.bandwidth
+            )
+        else:
+            raise NotImplementedError
+
+        pred = pd.DataFrame(
+            [
+                pd.Series(
+                    self.local_models[i].predict_proba(X).flatten(),
+                    index=self.local_models[i].classes_,
+                )
+                for i in within
+            ]
+        ).fillna(0)
+
+        weighted = np.average(pred, axis=0, weights=distance)
+
+        # normalize
+        weighted = weighted / weighted.sum()
+
+        return pd.Series(weighted, index=pred.columns)
+
+    def predict(self, X, geometry):
+        # TODO: generalise for mutliple samples
+        proba = self.predict_proba(X, geometry)
+
+        return proba.idxmax()
