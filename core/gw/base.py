@@ -308,12 +308,20 @@ class BaseClassifier:
         split_indices = np.where(np.diff(input_ids))[0] + 1
         local_model_ids = np.split(local_ids, split_indices)
         distances = np.split(distance.values, split_indices)
+        data = np.split(X, range(1, len(X)))
+
+        # probabilities = Parallel(n_jobs=self.n_jobs)(
+        #     delayed(self._predict_proba)(x_, models_, distances_, X.columns)
+        #     for x_, models_, distances_ in zip(
+        #         data, local_model_ids, distances, strict=True
+        #     )
+        # )
 
         probabilities = []
 
         # TODO: run this loop in parallel
         for x_, models_, distances_ in zip(
-            X.itertuples(index=False), local_model_ids, distances, strict=True
+            data, local_model_ids, distances, strict=True
         ):
             x_ = pd.DataFrame(np.array(x_).reshape(1, -1), columns=X.columns)
             pred = pd.DataFrame(
@@ -334,6 +342,23 @@ class BaseClassifier:
         return pd.DataFrame(
             probabilities, columns=self._global_classes, index=X.index
         ).fillna(0)
+
+    def _predict_proba(self, x_, models_, distances_, columns):
+        x_ = pd.DataFrame(np.array(x_).reshape(1, -1), columns=columns)
+        pred = pd.DataFrame(
+            [
+                pd.Series(
+                    self.local_models[i].predict_proba(x_).flatten(),
+                    index=self.local_models[i].classes_,
+                )
+                for i in models_
+            ]
+        ).fillna(0)
+        weighted = np.average(pred, axis=0, weights=distances_)
+
+        # normalize
+        weighted = weighted / weighted.sum()
+        return pd.Series(weighted, index=pred.columns)
 
     def predict(self, X, geometry):
         proba = self.predict_proba(X, geometry)
