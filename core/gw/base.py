@@ -151,6 +151,7 @@ class BaseClassifier:
                 is_sorted=True,
             )
 
+        self._global_classes = np.unique(y)
         # fit the models
         data = X.copy()
         data["_y"] = y
@@ -290,39 +291,51 @@ class BaseClassifier:
     def _get_score_data(self, true, pred):
         return sum(true.flatten() == pred), len(pred)
 
-    def predict_proba(self, X, geometry):
-        # TODO: generalise for mutliple samples
+    def predict_proba(self, X: pd.DataFrame, geometry: gpd.GeoSeries) -> pd.DataFrame:
         if self.fixed:
-            within = self._geometry.index[
-                self._geometry.sindex.query(
-                    geometry, predicate="dwithin", distance=self.bandwidth
-                )
-            ]
+            input_ids, local_ids = self._geometry.sindex.query(
+                geometry, predicate="dwithin", distance=self.bandwidth
+            )
             distance = _kernel_functions[self.kernel](
-                self._geometry[within].distance(geometry), self.bandwidth
+                self._geometry.iloc[local_ids].distance(
+                    geometry.iloc[input_ids], align=False
+                ),
+                self.bandwidth,
             )
         else:
             raise NotImplementedError
 
-        pred = pd.DataFrame(
-            [
-                pd.Series(
-                    self.local_models[i].predict_proba(X).flatten(),
-                    index=self.local_models[i].classes_,
-                )
-                for i in within
-            ]
+        split_indices = np.where(np.diff(input_ids))[0] + 1
+        local_model_ids = np.split(local_ids, split_indices)
+        distances = np.split(distance.values, split_indices)
+
+        probabilities = []
+
+        # TODO: run this loop in parallel
+        for x_, models_, distances_ in zip(
+            X.itertuples(index=False), local_model_ids, distances, strict=True
+        ):
+            x_ = pd.DataFrame(np.array(x_).reshape(1, -1), columns=X.columns)
+            pred = pd.DataFrame(
+                [
+                    pd.Series(
+                        self.local_models[i].predict_proba(x_).flatten(),
+                        index=self.local_models[i].classes_,
+                    )
+                    for i in models_
+                ]
+            ).fillna(0)
+            weighted = np.average(pred, axis=0, weights=distances_)
+
+            # normalize
+            weighted = weighted / weighted.sum()
+            probabilities.append(pd.Series(weighted, index=pred.columns))
+
+        return pd.DataFrame(
+            probabilities, columns=self._global_classes, index=X.index
         ).fillna(0)
 
-        weighted = np.average(pred, axis=0, weights=distance)
-
-        # normalize
-        weighted = weighted / weighted.sum()
-
-        return pd.Series(weighted, index=pred.columns)
-
     def predict(self, X, geometry):
-        # TODO: generalise for mutliple samples
         proba = self.predict_proba(X, geometry)
 
-        return proba.idxmax()
+        return proba.idxmax(axis=1)
