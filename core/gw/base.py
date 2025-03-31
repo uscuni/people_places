@@ -91,6 +91,9 @@ class BaseClassifier:
         Keep all local models (required for prediction), by default True. Note that
         for some models,
         like random forests, the objects can be large.
+    temp_folder : str, optional
+        Folder to be used by the pool for memmapping large arrays for sharing memory
+        with worker processes, e.g., ``/tmp``. Passed to ``joblib.Parallel``.
     **kwargs
         Additional keyword arguments passed to ``model`` initialisation
     """
@@ -106,6 +109,7 @@ class BaseClassifier:
         measure_performance: bool = True,
         strict: bool = False,
         keep_models: bool = False,
+        temp_folder: str | None = None,
         **kwargs,
     ):
         self.model = model
@@ -118,6 +122,7 @@ class BaseClassifier:
         self.measure_performance = measure_performance
         self.strict = strict
         self.keep_models = keep_models
+        self.temp_folder = temp_folder
         self._measure_oob = "oob_score" in inspect.signature(model).parameters
         if self._measure_oob:
             self.model_kwargs["oob_score"] = self._get_score_data
@@ -172,7 +177,7 @@ class BaseClassifier:
                 )
 
         # models are fit in parallel
-        traning_output = Parallel(n_jobs=self.n_jobs)(
+        traning_output = Parallel(n_jobs=self.n_jobs, temp_folder=self.temp_folder)(
             delayed(self._fit_local)(
                 self.model, group, name, focal_x, self.model_kwargs, self.keep_models
             )
@@ -285,6 +290,8 @@ class BaseClassifier:
         ]
         if keep_models:
             output.append(local_model)
+        else:
+            del local_model
 
         return output
 
@@ -310,34 +317,16 @@ class BaseClassifier:
         distances = np.split(distance.values, split_indices)
         data = np.split(X, range(1, len(X)))
 
-        # probabilities = Parallel(n_jobs=self.n_jobs)(
-        #     delayed(self._predict_proba)(x_, models_, distances_, X.columns)
-        #     for x_, models_, distances_ in zip(
-        #         data, local_model_ids, distances, strict=True
-        #     )
-        # )
-
         probabilities = []
-
-        # TODO: run this loop in parallel
         for x_, models_, distances_ in zip(
             data, local_model_ids, distances, strict=True
         ):
-            x_ = pd.DataFrame(np.array(x_).reshape(1, -1), columns=X.columns)
-            pred = pd.DataFrame(
-                [
-                    pd.Series(
-                        self.local_models[i].predict_proba(x_).flatten(),
-                        index=self.local_models[i].classes_,
-                    )
-                    for i in models_
-                ]
-            ).fillna(0)
-            weighted = np.average(pred, axis=0, weights=distances_)
-
-            # normalize
-            weighted = weighted / weighted.sum()
-            probabilities.append(pd.Series(weighted, index=pred.columns))
+            # there are likely ways of speeding this up using parallel processing
+            # but I failed to do so efficiently. We are hitting GIL due to accessing
+            # same local models many times so iterative loop is in the end faster
+            probabilities.append(
+                self._predict_proba(x_, models_, distances_, X.columns)
+            )
 
         return pd.DataFrame(
             probabilities, columns=self._global_classes, index=X.index
