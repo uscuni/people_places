@@ -9,6 +9,10 @@ from joblib import Parallel, delayed
 from libpysal import graph
 from sklearn import metrics
 
+# TODO: localise F1 scores
+# TODO: fix OOB score when there are invariant cases
+# TODO: fix keep_models=True
+
 __all__ = ["BaseClassifier"]
 
 
@@ -110,6 +114,8 @@ class BaseClassifier:
         strict: bool = False,
         keep_models: bool = False,
         temp_folder: str | None = None,
+        batch_size: int | None = None,
+        min_proportion: float = 0.2,
         **kwargs,
     ):
         self.model = model
@@ -123,6 +129,8 @@ class BaseClassifier:
         self.strict = strict
         self.keep_models = keep_models
         self.temp_folder = temp_folder
+        self.batch_size = batch_size
+        self.min_proportion = min_proportion
         self._measure_oob = "oob_score" in inspect.signature(model).parameters
         if self._measure_oob:
             self.model_kwargs["oob_score"] = self._get_score_data
@@ -164,40 +172,88 @@ class BaseClassifier:
         data["_weight"] = self.weights._adjacency.values
         grouper = data.groupby(self.weights._adjacency.index.get_level_values(0))
 
-        if self.strict:
-            invariant = (
-                data["_y"]
-                .groupby(self.weights._adjacency.index.get_level_values(0))
-                .nunique()
-                == 1
-            )
-            if invariant.any():
+        invariant = (
+            data["_y"]
+            .groupby(self.weights._adjacency.index.get_level_values(0))
+            .nunique()
+            == 1
+        )
+        if invariant.any():
+            if self.strict:
                 raise ValueError(
                     f"y at locations {invariant.index[invariant]} is invariant."
                 )
+            else:
+                warnings.warn(
+                    f"y at locations {invariant.index[invariant]} is invariant.",
+                    stacklevel=3,
+                )
 
-        # models are fit in parallel
-        traning_output = Parallel(n_jobs=self.n_jobs, temp_folder=self.temp_folder)(
-            delayed(self._fit_local)(
-                self.model, group, name, focal_x, self.model_kwargs, self.keep_models
+        if self.batch_size:
+            training_output = []
+            num_groups = len(list(grouper))
+            indices = np.arange(num_groups)
+            for i in range(0, num_groups, self.batch_size):
+                batch_indices = indices[i : i + self.batch_size]
+                batch_grouper = [
+                    item for j, item in enumerate(grouper) if j in batch_indices
+                ]
+                batch_X = X.values[batch_indices]
+
+                print(
+                    f"Processing batch {i // self.batch_size + 1} "
+                    f"out of {(num_groups // self.batch_size) + 1}."
+                )
+                batch_training_output = Parallel(
+                    n_jobs=self.n_jobs, temp_folder=self.temp_folder
+                )(
+                    delayed(self._fit_local)(
+                        self.model,
+                        group,
+                        name,
+                        focal_x,
+                        self.model_kwargs,
+                    )
+                    for (name, group), focal_x in zip(
+                        batch_grouper, batch_X, strict=False
+                    )
+                )
+                training_output.extend(batch_training_output)
+        else:
+            training_output = Parallel(
+                n_jobs=self.n_jobs, temp_folder=self.temp_folder
+            )(
+                delayed(self._fit_local)(
+                    self.model,
+                    group,
+                    name,
+                    focal_x,
+                    self.model_kwargs,
+                )
+                for (name, group), focal_x in zip(grouper, X.values, strict=False)
             )
-            for (name, group), focal_x in zip(grouper, X.values, strict=False)
-        )
+
         if self.keep_models:
             (
                 self._names,
+                self._n_labels,
                 self._score_data,
                 self._feature_importances,
                 focal_proba,
                 models,
-            ) = zip(*traning_output, strict=False)
+            ) = zip(*training_output, strict=False)
             self.local_models = pd.Series(models, index=self._names)
             self._geometry = geometry
         else:
-            self._names, self._score_data, self._feature_importances, focal_proba = zip(
-                *traning_output, strict=False
-            )
+            (
+                self._names,
+                self._n_labels,
+                self._score_data,
+                self._feature_importances,
+                focal_proba,
+            ) = zip(*training_output, strict=False)
 
+        self._n_labels = pd.Series(self._n_labels, index=self._names)
         self.focal_proba_ = pd.DataFrame(focal_proba).fillna(0).loc[:, np.unique(y)]
 
         if self.fit_global_model:
@@ -211,7 +267,7 @@ class BaseClassifier:
 
         if self.measure_performance:
             # global GW accuracy
-            focal_pred = self.focal_proba_.idxmax(axis=1)
+            focal_pred = self.focal_proba_.iloc[:, 0] > 0.5
             self.score_ = metrics.accuracy_score(y, focal_pred)
             self.f1_macro = metrics.f1_score(y, focal_pred, average="macro")
             self.f1_micro = metrics.f1_score(y, focal_pred, average="micro")
@@ -226,9 +282,11 @@ class BaseClassifier:
         name: Hashable,
         focal_x,
         model_kwargs: dict,
-        keep_models: bool,
     ) -> tuple:
         """Fit individual local model
+
+        In case of an invariant y, model is not fitted and empty placeholder output
+        is returned.
 
         Parameters
         ----------
@@ -246,8 +304,33 @@ class BaseClassifier:
         tuple
             name, fitted model
         """
-        if data["_y"].nunique() == 1:
-            warnings.warn(f"y at location {name} is invariant.", stacklevel=2)
+        vc = data["_y"].value_counts()
+        n_labels = len(vc)
+        skip = n_labels == 1
+        if n_labels > 1:
+            skip = (vc.iloc[1] / vc.iloc[0]) < self.min_proportion
+        if skip:
+            if self._model_type in ["random_forest", "gradient_boosting"]:
+                score_data = (np.nan, np.nan)
+                feature_imp = np.array([np.nan] * (data.shape[1] - 2))
+            elif self._model_type == "logistic":
+                score_data = (
+                    np.nan,  # accuracy
+                    pd.Series(
+                        np.nan, index=data.columns.drop(["_y", "_weight"])
+                    ),  # local coefficients
+                    np.array([np.nan]),  # intercept
+                )
+                feature_imp = None
+
+            return [
+                name,
+                n_labels,
+                score_data,
+                feature_imp,
+                pd.Series(np.nan, index=self._global_classes),
+            ]
+
         local_model = model(**model_kwargs)
         X = data.drop(columns=["_y", "_weight"])
         y = data["_y"]
@@ -265,30 +348,28 @@ class BaseClassifier:
             local_model.predict_proba(focal_x).flatten(), index=local_model.classes_
         )
 
-        if hasattr(local_model, "oob_score_"):
+        if self._model_type == "random_forest":
             score_data = local_model.oob_score_
         elif self._model_type == "logistic":
             score_data = (
                 metrics.accuracy_score(y, local_model.predict(X)),
-                pd.DataFrame(
-                    local_model.coef_,
-                    index=local_model.classes_,
-                    columns=local_model.feature_names_in_,
-                ),  # coefficients
                 pd.Series(
-                    local_model.intercept_, index=local_model.classes_
-                ),  # intercept
+                    local_model.coef_.flatten(),
+                    index=local_model.feature_names_in_,
+                ),  # coefficients
+                local_model.intercept_,  # intercept
             )
         else:
             score_data = np.nan
 
         output = [
             name,
+            n_labels,
             score_data,
             getattr(local_model, "feature_importances_", None),
             focal_proba,
         ]
-        if keep_models:
+        if self.keep_models:
             output.append(local_model)
         else:
             del local_model
@@ -299,6 +380,27 @@ class BaseClassifier:
         return sum(true.flatten() == pred), len(pred)
 
     def predict_proba(self, X: pd.DataFrame, geometry: gpd.GeoSeries) -> pd.DataFrame:
+        """Predict probabiliies using the ensemble of local models
+
+        For any given location, this uses the
+
+        Parameters
+        ----------
+        X : pd.DataFrame
+            _description_
+        geometry : gpd.GeoSeries
+            _description_
+
+        Returns
+        -------
+        pd.DataFrame
+            _description_
+
+        Raises
+        ------
+        NotImplementedError
+            _description_
+        """
         if self.fixed:
             input_ids, local_ids = self._geometry.sindex.query(
                 geometry, predicate="dwithin", distance=self.bandwidth

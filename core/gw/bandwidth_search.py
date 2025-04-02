@@ -6,6 +6,7 @@ import pandas as pd
 from scipy.spatial.distance import pdist
 from sklearn import metrics
 
+
 class BandwidthSearch:
     """Optimal bandwidth search for geographically-weighted models
 
@@ -75,7 +76,7 @@ class BandwidthSearch:
     ) -> float:
         """Fit the model ans report criterion score.
 
-        In case of invariant y in a local model, returns -np.inf
+        In case of invariant y in a local model, returns np.inf
         """
         try:
             gwm = self.model(
@@ -85,11 +86,12 @@ class BandwidthSearch:
                 n_jobs=self.n_jobs,
                 fit_global_model=False,
                 measure_performance=False,
-                strict=True,
+                strict=False,
                 **self.model_kwargs,
             ).fit(X=X, y=y, geometry=geometry)
-            log_likelihood = -metrics.log_loss(y, gwm.focal_proba_)
-            n, k = X.shape
+            mask = gwm._n_labels > 1
+            log_likelihood = -metrics.log_loss(y[mask], gwm.focal_proba_[mask])
+            n, k = X[mask].shape
             match self.criterion:
                 case "aic":
                     return self._aic(k, n, log_likelihood)
@@ -116,9 +118,9 @@ class BandwidthSearch:
         oob_scores = {}
         bw = self.min_bandwidth
         while bw <= self.max_bandwidth:
-            self.oob_scores[bw] = self._score(X=X, y=y, geometry=geometry, bw=bw)
+            oob_scores[bw] = self._score(X=X, y=y, geometry=geometry, bw=bw)
             if self.verbose:
-                print(f"Bandwidth: {bw:.2f}, score: {self.oob_scores[bw]:.2f}")
+                print(f"Bandwidth: {bw:.2f}, score: {oob_scores[bw]:.2f}")
             bw += self.interval
         self.oob_scores = pd.Series(oob_scores, name="oob_score")
 
@@ -156,17 +158,21 @@ class BandwidthSearch:
             if b in oob_scores:
                 score_b = oob_scores[b]
             else:
+                if self.verbose:
+                    print(f"Fitting bandwidth: {f'{b:.2f}'.rstrip('0').rstrip('.')}")
                 score_b = self._score(X=X, y=y, geometry=geometry, bw=b)
                 if self.verbose:
                     print(
                         f"Bandwidth: {f'{b:.2f}'.rstrip('0').rstrip('.')}, "
-                        f"score: {score_b:.2f}"
+                        f"Score: {score_b:.2f}"
                     )
                 oob_scores[b] = score_b
 
             if d in oob_scores:
                 score_d = oob_scores[d]
             else:
+                if self.verbose:
+                    print(f"Fitting bandwidth: {f'{d:.2f}'.rstrip('0').rstrip('.')}")
                 score_d = self._score(X=X, y=y, geometry=geometry, bw=d)
                 if self.verbose:
                     print(

@@ -19,6 +19,9 @@ class GWRandomForestClassifier(BaseClassifier):
         measure_performance: bool = True,
         strict: bool = False,
         keep_models: bool = False,
+        temp_folder: str | None = None,
+        batch_size: int | None = None,
+        min_proportion: float = 0.2,
         **kwargs,
     ):
         self._model_type = "random_forest"
@@ -33,6 +36,9 @@ class GWRandomForestClassifier(BaseClassifier):
             measure_performance=measure_performance,
             strict=strict,
             keep_models=keep_models,
+            temp_folder=temp_folder,
+            batch_size=batch_size,
+            min_proportion=min_proportion,
             **kwargs,
         )
 
@@ -42,7 +48,7 @@ class GWRandomForestClassifier(BaseClassifier):
         if self.measure_performance:
             # OOB accuracy for RF can be measured both local and global
             true, n = zip(*self._score_data, strict=False)
-            self.oob_score_ = sum(true) / sum(n)
+            self.oob_score_ = np.sum(true) / np.sum(n)
             self.local_oob_score_ = pd.Series(
                 np.array(true) / np.array(n), index=self._names
             )
@@ -66,6 +72,8 @@ class GWGradientBoostingClassifier(BaseClassifier):
         measure_performance: bool = True,
         strict: bool = False,
         keep_models: bool = False,
+        temp_folder: str | None = None,
+        batch_size: int | None = None,
         **kwargs,
     ):
         self._model_type = "gradient_boosting"
@@ -80,6 +88,8 @@ class GWGradientBoostingClassifier(BaseClassifier):
             measure_performance=measure_performance,
             strict=strict,
             keep_models=keep_models,
+            temp_folder=temp_folder,
+            batch_size=batch_size,
             **kwargs,
         )
 

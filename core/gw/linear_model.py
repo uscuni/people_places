@@ -19,6 +19,8 @@ class GWLogisticRegression(BaseClassifier):
         measure_performance: bool = True,
         strict: bool = False,
         keep_models: bool = False,
+        temp_folder: str | None = None,
+        batch_size: int | None = None,
         **kwargs,
     ):
         self._model_type = "logistic"
@@ -33,6 +35,8 @@ class GWLogisticRegression(BaseClassifier):
             measure_performance=measure_performance,
             strict=strict,
             keep_models=keep_models,
+            temp_folder=temp_folder,
+            batch_size=batch_size,
             **kwargs,
         )
 
@@ -43,7 +47,7 @@ class GWLogisticRegression(BaseClassifier):
         self.local_coef_ = pd.concat(
             [x[1] for x in self._score_data], axis=1, keys=self._names
         ).T
-        self.local_intercept_ = pd.DataFrame(
-            [x[2] for x in self._score_data], index=self._names, columns=np.unique(y)
+        self.local_intercept_ = pd.Series(
+            np.concatenate([x[2] for x in self._score_data]), index=self._names
         )
         return self
