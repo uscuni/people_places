@@ -9,8 +9,6 @@ from joblib import Parallel, delayed
 from libpysal import graph
 from sklearn import metrics
 
-# TODO: localise F1 scores
-# TODO: fix OOB score when there are invariant cases
 # TODO: fix keep_models=True
 
 __all__ = ["BaseClassifier"]
@@ -254,7 +252,7 @@ class BaseClassifier:
             ) = zip(*training_output, strict=False)
 
         self._n_labels = pd.Series(self._n_labels, index=self._names)
-        self.focal_proba_ = pd.DataFrame(focal_proba).fillna(0).loc[:, np.unique(y)]
+        self.focal_proba_ = pd.DataFrame(focal_proba, index=self._names)
 
         if self.fit_global_model:
             if self._measure_oob:
@@ -267,11 +265,24 @@ class BaseClassifier:
 
         if self.measure_performance:
             # global GW accuracy
-            focal_pred = self.focal_proba_.iloc[:, 0] > 0.5
-            self.score_ = metrics.accuracy_score(y, focal_pred)
-            self.f1_macro = metrics.f1_score(y, focal_pred, average="macro")
-            self.f1_micro = metrics.f1_score(y, focal_pred, average="micro")
-            self.f1_weighted = metrics.f1_score(y, focal_pred, average="weighted")
+            nan_mask = self.focal_proba_[True].isna()
+            self.focal_pred_ = self.focal_proba_[True][~nan_mask] > 0.5
+            masked_y = y[~nan_mask]
+            self.score_ = metrics.accuracy_score(masked_y, self.focal_pred_)
+            self.precision_ = metrics.precision_score(masked_y, self.focal_pred_)
+            self.recall_ = metrics.recall_score(masked_y, self.focal_pred_)
+            self.balanced_accuracy_ = metrics.balanced_accuracy_score(
+                masked_y, self.focal_pred_
+            )
+            self.f1_macro = metrics.f1_score(
+                masked_y, self.focal_pred_, average="macro"
+            )
+            self.f1_micro = metrics.f1_score(
+                masked_y, self.focal_pred_, average="micro"
+            )
+            self.f1_weighted = metrics.f1_score(
+                masked_y, self.focal_pred_, average="weighted"
+            )
 
         return self
 
@@ -311,25 +322,28 @@ class BaseClassifier:
             skip = (vc.iloc[1] / vc.iloc[0]) < self.min_proportion
         if skip:
             if self._model_type in ["random_forest", "gradient_boosting"]:
-                score_data = (np.nan, np.nan)
+                score_data = (np.array([]).reshape(-1, 1), np.array([]))
                 feature_imp = np.array([np.nan] * (data.shape[1] - 2))
             elif self._model_type == "logistic":
                 score_data = (
-                    np.nan,  # accuracy
+                    np.array([]),  # true
+                    np.array([]),  # pred
                     pd.Series(
                         np.nan, index=data.columns.drop(["_y", "_weight"])
                     ),  # local coefficients
                     np.array([np.nan]),  # intercept
                 )
                 feature_imp = None
-
-            return [
+            output = [
                 name,
                 n_labels,
                 score_data,
                 feature_imp,
                 pd.Series(np.nan, index=self._global_classes),
             ]
+            if self.keep_models:
+                output.append(None)
+            return output
 
         local_model = model(**model_kwargs)
         X = data.drop(columns=["_y", "_weight"])
@@ -348,11 +362,16 @@ class BaseClassifier:
             local_model.predict_proba(focal_x).flatten(), index=local_model.classes_
         )
 
+        local_proba = pd.DataFrame(
+            local_model.predict_proba(X), columns=local_model.classes_
+        )
+
         if self._model_type == "random_forest":
             score_data = local_model.oob_score_
         elif self._model_type == "logistic":
             score_data = (
-                metrics.accuracy_score(y, local_model.predict(X)),
+                y,
+                local_proba.idxmax(axis=1),
                 pd.Series(
                     local_model.coef_.flatten(),
                     index=local_model.feature_names_in_,
@@ -377,7 +396,7 @@ class BaseClassifier:
         return output
 
     def _get_score_data(self, true, pred):
-        return sum(true.flatten() == pred), len(pred)
+        return true, pred
 
     def predict_proba(self, X: pd.DataFrame, geometry: gpd.GeoSeries) -> pd.DataFrame:
         """Predict probabiliies using the ensemble of local models
@@ -455,3 +474,18 @@ class BaseClassifier:
         proba = self.predict_proba(X, geometry)
 
         return proba.idxmax(axis=1)
+
+
+def _scores(y_true, y_pred):
+    if y_true.shape[0] == 0:
+        return np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan
+
+    return (
+        metrics.accuracy_score(y_true, y_pred),
+        metrics.precision_score(y_true, y_pred),
+        metrics.recall_score(y_true, y_pred),
+        metrics.balanced_accuracy_score(y_true, y_pred),
+        metrics.f1_score(y_true, y_pred, average="macro"),
+        metrics.f1_score(y_true, y_pred, average="micro"),
+        metrics.f1_score(y_true, y_pred, average="weighted"),
+    )
