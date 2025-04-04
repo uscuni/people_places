@@ -55,6 +55,8 @@ class GWLogisticRegression(BaseClassifier):
             true = [x[0] for x in self._score_data]
             pred = [x[1] for x in self._score_data]
 
+            del self._score_data
+
             all_true = np.concat(true)
             all_pred = np.concat(pred)
 

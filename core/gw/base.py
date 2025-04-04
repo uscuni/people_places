@@ -19,6 +19,7 @@ from sklearn import metrics
 # TODO: repr
 # TODO: predict_proba for adaptive kernel
 # TODO: better type hinting (Literal etc)
+# TODO: catch non-binary cases
 
 __all__ = ["BaseClassifier"]
 
@@ -157,9 +158,14 @@ class BaseClassifier:
         geometry : gpd.GeoSeries
             Geographic location
         """
+        if not (geometry.geom_type == "Point").all():
+            raise ValueError(
+                "Unsupported geometry type. Only point geometry is allowed."
+            )
+
         # build graph
         if self.fixed:  # fixed distance
-            self.weights = graph.Graph.build_kernel(
+            weights = graph.Graph.build_kernel(
                 geometry, kernel=self.kernel, bandwidth=self.bandwidth
             )
         else:  # adaptive KNN
@@ -169,7 +175,7 @@ class BaseClassifier:
             # post-process identity weights by the selected kernel
             # and kernel bandwidth derived from each neighborhood
             bandwidth = weights._adjacency.groupby(level=0).transform("max")
-            self.weights = graph.Graph(
+            weights = graph.Graph(
                 adjacency=_kernel_functions[self.kernel](weights._adjacency, bandwidth),
                 is_sorted=True,
             )
@@ -181,13 +187,13 @@ class BaseClassifier:
         # fit the models
         data = X.copy()
         data["_y"] = y
-        data = data.loc[self.weights._adjacency.index.get_level_values(1)]
-        data["_weight"] = self.weights._adjacency.values
-        grouper = data.groupby(self.weights._adjacency.index.get_level_values(0))
+        data = data.loc[weights._adjacency.index.get_level_values(1)]
+        data["_weight"] = weights._adjacency.values
+        grouper = data.groupby(weights._adjacency.index.get_level_values(0))
 
         invariant = (
             data["_y"]
-            .groupby(self.weights._adjacency.index.get_level_values(0))
+            .groupby(weights._adjacency.index.get_level_values(0))
             .nunique()
             == 1
         )
@@ -443,6 +449,10 @@ class BaseClassifier:
         NotImplementedError
             _description_
         """
+        if not (geometry.geom_type == "Point").all():
+            raise ValueError(
+                "Unsupported geometry type. Only point geometry is allowed."
+            )
         if self.fixed:
             input_ids, local_ids = self._geometry.sindex.query(
                 geometry, predicate="dwithin", distance=self.bandwidth

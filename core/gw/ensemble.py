@@ -49,20 +49,28 @@ class GWRandomForestClassifier(BaseClassifier):
         if self.measure_performance:
             # OOB accuracy for RF can be measured both local and global
             true, pred = zip(*self._score_data, strict=False)
+            del self._score_data
+
             all_true = np.concat(true)
             all_pred = np.concat(pred)
 
             # global OOB scores
             self.oob_score_ = metrics.accuracy_score(all_true, all_pred)
-            self.oob_precision_ = metrics.precision_score(all_true, all_pred)
-            self.oob_recall_ = metrics.recall_score(all_true, all_pred)
+            self.oob_precision_ = metrics.precision_score(
+                all_true, all_pred, zero_division=0
+            )
+            self.oob_recall_ = metrics.recall_score(all_true, all_pred, zero_division=0)
             self.oob_balanced_accuracy_ = metrics.balanced_accuracy_score(
                 all_true, all_pred
             )
-            self.oob_f1_macro = metrics.f1_score(all_true, all_pred, average="macro")
-            self.oob_f1_micro = metrics.f1_score(all_true, all_pred, average="micro")
+            self.oob_f1_macro = metrics.f1_score(
+                all_true, all_pred, average="macro", zero_division=0
+            )
+            self.oob_f1_micro = metrics.f1_score(
+                all_true, all_pred, average="micro", zero_division=0
+            )
             self.oob_f1_weighted = metrics.f1_score(
-                all_true, all_pred, average="weighted"
+                all_true, all_pred, average="weighted", zero_division=0
             )
 
             # local OOB scores
@@ -145,5 +153,3 @@ class GWGradientBoostingClassifier(BaseClassifier):
         )
 
         return self
-
-

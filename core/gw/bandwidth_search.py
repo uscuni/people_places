@@ -67,7 +67,7 @@ class BandwidthSearch:
         elif self.search_method == "golden_section":
             self._golden_section(X=X, y=y, geometry=geometry, tolerance=self.tolerance)
 
-        self.optimal_bandwidth = self.oob_scores.idxmin()
+        self.optimal_bandwidth = self.scores.idxmin()
 
         return self
 
@@ -78,30 +78,31 @@ class BandwidthSearch:
 
         In case of invariant y in a local model, returns np.inf
         """
-        try:
-            gwm = self.model(
-                bandwidth=bw,
-                fixed=self.fixed,
-                kernel=self.kernel,
-                n_jobs=self.n_jobs,
-                fit_global_model=False,
-                measure_performance=False,
-                strict=False,
-                **self.model_kwargs,
-            ).fit(X=X, y=y, geometry=geometry)
-            mask = gwm._n_labels > 1
-            log_likelihood = -metrics.log_loss(y[mask], gwm.focal_proba_[mask])
-            n, k = X[mask].shape
-            match self.criterion:
-                case "aic":
-                    return self._aic(k, n, log_likelihood)
-                case "bic":
-                    return self._bic(k, n, log_likelihood)
-                case "aicc":
-                    return self._aicc(k, n, log_likelihood)
-
-        except ValueError:  # invariant subset
+        if len(np.unique(y)) == 1:
             return np.inf
+
+        gwm = self.model(
+            bandwidth=bw,
+            fixed=self.fixed,
+            kernel=self.kernel,
+            n_jobs=self.n_jobs,
+            fit_global_model=False,
+            measure_performance=False,
+            strict=False,
+            **self.model_kwargs,
+        ).fit(X=X, y=y, geometry=geometry)
+        mask = (gwm._n_labels < 2) | np.isnan(gwm.focal_proba_).any(axis=1)
+        log_likelihood = -metrics.log_loss(y[~mask], gwm.focal_proba_[~mask])
+        n, k = X[~mask].shape
+        print(log_likelihood, n, k)
+
+        match self.criterion:
+            case "aic":
+                return self._aic(k, n, log_likelihood)
+            case "bic":
+                return self._bic(k, n, log_likelihood)
+            case "aicc":
+                return self._aicc(k, n, log_likelihood)
 
     def _interval(self, X: pd.DataFrame, y: pd.Series, geometry: gpd.GeoSeries) -> None:
         """Fit models using the equal interval search.
@@ -115,14 +116,14 @@ class BandwidthSearch:
         geometry : gpd.GeoSeries
             Geographic location
         """
-        oob_scores = {}
+        scores = {}
         bw = self.min_bandwidth
         while bw <= self.max_bandwidth:
-            oob_scores[bw] = self._score(X=X, y=y, geometry=geometry, bw=bw)
+            scores[bw] = self._score(X=X, y=y, geometry=geometry, bw=bw)
             if self.verbose:
-                print(f"Bandwidth: {bw:.2f}, score: {oob_scores[bw]:.2f}")
+                print(f"Bandwidth: {bw:.2f}, score: {scores[bw]:.3f}")
             bw += self.interval
-        self.oob_scores = pd.Series(oob_scores, name="oob_score")
+        self.scores_ = pd.Series(scores, name=self.criterion)
 
     def _golden_section(
         self, X: pd.DataFrame, y: pd.Series, geometry: gpd.GeoSeries, tolerance: float
@@ -149,14 +150,14 @@ class BandwidthSearch:
 
         diff = 1.0e9
         iters = 0
-        oob_scores = {}
+        scores = {}
         while diff > tolerance and iters < self.max_iterations and a != np.inf:
             if not self.fixed:  # ensure we use int as possible bandwidth
                 b = int(b)
                 d = int(d)
 
-            if b in oob_scores:
-                score_b = oob_scores[b]
+            if b in scores:
+                score_b = scores[b]
             else:
                 if self.verbose:
                     print(f"Fitting bandwidth: {f'{b:.2f}'.rstrip('0').rstrip('.')}")
@@ -164,12 +165,12 @@ class BandwidthSearch:
                 if self.verbose:
                     print(
                         f"Bandwidth: {f'{b:.2f}'.rstrip('0').rstrip('.')}, "
-                        f"Score: {score_b:.2f}"
+                        f"Score: {score_b:.3f}"
                     )
-                oob_scores[b] = score_b
+                scores[b] = score_b
 
-            if d in oob_scores:
-                score_d = oob_scores[d]
+            if d in scores:
+                score_d = scores[d]
             else:
                 if self.verbose:
                     print(f"Fitting bandwidth: {f'{d:.2f}'.rstrip('0').rstrip('.')}")
@@ -177,9 +178,9 @@ class BandwidthSearch:
                 if self.verbose:
                     print(
                         f"Bandwidth: {f'{d:.2f}'.rstrip('0').rstrip('.')}, "
-                        f"score: {score_d:.2f}"
+                        f"score: {score_d:.3f}"
                     )
-                oob_scores[d] = score_d
+                scores[d] = score_d
 
             if score_b <= score_d:
                 c = d
@@ -193,7 +194,7 @@ class BandwidthSearch:
 
             diff = np.abs(score_b - score_d)
 
-        self.oob_scores = pd.Series(oob_scores, name="oob_score")
+        self.scores = pd.Series(scores, name="oob_score")
 
     def _aic(self, k, _, log_likelihood):
         return 2 * k - 2 * log_likelihood
