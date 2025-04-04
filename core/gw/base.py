@@ -1,21 +1,24 @@
 import inspect
+import os
 import warnings
 from collections.abc import Callable, Hashable
+from pathlib import Path
 
 import geopandas as gpd
 import numpy as np
 import pandas as pd
-from joblib import Parallel, delayed
+from joblib import Parallel, delayed, dump, load
 from libpysal import graph
 from sklearn import metrics
 
-# TODO: keep_models=path and predict_proba with models from disk
 # TODO: testing
 # TODO: formal documentation
 # TODO: comments in code
 # TODO: better handling of verbosity
 # TODO: summary
 # TODO: repr
+# TODO: predict_proba for adaptive kernel
+# TODO: better type hinting (Literal etc)
 
 __all__ = ["BaseClassifier"]
 
@@ -95,10 +98,11 @@ class BaseClassifier:
     strict : bool, optional
         Do not fit any models if at least one neighborhood has invariant ``y``,
         by default False
-    keep_models : bool, optional
-        Keep all local models (required for prediction), by default True. Note that
-        for some models,
-        like random forests, the objects can be large.
+    keep_models : bool | str | Path, optional
+        Keep all local models (required for prediction), by default False. Note that
+        for some models, like random forests, the objects can be large. If string or
+        Path is provided, the local models are not held in memory but serialized to
+        the disk from which they are loaded in prediction.
     temp_folder : str, optional
         Folder to be used by the pool for memmapping large arrays for sharing memory
         with worker processes, e.g., ``/tmp``. Passed to ``joblib.Parallel``.
@@ -115,7 +119,7 @@ class BaseClassifier:
         n_jobs: int = -1,
         fit_global_model: bool = True,
         measure_performance: bool = True,
-        strict: bool = False,
+        strict: bool | str | Path = False,
         keep_models: bool = False,
         temp_folder: str | None = None,
         batch_size: int | None = None,
@@ -131,6 +135,8 @@ class BaseClassifier:
         self.fit_global_model = fit_global_model
         self.measure_performance = measure_performance
         self.strict = strict
+        if isinstance(keep_models, str):
+            keep_models = Path(keep_models)
         self.keep_models = keep_models
         self.temp_folder = temp_folder
         self.batch_size = batch_size
@@ -167,6 +173,9 @@ class BaseClassifier:
                 adjacency=_kernel_functions[self.kernel](weights._adjacency, bandwidth),
                 is_sorted=True,
             )
+
+        if isinstance(self.keep_models, Path):
+            self.keep_models.mkdir(exist_ok=True)
 
         self._global_classes = np.unique(y)
         # fit the models
@@ -394,8 +403,16 @@ class BaseClassifier:
             getattr(local_model, "feature_importances_", None),
             focal_proba,
         ]
-        if self.keep_models:
+
+        if self.keep_models is True:  # if True, models are kept in memory
             output.append(local_model)
+        elif isinstance(self.keep_models, Path):  # if Path, models are saved to disk
+            p = f"{self.keep_models.joinpath(f'{name}.joblib')}"
+            with open(p, "wb") as f:
+                dump(local_model, f, protocol=5)
+            output.append(p)
+
+            del local_model
         else:
             del local_model
 
@@ -455,26 +472,33 @@ class BaseClassifier:
                 self._predict_proba(x_, models_, distances_, X.columns)
             )
 
-        return pd.DataFrame(
-            probabilities, columns=self._global_classes, index=X.index
-        ).fillna(0)
+        return pd.DataFrame(probabilities, columns=self._global_classes, index=X.index)
 
     def _predict_proba(self, x_, models_, distances_, columns):
         x_ = pd.DataFrame(np.array(x_).reshape(1, -1), columns=columns)
-        pred = pd.DataFrame(
-            [
-                pd.Series(
-                    self.local_models[i].predict_proba(x_).flatten(),
-                    index=self.local_models[i].classes_,
+        pred = []
+        for i in models_:
+            local_model = self.local_models[i]
+            if isinstance(local_model, str):
+                with open(local_model, "rb") as f:
+                    local_model = load(f)
+
+            if local_model is not None:
+                pred.append(
+                    pd.Series(
+                        local_model.predict_proba(x_).flatten(),
+                        index=local_model.classes_,
+                    )
                 )
-                if self.local_models[i] is not None
-                else pd.Series(
-                    np.nan,
-                    index=self._global_classes,
+            else:
+                pred.append(
+                    pd.Series(
+                        np.nan,
+                        index=self._global_classes,
+                    )
                 )
-                for i in models_
-            ]
-        )
+        pred = pd.DataFrame(pred)
+
         mask = pred.isna().any(axis=1)
         if mask.all():
             return pd.Series(np.nan, index=pred.columns)
