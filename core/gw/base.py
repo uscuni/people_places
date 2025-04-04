@@ -20,6 +20,7 @@ from sklearn import metrics
 # TODO: predict_proba for adaptive kernel
 # TODO: better type hinting (Literal etc)
 # TODO: catch non-binary cases
+# TODO: UndefinedMetricWarning
 
 __all__ = ["BaseClassifier"]
 
