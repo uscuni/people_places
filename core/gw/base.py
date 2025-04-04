@@ -9,7 +9,13 @@ from joblib import Parallel, delayed
 from libpysal import graph
 from sklearn import metrics
 
-# TODO: fix keep_models=True
+# TODO: keep_models=path and predict_proba with models from disk
+# TODO: testing
+# TODO: formal documentation
+# TODO: comments in code
+# TODO: better handling of verbosity
+# TODO: summary
+# TODO: repr
 
 __all__ = ["BaseClassifier"]
 
@@ -274,13 +280,13 @@ class BaseClassifier:
             self.balanced_accuracy_ = metrics.balanced_accuracy_score(
                 masked_y, self.focal_pred_
             )
-            self.f1_macro = metrics.f1_score(
+            self.f1_macro_ = metrics.f1_score(
                 masked_y, self.focal_pred_, average="macro"
             )
-            self.f1_micro = metrics.f1_score(
+            self.f1_micro_ = metrics.f1_score(
                 masked_y, self.focal_pred_, average="micro"
             )
-            self.f1_weighted = metrics.f1_score(
+            self.f1_weighted_ = metrics.f1_score(
                 masked_y, self.focal_pred_, average="weighted"
             )
 
@@ -436,7 +442,7 @@ class BaseClassifier:
         split_indices = np.where(np.diff(input_ids))[0] + 1
         local_model_ids = np.split(local_ids, split_indices)
         distances = np.split(distance.values, split_indices)
-        data = np.split(X, range(1, len(X)))
+        data = np.split(X.to_numpy(), range(1, len(X)))
 
         probabilities = []
         for x_, models_, distances_ in zip(
@@ -461,10 +467,19 @@ class BaseClassifier:
                     self.local_models[i].predict_proba(x_).flatten(),
                     index=self.local_models[i].classes_,
                 )
+                if self.local_models[i] is not None
+                else pd.Series(
+                    np.nan,
+                    index=self._global_classes,
+                )
                 for i in models_
             ]
-        ).fillna(0)
-        weighted = np.average(pred, axis=0, weights=distances_)
+        )
+        mask = pred.isna().any(axis=1)
+        if mask.all():
+            return pd.Series(np.nan, index=pred.columns)
+
+        weighted = np.average(pred[~mask], axis=0, weights=distances_[~mask])
 
         # normalize
         weighted = weighted / weighted.sum()
