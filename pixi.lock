@@ -375,7 +375,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zlib-1.3.1-hb9d3cd8_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstandard-0.23.0-py312hef9b889_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.6-ha6fb4c9_0.conda
-      - pypi: git+https://github.com/uscuni/gwlearn.git#5815394ce7553fb6a0f2b5e96ccea29963ba803f
+      - pypi: git+https://github.com/uscuni/gwlearn.git@5815394ce7553fb6a0f2b5e96ccea29963ba803f
       - pypi: .
       osx-64:
       - conda: https://conda.anaconda.org/conda-forge/noarch/anyio-4.8.0-pyhd8ed1ab_0.conda
@@ -678,7 +678,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/zlib-1.3.1-hd23fc13_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/zstandard-0.23.0-py313hab0894d_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/zstd-1.5.6-h915ae27_0.conda
-      - pypi: git+https://github.com/uscuni/gwlearn.git#5815394ce7553fb6a0f2b5e96ccea29963ba803f
+      - pypi: git+https://github.com/uscuni/gwlearn.git@5815394ce7553fb6a0f2b5e96ccea29963ba803f
       - pypi: .
       osx-arm64:
       - conda: https://conda.anaconda.org/conda-forge/noarch/anyio-4.8.0-pyhd8ed1ab_0.conda
@@ -981,7 +981,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zlib-1.3.1-h8359307_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zstandard-0.23.0-py313hf2da073_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zstd-1.5.6-hb46c0d2_0.conda
-      - pypi: git+https://github.com/uscuni/gwlearn.git#5815394ce7553fb6a0f2b5e96ccea29963ba803f
+      - pypi: git+https://github.com/uscuni/gwlearn.git@5815394ce7553fb6a0f2b5e96ccea29963ba803f
       - pypi: .
       win-64:
       - conda: https://conda.anaconda.org/conda-forge/win-64/_libavif_api-1.1.1-h57928b3_2.conda
@@ -1295,7 +1295,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/zlib-1.3.1-h2466b09_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/zstandard-0.23.0-py313h574b89f_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.6-h0ea2cb4_0.conda
-      - pypi: git+https://github.com/uscuni/gwlearn.git#5815394ce7553fb6a0f2b5e96ccea29963ba803f
+      - pypi: git+https://github.com/uscuni/gwlearn.git@5815394ce7553fb6a0f2b5e96ccea29963ba803f
       - pypi: .
 packages:
 - conda: https://conda.anaconda.org/conda-forge/win-64/_libavif_api-1.1.1-h57928b3_2.conda
@@ -3360,8 +3360,8 @@ packages:
   timestamp: 1731429291382
 - pypi: .
   name: core
-  version: 0.1.dev78+g40dacb3.d20250407
-  sha256: a0dc50de2ed48acc63d197071b05241e137e56bd3939dbaa3c547081db001ac0
+  version: 0.1.dev79+g691f4c5.d20250408
+  sha256: f8ad91015617921e063e53f5212184650f71d3807511d319951cf9aa8e9b078f
   requires_python: '>=3.11'
   editable: true
 - conda: https://conda.anaconda.org/conda-forge/noarch/cpython-3.13.2-py313hd8ed1ab_101.conda
@@ -4351,7 +4351,7 @@ packages:
   purls: []
   size: 95406
   timestamp: 1711634622644
-- pypi: git+https://github.com/uscuni/gwlearn.git#5815394ce7553fb6a0f2b5e96ccea29963ba803f
+- pypi: git+https://github.com/uscuni/gwlearn.git@5815394ce7553fb6a0f2b5e96ccea29963ba803f
   name: gwlearn
   version: 0.1.dev30+g5815394
   requires_dist:
