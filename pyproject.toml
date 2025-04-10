@@ -40,6 +40,20 @@ ignore = ["N803", "N806"] # name {} should be lowercase
     "F401",  # imported but unused
 ]
 
+[tool.ruff.lint.isort]
+section-order = [
+  "future",
+  "standard-library",
+  "third-party",
+  "uscuni",
+  "first-party",
+  "local-folder",
+  "testing"
+]
+
+[tool.ruff.lint.isort.sections]
+"uscuni" = ["gwlearn", "neatnet"]
+
 [tool.coverage.run]
 source = ["./core"]
 
@@ -78,6 +92,9 @@ openpyxl = ">=3.1.5,<4"
 pre-commit = ">=4.1.0,<5"
 ruff = ">=0.9.6,<0.10"
 geodatasets = ">=2024.8.0,<2025"
+imbalanced-learn = ">=0.13.0,<0.14"
+tabulate = ">=0.9.0,<0.10"
 
 [tool.pixi.pypi-dependencies]
 core = { path = ".", editable = true }
+gwlearn = { git = "https://github.com/uscuni/gwlearn.git" }
