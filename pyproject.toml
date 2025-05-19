@@ -94,6 +94,8 @@ ruff = ">=0.9.6,<0.10"
 geodatasets = ">=2024.8.0,<2025"
 imbalanced-learn = ">=0.13.0,<0.14"
 tabulate = ">=0.9.0,<0.10"
+factor-analyzer = ">=0.5.1,<0.6"
+umap-learn = ">=0.5.7,<0.6"
 
 [tool.pixi.pypi-dependencies]
 core = { path = ".", editable = true }
