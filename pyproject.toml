@@ -75,7 +75,6 @@ platforms = ["linux-64", "osx-arm64", "osx-64", "win-64"]
 [tool.pixi.dependencies]
 geopandas = ">=1.0.1,<2"
 lonboard = "<0.10"
-libpysal = ">=4.12.1,<5"
 numpy = ">=2.0.2,<3"
 pandas = ">=2.2.3,<3"
 matplotlib = ">=3.9.3,<4"
@@ -99,4 +98,6 @@ umap-learn = ">=0.5.7,<0.6"
 
 [tool.pixi.pypi-dependencies]
 core = { path = ".", editable = true }
-gwlearn = { git = "https://github.com/uscuni/gwlearn.git" }
+libpysal = { git = "https://github.com/pysal/libpysal.git" }
+gwlearn = { git = "https://github.com/pysal/gwlearn.git" }
+
