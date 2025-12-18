@@ -373,8 +373,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstandard-0.23.0-py312h66e93f0_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb8e6e7a_2.conda
       - pypi: https://files.pythonhosted.org/packages/96/69/43821d5c82543b0b342176b49c0956d77dede09f7af56305e8983a8f4142/esda-2.7.1-py3-none-any.whl
-      - pypi: git+https://github.com/pysal/gwlearn.git#2242216d9afdea6acc094d186d824cfb31c7c398
-      - pypi: git+https://github.com/pysal/libpysal.git#a01ec777bb73a03009df8702f03b338785345c71
+      - pypi: git+https://github.com/pysal/gwlearn.git#2f5c5cb21c4ad689d259e19380c20e6a6d4bdd3c
+      - pypi: git+https://github.com/pysal/libpysal.git#338aff1989a44b6972e39cfb08d93249b2e7a198
       - pypi: ./
       osx-64:
       - conda: https://conda.anaconda.org/conda-forge/noarch/anyio-4.9.0-pyh29332c3_0.conda
@@ -680,8 +680,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/zstandard-0.23.0-py313h63b0ddb_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/zstd-1.5.7-h8210216_2.conda
       - pypi: https://files.pythonhosted.org/packages/96/69/43821d5c82543b0b342176b49c0956d77dede09f7af56305e8983a8f4142/esda-2.7.1-py3-none-any.whl
-      - pypi: git+https://github.com/pysal/gwlearn.git#2242216d9afdea6acc094d186d824cfb31c7c398
-      - pypi: git+https://github.com/pysal/libpysal.git#a01ec777bb73a03009df8702f03b338785345c71
+      - pypi: git+https://github.com/pysal/gwlearn.git#2f5c5cb21c4ad689d259e19380c20e6a6d4bdd3c
+      - pypi: git+https://github.com/pysal/libpysal.git#338aff1989a44b6972e39cfb08d93249b2e7a198
       - pypi: ./
       osx-arm64:
       - conda: https://conda.anaconda.org/conda-forge/noarch/anyio-4.9.0-pyh29332c3_0.conda
@@ -987,8 +987,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zstandard-0.23.0-py313h90d716c_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zstd-1.5.7-h6491c7d_2.conda
       - pypi: https://files.pythonhosted.org/packages/96/69/43821d5c82543b0b342176b49c0956d77dede09f7af56305e8983a8f4142/esda-2.7.1-py3-none-any.whl
-      - pypi: git+https://github.com/pysal/gwlearn.git#2242216d9afdea6acc094d186d824cfb31c7c398
-      - pypi: git+https://github.com/pysal/libpysal.git#a01ec777bb73a03009df8702f03b338785345c71
+      - pypi: git+https://github.com/pysal/gwlearn.git#2f5c5cb21c4ad689d259e19380c20e6a6d4bdd3c
+      - pypi: git+https://github.com/pysal/libpysal.git#338aff1989a44b6972e39cfb08d93249b2e7a198
       - pypi: ./
       win-64:
       - conda: https://conda.anaconda.org/conda-forge/win-64/_openmp_mutex-4.5-2_gnu.conda
@@ -1303,8 +1303,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/zstandard-0.23.0-py313ha7868ed_2.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/zstd-1.5.7-hbeecb71_2.conda
       - pypi: https://files.pythonhosted.org/packages/96/69/43821d5c82543b0b342176b49c0956d77dede09f7af56305e8983a8f4142/esda-2.7.1-py3-none-any.whl
-      - pypi: git+https://github.com/pysal/gwlearn.git#2242216d9afdea6acc094d186d824cfb31c7c398
-      - pypi: git+https://github.com/pysal/libpysal.git#a01ec777bb73a03009df8702f03b338785345c71
+      - pypi: git+https://github.com/pysal/gwlearn.git#2f5c5cb21c4ad689d259e19380c20e6a6d4bdd3c
+      - pypi: git+https://github.com/pysal/libpysal.git#338aff1989a44b6972e39cfb08d93249b2e7a198
       - pypi: ./
 packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/_libgcc_mutex-0.1-conda_forge.tar.bz2
@@ -3160,8 +3160,8 @@ packages:
   timestamp: 1744743864955
 - pypi: ./
   name: core
-  version: 0.1.dev93+ge41e82c.d20250717
-  sha256: ebb6f92708f08df960dc25276fb394984028a97ba7b83710eea58a9dbc2157ae
+  version: 0.1.dev96+g6d0e71ab9.d20251218
+  sha256: 57cfbf830c12637db568f707b0ec3d3f92ef003d56f4d82280fcf50283f7fe7d
   requires_python: '>=3.11'
   editable: true
 - conda: https://conda.anaconda.org/conda-forge/noarch/cpython-3.13.5-py313hd8ed1ab_102.conda
@@ -3945,9 +3945,9 @@ packages:
   purls: []
   size: 95862
   timestamp: 1750080330012
-- pypi: git+https://github.com/pysal/gwlearn.git#2242216d9afdea6acc094d186d824cfb31c7c398
+- pypi: git+https://github.com/pysal/gwlearn.git#2f5c5cb21c4ad689d259e19380c20e6a6d4bdd3c
   name: gwlearn
-  version: 0.1.dev72+g2242216
+  version: 0.0.1
   requires_dist:
   - geopandas>=1.0.0
   - joblib>=1.4.0
@@ -3956,7 +3956,6 @@ packages:
   - scipy>=1.12.0
   - scikit-learn>=1.4.0
   - pandas>=2.1.0
-  - imbalanced-learn>=0.12.0 ; extra == 'optional'
   requires_python: '>=3.11'
 - conda: https://conda.anaconda.org/conda-forge/noarch/h11-0.16.0-pyhd8ed1ab_0.conda
   sha256: f64b68148c478c3bfc8f8d519541de7d2616bf59d44485a5271041d40c061887
@@ -7608,9 +7607,9 @@ packages:
   purls: []
   size: 7615542
   timestamp: 1751690551169
-- pypi: git+https://github.com/pysal/libpysal.git#a01ec777bb73a03009df8702f03b338785345c71
+- pypi: git+https://github.com/pysal/libpysal.git#338aff1989a44b6972e39cfb08d93249b2e7a198
   name: libpysal
-  version: 4.13.1.dev14+ga01ec777
+  version: 4.13.1.dev39+g338aff198
   requires_dist:
   - beautifulsoup4>=4.13.0
   - geopandas>=0.14.0
