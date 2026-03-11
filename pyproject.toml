@@ -25,7 +25,7 @@ include = ["core", "core.*"]
 [tool.ruff]
 line-length = 88
 extend-include = ["*.ipynb"]
-exclude = ["notebooks/archive"]
+exclude = ["notebooks/archive","notebooks/04_results/archive"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "N", "B", "A", "C4", "SIM", "ARG"]
