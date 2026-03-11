@@ -1,8 +1,9 @@
-# people_places
+# Spatially conditioned dynamics between population and built form
+
+Authors: Anna Brázdová & Martin Fleischmann
 
 This repository contains code used in the research attempting to understand the methods of evaluating the relationship between urban form and population structure.
-
-Work in progress.
+These notebooks do not contain outputs due to restrictions of the data provider.
 
 
 ## How to
