@@ -17,6 +17,7 @@ classifiers = [
 ]
 requires-python = ">=3.11"
 readme = "README.md"
+dependencies = ["matplotlib-map-utils>=3.1.1,<4", "pyinterpolate>=1.2.1,<2", "wkls>=0.4.7,<0.6", "matplotlib-scalebar>=0.9.0,<0.10", "contextily>=1.7.0,<2", "momepy>=0.11.0,<0.12"]
 
 [tool.setuptools.packages.find]
 include = ["core", "core.*"]
@@ -24,7 +25,7 @@ include = ["core", "core.*"]
 [tool.ruff]
 line-length = 88
 extend-include = ["*.ipynb"]
-exclude = ["notebooks/archive"]
+exclude = ["notebooks/archive","notebooks/04_results/archive"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "UP", "N", "B", "A", "C4", "SIM", "ARG"]
@@ -96,6 +97,7 @@ imbalanced-learn = ">=0.13.0,<0.14"
 tabulate = ">=0.9.0,<0.10"
 factor-analyzer = ">=0.5.1,<0.6"
 umap-learn = ">=0.5.7,<0.6"
+dataframe_image = ">=0.1.1,<0.2"
 
 [tool.pixi.pypi-dependencies]
 core = { path = ".", editable = true }
